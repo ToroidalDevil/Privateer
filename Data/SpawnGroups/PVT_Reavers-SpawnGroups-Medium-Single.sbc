@@ -1,0 +1,576 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+
+    <!--Aggressor-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Aggressor-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Aggressor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Aggressor-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Aggressor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Butcher-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Butcher-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Butcher">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Butcher-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Butcher">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Carver-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Carver-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-0.8G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Carver">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Carver-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-0.8G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Carver">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Charger-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Charger-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Charger">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Charger-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Charger">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Cockroach-->
+
+    <!--Devourer-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Devourer-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.1G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Devourer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Devourer-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.1G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Devourer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Interloper-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Interloper-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-MediumHover-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust-B]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Interloper">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-Hover</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Interloper-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-2G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-MediumHover-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust-B]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Interloper">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-Hover</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Mutilator-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Mutilator-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.3G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Mutilator">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-Mutilator</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Mutilator-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.3G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Mutilator">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-Mutilator</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <!--Piercer-->
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Piercer-L</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.1G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-L]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Piercer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Reaver-SpawnGroup-Piercer-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PersistentConditions:Reaver-PersistentSpawnConditions-Environment-1.1G]
+        [SpawnConditionsProfiles:Reaver-SpawnConditions-Medium-M]
+
+        [ManipulationProfiles:Reaver-Manipulation-Common]
+        [ManipulationProfiles:Reaver-Manipulation-Loot]
+        [ManipulationProfiles:Reaver-Manipulation-Thrust]
+        [ManipulationProfiles:Reaver-Manipulation-PaintAndBuildStates]
+
+        [ReplenishSystems:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RVR) Piercer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>Reaver-Behavior-MediumShip</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+  </SpawnGroups>
+</Definitions>

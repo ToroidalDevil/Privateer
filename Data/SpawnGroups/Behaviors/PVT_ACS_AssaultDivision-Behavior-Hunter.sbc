@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- WEAPONS definitions START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Weapons-Standard -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Weapons-Standard</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Weapons]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+
+        [MaxStaticWeaponRange:7500]
+        [WeaponMaxAngleFromTarget:5]
+        [WeaponMaxBaseDistanceTarget:17]
+
+        [UseBarrageFire:true]
+        [MaxFireRateForBarrageWeapons:200]
+      </Description>
+    </EntityComponent>
+<!-- WEAPONS definitions END -->
+
+
+<!-- BEHAVIOR START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-LongRange]
+
+        [TargetData:(NPC-ACS)-AssaultDivision-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:(NPC-ACS)-AssaultDivision-Weapons-Standard]
+				  
+		[Triggers:ACS-AssaultDivision-Trigger-Announce]
+		[Triggers:ACS-AssaultDivision-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-Trigger-RemoteCompromisedBounty]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-Behavior-AssaultDivision-Hunter-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-ShortRange]
+
+        [TargetData:(NPC-ACS)-AssaultDivision-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:(NPC-ACS)-AssaultDivision-Weapons-Standard]
+
+		[Triggers:ACS-AssaultDivision-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+        [Triggers:ACS-AssaultDivision-Trigger-RandomRamming]
+		
+		[Triggers:PVTACS-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-Trigger-RemoteCompromisedBounty]
+
+      </Description>
+<!--
+		TODO:: implement jump chase triggers for the jump capable ships that still have opeational jump drives?
+        [TriggerGroups:Reaver-TriggerGroup-Common]
+        [Triggers:Reaver-TriggerJumpChase]
+        [Triggers:Reaver-Trigger-JumpComplete]
+-->
+    </EntityComponent>
+<!-- BEHAVIOR END -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Hunter-Targeting -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Hunter-Targeting</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:5000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+        [MatchAnyFilters:MovementScore]
+		
+        [MinMovementScore:1000]
+        [MaxMovementDetectableDistance:5000]
+
+        [MaxLineOfSight:3250]
+        [NonBroadcastVisualRange:3000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+		[MinTargetValue:300]
+      </Description>
+<!--
+-->	  
+    </EntityComponent>
+    	
+<!-- AUTOPILOT START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:25]
+        [IdealMinSpeed:10]
+        [IdealMaxSpeed:20]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:150]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:3000]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:1100]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:1200]
+
+        [EngageDistanceSpace:1200]
+        [EngageDistancePlanet:1200]
+		
+        [DisengageDistanceSpace:2000]
+        [DisengageDistancePlanet:2000]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:500]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:750]
+
+        [EngageDistanceSpace:1200]
+        [EngageDistancePlanet:1200]
+		
+        [DisengageDistanceSpace:1400]
+        [DisengageDistancePlanet:1400]
+      </Description>	
+    </EntityComponent>
+<!-- AUTOPILOT END -->
+	
+  </EntityComponents>
+</Definitions>

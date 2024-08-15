@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<TextTemplate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <DataPadEntries>
+    <DataPadEntry>
+      <DataPadTitle>Imber TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Mining Chief Of Staff
+        Subject: New Resource identifed.
+    
+        Message: 
+			A new source of Magnesium has been discovered in the Asteroid belts of Ganth. This has the potential to turn the battle to our favor, we'll finally have the ammunition we need to secure the valuable asteroids in this sector. The Ganth don't deserve it, their ship designs creep me out.
+			
+			We are preparing attack groups, and attempting to secure the asteroid now. We will send you the location, when it's "secure" enough for mining. It may not be posisble for to to secure the asteroid from hostiles, so your engineers should be prepared for combat conditions while mining. Successful setup of an on site operation will be slim until we can gain a better foothold in the Asteroid Belt.
+      </DataPadBody>
+    </DataPadEntry>
+	
+    <DataPadEntry>
+      <DataPadTitle>Imber TopSecret clearance ONLY R2</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Mining Chief Of Staff
+        Subject: Combat mining
+    
+        Message: 
+			We have not managed to secure the Magnesium asteroid, but high commnand can't wait. Without the ammunition that Magnesium will provide, we aren't likely to prevail in this system, and we'll loose another opportunity to Assert.
+			
+			Prepare for combat mining, we will coordinate escorts for your operations. It looks like we may have a window to make a mining run soon.
+			
+			Here is the location:
+      </DataPadBody>
+    </DataPadEntry>
+	
+    <DataPadEntry>
+      <DataPadTitle>Imber TopSecret clearance ONLY R3</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Mining Chief Of Staff
+        Subject: Combat mining
+    
+        Message: 
+			The conflict with ASSERT over the Mg asteroid has been hard fought, and the build up of corpses in the area is attracting Reavers. We will be unlikely to protect the mining engineers in future operations. We're going to need to toughen up the mining equipment as it's likely to take a beating.
+			
+			I pre-apologize for the inability to retrieve clones lost on the battlefield... Reavers gotta eat.
+			
+			Prepare for combat mining, we will coordinate escorts for your operations. It looks like we may have a window to make a mining run soon.
+			
+			Please use the new rally point for the next run:
+      </DataPadBody>
+    </DataPadEntry>
+
+    <DataPadEntry>
+      <DataPadTitle>Imber TopSecret clearance ONLY R3</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Mining Chief Of Staff
+        Subject: Combat mining
+    
+        Message: 
+			The conflict with ASSERT over the Mg asteroid has been hard fought, and the build up of corpses in the area is attracting Reavers. We will be unlikely to protect the mining engineers in future operations. We're going to need to toughen up the mining equipment as it's likely to take a beating.
+			
+			I pre-apologize for the inability to retrieve clones lost on the battlefield... Reavers gotta eat.
+			
+			Prepare for combat mining, we will coordinate escorts for your operations. It looks like we may have a window to make a mining run soon.
+			
+			Please use the new rally point for the next run:
+      </DataPadBody>
+    </DataPadEntry>
+<!--    
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 1-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Manufacturing Facilities
+        Subject: Cyber Attacks
+    
+        Message: The head communications engineer at our main drone production facility reports that there have been an increased number of cyber attacks in recent months. They suspect the would-be infiltrators are trying to gain access to designs and fabrication methods. This may be the work of one of the various pirate factions, or maybe even an INCON group trying to steal and counterfeit our designs.
+    
+        I’m authorizing increased armed support near the targeted facility. Because these attackers would need to be within proximity of the facility, it shouldn’t be hard to locate them once they’ve begun another infiltration attempt.
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 1-B</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Lars Turner
+        To: IMBER Manufacturing Facilities
+        Subject: Cyber Attacks Update
+    
+        Message: There was another cyber attack at the main drone production facility. Our increased security presence managed to track down the attacker. We aren’t sure if it was a piloted ship or a drone, but when our own security drones attempted to engage, the attacker managed to remotely scramble the systems of any drone that got close. The attacker was not apprehended.
+    
+        I am issuing a new directive to all facilities that manufacture IMBER assets. All radio wave antennas are to be disabled until we have implemented cyber security measures to mitigate these frequent attacks. Once a solution has been developed, it will be deployed to these facilities. In the interim, please utilize long range laser transceiver communications.
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 2-A</DataPadTitle>
+      <DataPadBody>
+        Type: Social Broadcast
+        From: Jerome Banks
+        To: IMBER Social Nexus
+        Subject: Inhibitor Critics
+ 
+        Message: You’re never going to believe this! Do you remember a while back when we outfitted most of our fleet with those new Inhibitor Modules to deter pirate attacks? They’ve been pretty effective, but that’s not the crazy part.
+    
+        We’ve actually been receiving mail and other communications FROM THE PIRATES complaining about how hard it is to steal our assets now. “Oh I’m sorry Mr. Pirate, please give us a moment to disable all security and invite you on board, we even have a table waiting for you!”. Is that what they expected us to reply with??
+    
+        If nothing else, the complaints make for entertaining reading with the morning Cosmic Coffee!
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 3-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Systems Researcher Alex Nasir
+        To: Transportation Personnel
+        Subject: Experimental Inhibitor Nullifiers
+    
+        Message: We've completed the final preparations on the inhibitor nullifier modules. These can temporarily protect crew by drawing from spacesuit power reserves to emit a field that blocks the effects of our inhibitor technologies.
+    
+        While we have not moved these modules into mass production yet, a number of them have been made available to crews of various cargo transports for emergency use against pirates and other raiders. Keep in mind, these modules will rapidly deplete your suit energy while in use. After a module has exceeded it's operational limit, the module will burn out. Hopefully the next generation of these modules will introduce some reusability.
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 4-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Scout Coordinator Wayne Masters
+        To: Transportation Personnel
+        Subject: Increased Pirate Activity
+    
+        Message: Our scouts have picked up several new pirate groups in the region. They do not appear to be affiliated with any notable faction or group, but they do not seem to discriminate between targets when choosing to attack.
+    
+        If a particular group of pirates in an area causes enough trouble, then I will authorize any nearby militarized support ships to engage them directly.
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 5-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Ambassador Carolyn Sharpe
+        To: Transportation Personnel
+        Subject: Agreement with PARALLAX
+    
+        Message: This is a reminder that IMBER and PARALLAX have reached a cease-fire agreement. As long as PARALLAX does not approach IMBER assets, and IMBER does not approach PARALLAX assets, then neither side will elict a hostile response.
+    
+        We cannot afford a full-scale conflict with an organization as large as PARALLAX, so it is a top priority that we do not push any boundaries with them.
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 6-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Captain David Anders
+        To: IMBER Operations
+        Subject: Location Discrepancy
+    
+        Message: Well this is a first... I was enroute to one of our factory outposts in one of the outer sectors. It was my first time to this particular outpost, but I'm no stranger to star maps so this should have been a standard run. The thing is, I got there and there was no outpost to be found. A part of me wondered at first if they had been attacked, but there was no sign of conflict that you'd normally expect after an attack.
+    
+        When I tried to radio to the Sector Command, I was getting no response. It's like the sector was a complete dead zone. Since there was nothing else to be done, I turned the ship back towards the origin depot. I'll submit my full report once I'm back in communication range.
+      </DataPadBody>
+    </DataPadEntry>
+
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 7-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Commander Gordon Ogden
+        To: IMBER Archives
+        Subject: Ambush Field Debriefing Transcript
+ 
+        [Transcript Begin]
+ 
+        [Commander] Your initial incident report indicated that your convoy was attacked by IMBER manufactured drones?
+ 
+        [Captain] Yes sir, that is correct.
+ 
+        [Commander] I find that very hard to believe. Our drones are hard coded to recognize other IMBER assets and to not engage unless provided with an override command issued by The Director.
+ 
+        [Captain] Sir, I am familiar with our combat drones and their security systems. But with all due respect, I know what I saw out there.
+ 
+        [Commander] I want you and your crew to return to headquarters for a full debriefing. You will submit to a psychiatric evaluation. And perhaps your crew can tell us what really happened.
+ 
+        [Transcript End]
+      </DataPadBody>
+    </DataPadEntry>
+  
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 8-A</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Captain Carson Sprague
+        To: IMBER Archives
+        Subject: INCON Incident Transcript
+ 
+        [Transcript Begin]
+ 
+        [Captain] : You are trespassing in IMBER controlled space
+ 
+        [INCON Pilot] : Please let us pass, our navigation system is malfunctioning, our supplies are exhausted, and this is the only route we know back to our own territory.
+ 
+        [Captain] : That’s not our problem. Turn back now or we will open fire.
+ 
+        [INCON Pilot] : Please don’t!! We’re not even armed.. We just want to get home.
+ 
+        [Captain] : Enough stalling! Turn back. Now!
+ 
+        [INCON Pilot] : We’ll die out there!! Please don’t make us go back!
+ 
+        [Captain] : You had your chance...
+ 
+        [INCON Pilot] : Wait!! Don’t do this!! We
+ 
+        
+        [Transcript End]
+      </DataPadBody>
+    </DataPadEntry>
+
+    <DataPadEntry>
+      <DataPadTitle>Imber Communication Record 9-A</DataPadTitle>
+      <DataPadBody>
+        Type: Personal Message
+        From: Lucius Raven (Human Resources)
+        To: Carey Freemont
+        Subject: Employment with Imber
+ 
+        Message: Hello Carey,
+  
+        We are messaging you today to address your continued arguments with management. You were provided with several warnings, including a final warning. However, your unacceptable behavior has persisted.
+  
+        As a result, we have decided to terminate your employment with the Imber Corporation. You are now prohibited from accessing any Imber ships or installations. A security officer will escort you from the territory.
+  
+        We wish you well in your future endeavors.
+ 
+ 
+        Lucius Raven
+        Human Resources
+      </DataPadBody>
+    </DataPadEntry>
+  -->
+  </DataPadEntries>
+ 
+</TextTemplate>

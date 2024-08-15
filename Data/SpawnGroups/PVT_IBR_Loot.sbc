@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-DataPads -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-DataPads</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[Chance:50]
+				[MinBlocks:1]
+				[MaxBlocks:2]
+				
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitSeat]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/CockpitOpen]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/RoverCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitSmall]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitLarge]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/BuggyCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockStandingCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockStandingCockpit]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+				
+				[AddDatapads:true]
+				[DatapadFileSource:PVT-ACS-DataPadText.xml]
+				[DatapadCount:1]
+			</Description>
+		</EntityComponent>
+		<!-- TODO: update the DatapadFileSource -->
+
+
+<!-- Re-define existing IBR lootGroups to include location information -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-BasicLoot</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Easy]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-BasicContainers]
+        [LootProfiles:MES-Loot-BasicContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+		[LootProfiles:PVT-IBR-Loot-DataPads]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-MixedLoot</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Medium]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-MixedContainers]
+        [LootProfiles:MES-Loot-MixedContainersLarge]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+		[LootProfiles:PVT-IBR-Loot-DataPads]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-AdvancedLoot</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Hard]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AdvancedContainers]
+        [LootProfiles:MES-Loot-AdvancedContainersLarge]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+		[LootProfiles:PVT-IBR-Loot-DataPads]
+      </Description>
+    </EntityComponent>
+	
+<!-- Redefine END -->
+
+
+<!-- Buffalo profiles START -->
+
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Platinum -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Platinum</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Platinum]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Uranium -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Uranium</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Uranium]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Gold -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Gold</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Gold]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Silver -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Silver</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Silver]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Magnesium -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Magnesium</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Magnesium]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Cobalt -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Cobalt</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Cobalt]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Nickel -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Nickel</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Nickel]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-IBR-Loot-Buffalo-Iron -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-IBR-Loot-Buffalo-Iron</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:2]
+				[MaxBlocks:4]
+				
+				[ContainerTypes:PVT-IBR-ContainerTypes-Buffalo-Iron]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		
+<!-- Buffalo profiles END -->
+
+	</EntityComponents>
+</Definitions>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- TODO:: FINISH!! -->
+
+<!--  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)-Behavior-RaidingParty</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-ShortRange]
+
+        [TargetData:(NPC-IBR)-Targeting-RaidingParty]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:(NPC-ACS)-AssaultDivision-Weapons-Standard]
+
+		[Triggers:ACS-AssaultDivision-Trigger-Warning]
+		[Triggers:ACS-AssaultDivision-Trigger-SupportCall]
+		
+        [Triggers:ACS-AssaultDivision-Trigger-RandomRamming]
+		
+		[Triggers:PVTACS-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-Trigger-RemoteCompromisedBounty]
+
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)-Targeting-RaidingParty</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:6000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+		[MatchAllFilters:Faction]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+        [MatchAnyFilters:MovementScore]
+        [MinMovementScore:1000]
+        [MaxMovementDetectableDistance:4000]
+
+        [MaxLineOfSight:2750]
+        [NonBroadcastVisualRange:2000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+		[PrioritizeSpecifiedFactions:true]
+		[FactionTargets:Assert]
+
+        [GetTargetBy:HighestTargetValue]
+		[MinTargetValue:300]
+      </Description>
+    </EntityComponent>
+-->	  
+  </EntityComponents>
+</Definitions>

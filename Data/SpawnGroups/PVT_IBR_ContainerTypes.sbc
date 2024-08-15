@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ContainerTypes>
+	
+<!-- Buffalo containertypes START -->	
+
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Platinum -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Platinum</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Platinum ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silicon+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron++</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Uranium -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Uranium</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Uranium ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron+</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Gold -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Gold</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Gold ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron++</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Silver -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Silver</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Silver ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Magnesium -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Magnesium</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Magnesium ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Nickel -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Nickel</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Nickel ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron+</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Cobalt -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Cobalt</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Cobalt ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron++</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron+</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVT-IBR-ContainerTypes-Buffalo-Iron -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVT-IBR-ContainerTypes-Buffalo-Iron</SubtypeId>
+			</Id>
+			<Items>
+				<!-- Cobalt ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="10089" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Other ore -->
+				<Item AmountMin="309" AmountMax="65400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="154" AmountMax="210843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="567" AmountMax="154960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="376" AmountMax="165400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron++</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="874" AmountMax="21843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="321" AmountMax="54960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron+</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+<!-- Buffalo containertypes END -->	
+	</ContainerTypes>
+</Definitions>

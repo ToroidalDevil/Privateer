@@ -1,0 +1,1732 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Prefabs>
+    <Prefab xsi:type="MyObjectBuilder_PrefabDefinition">
+      <Id Type="MyObjectBuilder_PrefabDefinition" Subtype="Ekoforcer" />
+      <CubeGrids>
+        <CubeGrid>
+          <SubtypeName />
+          <EntityId>119795308175991340</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <Name>119795308175991340</Name>
+          <PositionAndOrientation>
+            <Position x="0" y="0" z="0" />
+            <Forward x="-0.887720764" y="-0.421817154" z="-0.18445015" />
+            <Up x="-0.129279554" y="-0.156125873" z="0.97924006" />
+            <Orientation>
+              <X>0.363943</X>
+              <Y>0.5247099</Y>
+              <Z>0.6675391</Z>
+              <W>0.382905483</W>
+            </Orientation>
+          </PositionAndOrientation>
+          <LocalPositionAndOrientation xsi:nil="true" />
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorInvCorner2Tip</SubtypeName>
+              <Min x="2" y="9" z="-29" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>81509901862921470</EntityId>
+              <Min x="0" y="7" z="-25" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>7</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorInvCorner2Tip</SubtypeName>
+              <Min x="0" y="9" z="-29" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGeneratorWarfare2</SubtypeName>
+              <EntityId>102036893981782154</EntityId>
+              <Min x="1" y="9" z="-25" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>5</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                            <SubtypeName>Uranium</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>900</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Capacity>5</Capacity>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_ShipConnector">
+              <SubtypeName>ConnectorMedium</SubtypeName>
+              <EntityId>97612773276666188</EntityId>
+              <Min x="0" y="7" z="-24" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Corrugated</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0.5</DeformationRatio>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>38</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>MediumCalibreAmmo</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>3</nextItemId>
+                      <Volume>1.152</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>80</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>BA - X01 Connector Vertical</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>false</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>5</NumberInGrid>
+              <Enabled>true</Enabled>
+              <MasterToSlaveTransform xsi:nil="true" />
+              <MasterToSlaveGrid xsi:nil="true" />
+              <IsMaster>true</IsMaster>
+              <TradingEnabled>false</TradingEnabled>
+              <AutoUnlockTime>0</AutoUnlockTime>
+              <TimeOfConnection>0</TimeOfConnection>
+              <IsParkingEnabled>true</IsParkingEnabled>
+              <IsPowerTransferOverrideEnabled>false</IsPowerTransferOverrideEnabled>
+              <IsApproaching>false</IsApproaching>
+              <IsConnecting>false</IsConnecting>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>136524587058600174</EntityId>
+              <Min x="0" y="8" z="-29" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>14</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>132862234688847138</EntityId>
+              <Min x="0" y="8" z="-26" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>9</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>118091969048298722</EntityId>
+              <Min x="1" y="9" z="-23" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Warhead">
+              <SubtypeName>SmallWarhead</SubtypeName>
+              <EntityId>101284704357485880</EntityId>
+              <Min x="1" y="7" z="-25" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <CountdownMs>10000</CountdownMs>
+              <IsArmed>false</IsArmed>
+              <IsCountingDown>false</IsCountingDown>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>109114261472289802</EntityId>
+              <Min x="0" y="7" z="-29" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>13</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="0" y="7" z="-28" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>111126336790090187</EntityId>
+              <Min x="2" y="9" z="-22" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LargeMissileTurret">
+              <SubtypeName>SmallBlockMediumCalibreTurret</SubtypeName>
+              <EntityId>75771568373025393</EntityId>
+              <Min x="-5" y="5" z="-26" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Corrugated</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>3</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>MediumCalibreAmmo</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.09</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>10</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <CustomName>BA - X01 Assault Cannon Turret</CustomName>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsShooting>false</IsShooting>
+              <IsShootingFromTerminal>false</IsShootingFromTerminal>
+              <IsLargeTurret>true</IsLargeTurret>
+              <MinFov>0.1</MinFov>
+              <MaxFov>1.04719758</MaxFov>
+              <RemainingAmmo>0</RemainingAmmo>
+              <Target>0</Target>
+              <IsPotentialTarget>true</IsPotentialTarget>
+              <PreviousControlledEntityId xsi:nil="true" />
+              <Rotation>3.06217337</Rotation>
+              <Elevation>-0.17453292</Elevation>
+              <GunBase>
+                <CurrentAmmoMagazineName>MediumCalibreAmmo</CurrentAmmoMagazineName>
+                <RemainingAmmosList />
+                <LastShootTime>638514987779496275</LastShootTime>
+              </GunBase>
+              <EnableIdleRotation>false</EnableIdleRotation>
+              <PreviousIdleRotationState>true</PreviousIdleRotationState>
+              <TargetCharacters>false</TargetCharacters>
+              <TargetingGroup>Weapons</TargetingGroup>
+              <Flags>
+                <TargetMeteors>false</TargetMeteors>
+                <TargetCharacters>true</TargetCharacters>
+                <TargetNeutrals>true</TargetNeutrals>
+              </Flags>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>111460379225362805</EntityId>
+              <Min x="2" y="7" z="-25" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>8</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>76594214893485333</EntityId>
+              <Min x="3" y="8" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGeneratorWarfare2</SubtypeName>
+              <EntityId>133452105844093376</EntityId>
+              <Min x="1" y="9" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>5</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                            <SubtypeName>Uranium</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>900</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Capacity>5</Capacity>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>98340195911803138</EntityId>
+              <Min x="2" y="8" z="-26" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>10</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>135861587109321238</EntityId>
+              <Min x="-1" y="8" z="-27" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="2" y="7" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="2" y="7" z="-29" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
+              <SubtypeName>SmallBlockSmallContainer</SubtypeName>
+              <EntityId>89560961541686470</EntityId>
+              <Min x="1" y="8" z="-29" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_ConsumableItem">
+                            <SubtypeName>ClangCola</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>2</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_GasContainerObject">
+                            <SubtypeName>HydrogenBottle</SubtypeName>
+                            <GasLevel>1</GasLevel>
+                          </PhysicalContent>
+                          <ItemId>8</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>9</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RadioAntenna">
+              <SubtypeName>SmallBlockRadioAntenna</SubtypeName>
+              <EntityId>100585331157874361</EntityId>
+              <Min x="2" y="8" z="-27" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <BroadcastRadius>14999.998</BroadcastRadius>
+              <ShowShipName>true</ShowShipName>
+              <EnableBroadcasting>true</EnableBroadcasting>
+              <AttachedPB>0</AttachedPB>
+              <IgnoreAllied>false</IgnoreAllied>
+              <IgnoreOther>true</IgnoreOther>
+              <HudText />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>101452506958386743</EntityId>
+              <Min x="3" y="8" z="-28" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>132375536772364832</EntityId>
+              <Min x="2" y="10" z="-23" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="2" y="9" z="-28" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorInvCorner2Base</SubtypeName>
+              <Min x="0" y="9" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>86561998035062415</EntityId>
+              <Min x="-1" y="8" z="-28" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="9" z="-21" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CargoContainer">
+              <SubtypeName>SmallBlockSmallContainer</SubtypeName>
+              <EntityId>73737751629079779</EntityId>
+              <Min x="1" y="8" z="-28" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Datapad">
+                            <SubtypeName>Datapad</SubtypeName>
+                            <Name />
+                            <Data />
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_PhysicalGunObject">
+                            <SubtypeName>Welder4Item</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>1</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>1</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_PhysicalGunObject">
+                            <SubtypeName>AngleGrinder4Item</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>2</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>20000</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_PhysicalObject">
+                            <SubtypeName>SpaceCredit</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>3</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>2</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                            <SubtypeName>Gold</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>4</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>5</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive CanSend</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="0" y="7" z="-26" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>ConveyorTubeDuctSmallT</SubtypeName>
+              <EntityId>92996528365366580</EntityId>
+              <Min x="1" y="8" z="-26" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>106345776056285659</EntityId>
+              <Min x="0" y="7" z="-27" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>12</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_RemoteControl">
+              <SubtypeName>SmallBlockRemoteControl</SubtypeName>
+              <EntityId>120100120130040800</EntityId>
+              <Min x="1" y="9" z="-24" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyAutopilotComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AutopilotComponent">
+                      <AutoPilotEnabled>false</AutoPilotEnabled>
+                      <FlightMode>0</FlightMode>
+                      <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+                      <Waypoints />
+                      <DockingModeEnabled>false</DockingModeEnabled>
+                      <CollisionAvoidance>false</CollisionAvoidance>
+                      <Direction>0</Direction>
+                      <AutopilotSpeedLimit>100</AutopilotSpeedLimit>
+                      <WaitForFreeWay>false</WaitForFreeWay>
+                      <WaypointThresholdDistance>0</WaypointThresholdDistance>
+                      <Coords />
+                      <Names />
+                      <LookAtPosition xsi:nil="true" />
+                      <FacingDirection>Forward</FacingDirection>
+                      <AlignToGravity>true</AlignToGravity>
+                      <MinHeightAboveTerrain>25</MinHeightAboveTerrain>
+                      <IsWorkAreaReturningToStart>false</IsWorkAreaReturningToStart>
+                      <WorkAreaStartForward>
+                        <X>0</X>
+                        <Y>0</Y>
+                        <Z>0</Z>
+                      </WorkAreaStartForward>
+                      <PitchAngle>0</PitchAngle>
+                      <RollAngle>0</RollAngle>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGunId xsi:nil="true" />
+              <BuildToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </BuildToolbar>
+              <OnLockedToolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </OnLockedToolbar>
+              <IsTargetLockingEnabled>false</IsTargetLockingEnabled>
+              <PreviousControlledEntityId xsi:nil="true" />
+              <AutoPilotEnabled>false</AutoPilotEnabled>
+              <FlightMode>0</FlightMode>
+              <BindedCamera>0</BindedCamera>
+              <CurrentWaypointIndex>-1</CurrentWaypointIndex>
+              <Waypoints />
+              <Direction>0</Direction>
+              <DockingModeEnabled>false</DockingModeEnabled>
+              <CollisionAvoidance>false</CollisionAvoidance>
+              <Coords />
+              <Names />
+              <WaypointThresholdDistance>0</WaypointThresholdDistance>
+              <IsMainRemoteControl>false</IsMainRemoteControl>
+              <WaitForFreeWay>false</WaitForFreeWay>
+              <IsUpdatedSave>true</IsUpdatedSave>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>116596659921289379</EntityId>
+              <Min x="3" y="9" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>88181635374745525</EntityId>
+              <Min x="1" y="7" z="-26" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>11</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallBlockHeavyArmorHalfSlopeInverted</SubtypeName>
+              <Min x="0" y="9" z="-28" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorBlock</SubtypeName>
+              <Min x="1" y="9" z="-22" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGeneratorWarfare2</SubtypeName>
+              <EntityId>137277694442968388</EntityId>
+              <Min x="1" y="9" z="-26" />
+              <BlockOrientation Forward="Forward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>5</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                            <SubtypeName>Uranium</SubtypeName>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.125</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>false</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>900</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Capacity>5</Capacity>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorSlope2Base</SubtypeName>
+              <Min x="2" y="8" z="-21" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
+              <SubtypeName>SmallBlockInsetLight</SubtypeName>
+              <EntityId>94505373289739179</EntityId>
+              <Min x="0" y="9" z="-25" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>20</Radius>
+              <ReflectorRadius>120</ReflectorRadius>
+              <ColorGreen>0.254901975</ColorGreen>
+              <ColorBlue>0</ColorBlue>
+              <Falloff>1.3</Falloff>
+              <Intensity>5</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>93706741109940035</EntityId>
+              <Min x="1" y="7" z="-28" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>13</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>122878766904511003</EntityId>
+              <Min x="0" y="9" z="-22" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorSlope2Base</SubtypeName>
+              <Min x="0" y="8" z="-21" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>97591358608419578</EntityId>
+              <Min x="0" y="10" z="-24" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>73669405467576345</EntityId>
+              <Min x="1" y="7" z="-30" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CameraBlock">
+              <SubtypeName>SmallCameraBlock</SubtypeName>
+              <EntityId>99748097972351800</EntityId>
+              <Min x="1" y="9" z="-20" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>2</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsActive>false</IsActive>
+              <Fov>1.04719758</Fov>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallHeavyBlockArmorSlope2Base</SubtypeName>
+              <Min x="1" y="8" z="-21" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>107106641552882761</EntityId>
+              <Min x="0" y="9" z="-24" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>14</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>122574378615092543</EntityId>
+              <Min x="2" y="9" z="-24" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>15</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_InteriorLight">
+              <SubtypeName>SmallBlockInsetLight</SubtypeName>
+              <EntityId>121373113991560325</EntityId>
+              <Min x="2" y="9" z="-25" />
+              <BlockOrientation Forward="Down" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <Radius>20</Radius>
+              <ReflectorRadius>120</ReflectorRadius>
+              <ColorGreen>0.254901975</ColorGreen>
+              <ColorBlue>0</ColorBlue>
+              <Falloff>1.3</Falloff>
+              <Intensity>5</Intensity>
+              <BlinkIntervalSeconds>0</BlinkIntervalSeconds>
+              <BlinkLenght>10</BlinkLenght>
+              <BlinkOffset>0</BlinkOffset>
+              <Offset>0.5</Offset>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_LargeMissileTurret">
+              <SubtypeName>SmallBlockMediumCalibreTurret</SubtypeName>
+              <EntityId>88341244780729348</EntityId>
+              <Min x="3" y="5" z="-26" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyInventoryBase</TypeId>
+                    <Component xsi:type="MyObjectBuilder_Inventory">
+                      <CanPutItems>true</CanPutItems>
+                      <Items>
+                        <MyObjectBuilder_InventoryItem>
+                          <Amount>3</Amount>
+                          <PhysicalContent xsi:type="MyObjectBuilder_AmmoMagazine">
+                            <SubtypeName>MediumCalibreAmmo</SubtypeName>
+                            <ProjectilesCount>0</ProjectilesCount>
+                          </PhysicalContent>
+                          <ItemId>0</ItemId>
+                        </MyObjectBuilder_InventoryItem>
+                      </Items>
+                      <nextItemId>1</nextItemId>
+                      <Volume>0.09</Volume>
+                      <Mass>9223372036854.775807</Mass>
+                      <MaxItemCount>2147483647</MaxItemCount>
+                      <Size xsi:nil="true" />
+                      <InventoryFlags>CanReceive</InventoryFlags>
+                      <RemoveEntityOnEmpty>false</RemoveEntityOnEmpty>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame10</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>10</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>3</NumberInGrid>
+              <Enabled>true</Enabled>
+              <IsShooting>false</IsShooting>
+              <IsShootingFromTerminal>false</IsShootingFromTerminal>
+              <IsLargeTurret>true</IsLargeTurret>
+              <MinFov>0.1</MinFov>
+              <MaxFov>1.04719758</MaxFov>
+              <RemainingAmmo>1</RemainingAmmo>
+              <Target>0</Target>
+              <IsPotentialTarget>true</IsPotentialTarget>
+              <PreviousControlledEntityId xsi:nil="true" />
+              <Rotation>1.59520626</Rotation>
+              <Elevation>0.87266463</Elevation>
+              <GunBase>
+                <RemainingAmmo>1</RemainingAmmo>
+                <CurrentAmmoMagazineName>MediumCalibreAmmo</CurrentAmmoMagazineName>
+                <RemainingAmmosList />
+                <LastShootTime>0</LastShootTime>
+              </GunBase>
+              <EnableIdleRotation>false</EnableIdleRotation>
+              <PreviousIdleRotationState>true</PreviousIdleRotationState>
+              <TargetCharacters>false</TargetCharacters>
+              <TargetingGroup />
+              <Flags>
+                <TargetMeteors>false</TargetMeteors>
+                <TargetCharacters>true</TargetCharacters>
+                <TargetNeutrals>true</TargetNeutrals>
+              </Flags>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>ConveyorTubeDuctSmallT</SubtypeName>
+              <EntityId>72356513385915975</EntityId>
+              <Min x="1" y="8" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>86850214011901707</EntityId>
+              <Min x="0" y="7" z="-30" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>82790620159351808</EntityId>
+              <Min x="1" y="6" z="-25" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>88271370865440396</EntityId>
+              <Min x="1" y="6" z="-26" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>121348606244442491</EntityId>
+              <Min x="1" y="6" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>113281976960887291</EntityId>
+              <Min x="1" y="6" z="-28" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>141819978103024543</EntityId>
+              <Min x="2" y="6" z="-28" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>89202048633501824</EntityId>
+              <Min x="2" y="6" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>131760377472905822</EntityId>
+              <Min x="2" y="6" z="-26" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>124282113437917036</EntityId>
+              <Min x="0" y="6" z="-28" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>135513399063334628</EntityId>
+              <Min x="0" y="6" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>120270167226190425</EntityId>
+              <Min x="0" y="6" z="-26" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>79117244285502701</EntityId>
+              <Min x="-1" y="8" z="-29" />
+              <BlockOrientation Forward="Down" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_DefensiveCombatBlock">
+              <SubtypeName>SmallDefensiveCombat</SubtypeName>
+              <EntityId>88241793775894679</EntityId>
+              <Min x="0" y="8" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ShareMode>Faction</ShareMode>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MySearchEnemyComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_SearchEnemyComponent">
+                      <TargetingLockOptions>2</TargetingLockOptions>
+                      <SubsystemsToDestroy>Weapons</SubsystemsToDestroy>
+                      <TargetEntityId>0</TargetEntityId>
+                    </Component>
+                  </ComponentData>
+                  <ComponentData>
+                    <TypeId>MyAiBlockComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_AiBlockComponent">
+                      <IsActivated>true</IsActivated>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>1</NumberInGrid>
+              <Enabled>true</Enabled>
+              <FleeTrigger>Never</FleeTrigger>
+              <SelectedBeaconEntityId>0</SelectedBeaconEntityId>
+              <SelectedGpsHash xsi:nil="true" />
+              <WaypointZoneSize>250</WaypointZoneSize>
+              <LockTarget>true</LockTarget>
+              <CustomFleeCoordinates>
+                <X>0</X>
+                <Y>0</Y>
+                <Z>0</Z>
+              </CustomFleeCoordinates>
+              <UseCustomFleeCoordinates>false</UseCustomFleeCoordinates>
+              <CanTargetCharacters>false</CanTargetCharacters>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots />
+                <SlotsGamepad />
+              </Toolbar>
+              <SelectedGpsHashNew xsi:nil="true" />
+              <FleeDistance>2500</FleeDistance>
+              <EvasiveManeuvers>true</EvasiveManeuvers>
+              <EvasiveManeuverAngle>0</EvasiveManeuverAngle>
+              <EvasiveManeuverIntervalRange>5</EvasiveManeuverIntervalRange>
+              <FleeMode>ToGpsOrBeacon</FleeMode>
+              <LastKnownEnemyPosition xsi:nil="true" />
+              <FleeMinHeightOnPlanets>-1</FleeMinHeightOnPlanets>
+              <PrevToolbarState xsi:nil="true" />
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>124217807125737919</EntityId>
+              <Min x="1" y="9" z="-29" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>16</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>SmallBlockSmallModularThruster</SubtypeName>
+              <EntityId>130149755398658960</EntityId>
+              <Min x="2" y="8" z="-29" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+              <ComponentContainer>
+                <Components>
+                  <ComponentData>
+                    <TypeId>MyTimerComponent</TypeId>
+                    <Component xsi:type="MyObjectBuilder_TimerComponent">
+                      <Repeat>true</Repeat>
+                      <TimeToEvent>0</TimeToEvent>
+                      <SetTimeMinutes>0</SetTimeMinutes>
+                      <TimerEnabled>true</TimerEnabled>
+                      <RemoveEntityOnTimer>false</RemoveEntityOnTimer>
+                      <TimerType>Frame100</TimerType>
+                      <FramesFromLastTrigger>0</FramesFromLastTrigger>
+                      <TimerTickInFrames>100</TimerTickInFrames>
+                      <IsSessionUpdateEnabled>false</IsSessionUpdateEnabled>
+                    </Component>
+                  </ComponentData>
+                </Components>
+              </ComponentContainer>
+              <ShowOnHUD>false</ShowOnHUD>
+              <ShowInTerminal>true</ShowInTerminal>
+              <ShowInToolbarConfig>true</ShowInToolbarConfig>
+              <ShowInInventory>true</ShowInInventory>
+              <NumberInGrid>15</NumberInGrid>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Conveyor">
+              <SubtypeName>ConveyorTubeDuctSmallT</SubtypeName>
+              <EntityId>99588588488512307</EntityId>
+              <Min x="1" y="8" z="-25" />
+              <BlockOrientation Forward="Backward" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>85917031376287156</EntityId>
+              <Min x="3" y="8" z="-29" />
+              <BlockOrientation Forward="Up" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>117849810080539089</EntityId>
+              <Min x="2" y="7" z="-30" />
+              <BlockOrientation Forward="Left" Up="Down" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>72277430233550858</EntityId>
+              <Min x="1" y="10" z="-24" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>120209559514003506</EntityId>
+              <Min x="1" y="10" z="-23" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelHeavy</SubtypeName>
+              <EntityId>132859459529126544</EntityId>
+              <Min x="1" y="10" z="-25" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>97860588809505514</EntityId>
+              <Min x="2" y="10" z="-24" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>135044728149110193</EntityId>
+              <Min x="1" y="10" z="-26" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>136255659321926133</EntityId>
+              <Min x="1" y="10" z="-27" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>117982434155480053</EntityId>
+              <Min x="1" y="10" z="-28" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>109246679251682679</EntityId>
+              <Min x="1" y="10" z="-29" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>106310624068037596</EntityId>
+              <Min x="2" y="10" z="-27" />
+              <BlockOrientation Forward="Left" Up="Forward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>110333233815903186</EntityId>
+              <Min x="0" y="10" z="-27" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorPanelLight</SubtypeName>
+              <EntityId>80297441230569573</EntityId>
+              <Min x="1" y="10" z="-22" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorHalfPanelLight</SubtypeName>
+              <EntityId>118564828951549257</EntityId>
+              <Min x="0" y="10" z="-23" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>130002573561167516</EntityId>
+              <Min x="0" y="9" z="-21" />
+              <BlockOrientation Forward="Right" Up="Backward" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_CubeBlock">
+              <SubtypeName>SmallArmorSlopedSidePanelLight</SubtypeName>
+              <EntityId>111125041953032009</EntityId>
+              <Min x="2" y="9" z="-21" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-0.8" z="-0.3" />
+              <SkinSubtypeId>Wartorn</SkinSubtypeId>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <ConveyorLines>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="0" y="8" z="-23" />
+              <StartDirection>Left</StartDirection>
+              <EndPosition x="-1" y="8" z="-23" />
+              <EndDirection>Right</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="2" y="8" z="-23" />
+              <StartDirection>Right</StartDirection>
+              <EndPosition x="3" y="8" z="-23" />
+              <EndDirection>Left</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-24" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="1" y="8" z="-25" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-25" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="1" y="9" z="-25" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-25" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="1" y="8" z="-26" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-26" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="1" y="8" z="-27" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-26" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="1" y="9" z="-26" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-27" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="1" y="8" z="-28" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-27" />
+              <StartDirection>Up</StartDirection>
+              <EndPosition x="1" y="9" z="-27" />
+              <EndDirection>Down</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+            <MyObjectBuilder_ConveyorLine>
+              <StartPosition x="1" y="8" z="-28" />
+              <StartDirection>Forward</StartDirection>
+              <EndPosition x="1" y="8" z="-29" />
+              <EndDirection>Backward</EndDirection>
+              <Sections />
+              <ConveyorLineType>SMALL_LINE</ConveyorLineType>
+            </MyObjectBuilder_ConveyorLine>
+          </ConveyorLines>
+          <DisplayName>Ekoforcer</DisplayName>
+          <DestructibleBlocks>true</DestructibleBlocks>
+          <CreatePhysics>false</CreatePhysics>
+          <EnableSmallToLargeConnections>false</EnableSmallToLargeConnections>
+          <IsRespawnGrid>false</IsRespawnGrid>
+          <LocalCoordSys>0</LocalCoordSys>
+          <TargetingTargets />
+          <NPCGridClaimElapsed xsi:nil="true" />
+        </CubeGrid>
+      </CubeGrids>
+      <EnvironmentType>None</EnvironmentType>
+    </Prefab>
+  </Prefabs>
+</Definitions>

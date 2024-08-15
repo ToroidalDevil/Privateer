@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Manipulation-AdvancedLoot</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Manipulation]
+
+        [ManipulationRequiredCustomTags:Hard]
+
+        [UseLootProfiles:true]
+        [ClearExistingContainerTypes:true]
+        [LootProfiles:Imber-Loot-Datapads]
+        [LootProfiles:MES-Loot-AdvancedContainers]
+        [LootProfiles:MES-Loot-AdvancedContainersLarge]
+        [LootProfiles:MES-Loot-AntiInhibitor]
+        [LootProfiles:MES-Loot-Corpses]
+        [LootProfiles:MES-Loot-Freight]
+        [LootProfiles:MES-Loot-Lockers]
+        [LootProfiles:MES-Loot-WeaponRacks]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

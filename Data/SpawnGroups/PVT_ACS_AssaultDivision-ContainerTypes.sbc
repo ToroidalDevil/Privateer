@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<ContainerTypes>
+
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Platinum -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Platinum</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="95" AmountMax="354960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Platinum+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Platinum Ingots -->
+				<Item AmountMin="1111" AmountMax="2523">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Platnium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="5893" AmountMax="104893">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Uranium -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Uranium</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Uranium Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1056" AmountMax="854960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Uranium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Uranium Ingots -->
+				<Item AmountMin="1111" AmountMax="4223">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Uranium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="5893" AmountMax="104893">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Gold -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Gold</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold_01</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1056" AmountMax="854960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Gold+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Gold Ingots -->
+				<Item AmountMin="2114" AmountMax="7523">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Gold</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="5893" AmountMax="104893">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Silver -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Silver</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver_01</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1056" AmountMax="854960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Silver+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Silver Ingots -->
+				<Item AmountMin="3111" AmountMax="14523">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silver</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="5893" AmountMax="104893">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Magnesium -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Magnesium</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium_01</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1056" AmountMax="854960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Magnesium+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Magnesium Ingots -->
+				<Item AmountMin="4111" AmountMax="12523">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Magnesium</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="5893" AmountMax="104893">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Cobalt -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Cobalt</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt_01</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1095" AmountMax="654960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Cobalt+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Cobalt Ingots -->
+				<Item AmountMin="4111" AmountMax="45210">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="111" AmountMax="23210">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+		
+		<ContainerType CountMin="3" CountMax="8"> <!-- PVTACS-ContainerTypes-Raupe-Iron -->
+			<Id>
+			<TypeId>ContainerTypeDefinition</TypeId>
+			<SubtypeId>PVTACS-ContainerTypes-Raupe-Iron</SubtypeId>
+			</Id>
+			<Items>
+				<!--- Stone++ -->
+				<Item AmountMin="1250" AmountMax="156534">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Stone2</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Ore -->
+				<Item AmountMin="267" AmountMax="565400">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron-</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="189" AmountMax="421843">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron_01</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1095" AmountMax="654960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron+</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<Item AmountMin="1056" AmountMax="854960">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ore</TypeId>
+						<SubtypeId>Iron++</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Iron Ingots -->
+				<Item AmountMin="20111" AmountMax="1523210">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Iron</SubtypeId>
+					</Id>
+				</Item>  
+				
+				<!-- Basic Ingots -->
+				<Item AmountMin="323" AmountMax="5234">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Nickel</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="529" AmountMax="12324">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Silicon</SubtypeId>
+					</Id>
+				</Item>  
+				<Item AmountMin="102" AmountMax="2867">
+					<Frequency>1.0</Frequency>
+					<Id>
+						<TypeId>Ingot</TypeId>
+						<SubtypeId>Cobalt</SubtypeId>
+					</Id>
+				</Item>  
+			</Items>
+		</ContainerType>
+	</ContainerTypes>
+</Definitions>

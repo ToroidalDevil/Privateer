@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- Assault Division START -->	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-AssaultDivision -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-AssaultDivision</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseRivalAi:true]
+		[RivalAiReplaceRemoteControl:true]
+		
+		[UseBlockReplacerProfile:true]
+		[BlockReplacerProfileNames:MES-NpcThrusters-Ion]	
+		[ConfigureSpecialNpcThrusters:true]
+		[RestrictNpcIonThrust:false]
+		[NpcIonThrustForceMultiply:1]
+		[NpcIonThrustPowerMultiply:0.75]
+
+		[UseLootProfiles:true]
+		[LootGroups:ACS-LootGroupSpace]
+      </Description>
+    </EntityComponent>
+	
+<!-- Assault Division END -->	
+
+	
+<!-- Mining Division START -->	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Platinum -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Platinum</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Platinum]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Uranium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Uranium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Uranium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Gold -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Gold</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Gold]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Silver -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Silver</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Silver]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Magnesium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Magnesium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Magnesium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Cobalt-->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Cobalt</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Cobalt]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Iron -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Iron</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Iron]
+      </Description>
+    </EntityComponent>
+	
+<!-- Mining Division END -->	
+	
+  </EntityComponents>
+</Definitions>

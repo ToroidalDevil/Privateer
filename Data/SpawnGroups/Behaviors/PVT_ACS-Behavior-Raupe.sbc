@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-Behavior-MiningDivision-Raupe</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+		
+		[Triggers:PVTACS-Trigger-ProcessEscortRequest]
+        [EscortOffsets:{X:-150 Y:0 Z:0}]
+        [EscortOffsets:{X:150 Y:0 Z:0}]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]		
+		
+        [Triggers:Triggers:ACS-ShipSpace-DamageMed-Trigger]
+		
+      </Description>
+<!--
+		== These are the options for escape difficulty ==
+
+        [Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+        [Triggers:ACS-ShipSpace-DamageHard-Trigger]
+-->
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+		
+		[Triggers:PVTACS-Trigger-ProcessEscortRequest]
+        [EscortOffsets:{X:-150 Y:-150 Z:0}]
+        [EscortOffsets:{X:150 Y:150 Z:0}]
+        [EscortOffsets:{X:0 Y:-150 Z:-150}]
+        [EscortOffsets:{X:0 Y:150 Z:150]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]		
+		
+        [Triggers:Triggers:ACS-ShipSpace-DamageMed-Trigger]
+		
+      </Description>
+<!--
+		== These are the options for escape difficulty ==
+
+        [Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+        [Triggers:ACS-ShipSpace-DamageHard-Trigger]
+-->
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

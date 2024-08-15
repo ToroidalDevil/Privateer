@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- Ektographer Behavior Basics Start -->  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Behavior-Ekotgrapher-GoodRep -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Behavior-Ekotgrapher-GoodRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:EKOT-Autopilot-Ektographer]
+
+        [TargetData:EKOT-Targeting-Ektographer]
+		
+		[UseDamageDetection:true]
+
+        [WeaponSystem:EKOT-Weapons-Ektographer]
+		
+		[Triggers:EKOT-Trigger-Damage]
+		[Triggers:EKOT-Trigger-4KOut]
+		[Triggers:EKOT-Trigger-1000Out]
+		[Triggers:EKOT-Trigger-300RepuationLoss]
+		[Triggers:EKOT-Trigger-Ektographer-CommandReceived-RequestEscortSlot]
+		
+        [EscortOffsets:{X:150 Y:150 Z:0}]
+        [EscortOffsets:{X:150 Y:0 Z:150}]
+        [EscortOffsets:{X:-150 Y:-150 Z:0}]
+        [EscortOffsets:{X:-150 Y:0 Z:-150}]
+        [EscortOffsets:{X:0 Y:-150 Z:-150}]
+        [EscortOffsets:{X:0 Y:150 Z:150}]
+		
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+        [EscortOffsets:{X:150 Y:0 Z:300}]
+        [EscortOffsets:{X:-150 Y:-150 Z:-150}]
+        [EscortOffsets:{X:-150 Y:0 Z:-300}]
+        [EscortOffsets:{X:0 Y:-150 Z:-300}]
+        [EscortOffsets:{X:0 Y:150 Z:300}]
+		
+        [EscortOffsets:{X:150 Y:300 Z:0}]
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+        [EscortOffsets:{X:-150 Y:-300 Z:-150}]
+        [EscortOffsets:{X:-150 Y:150 Z:-300}]
+        [EscortOffsets:{X:0 Y:-300 Z:-300}]
+        [EscortOffsets:{X:0 Y:300 Z:300}]
+		
+        [EscortOffsets:{X:300 Y:150 Z:0}]
+        [EscortOffsets:{X:300 Y:0 Z:150}]
+        [EscortOffsets:{X:-300 Y:-150 Z:0}]
+        [EscortOffsets:{X:-300 Y:0 Z:-150}]
+        [EscortOffsets:{X:150 Y:-150 Z:-150}]
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+		
+        [EscortOffsets:{X:300 Y:150 Z:150}]
+        [EscortOffsets:{X:300 Y:0 Z:300}]
+        [EscortOffsets:{X:-300 Y:-150 Z:-150}]
+        [EscortOffsets:{X:-300 Y:0 Z:-300}]
+        [EscortOffsets:{X:-150 Y:-150 Z:-300}]
+        [EscortOffsets:{X:-150 Y:150 Z:300}]
+		
+        [EscortOffsets:{X:300 Y:300 Z:0}]
+        [EscortOffsets:{X:300 Y:150 Z:150}]
+        [EscortOffsets:{X:-300 Y:-300 Z:-150}]
+        [EscortOffsets:{X:-300 Y:150 Z:-300}]
+        [EscortOffsets:{X:150 Y:-300 Z:-300}]
+        [EscortOffsets:{X:150 Y:300 Z:300}]
+      </Description>
+	</EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Behavior-Ekotgrapher-BadRep -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Behavior-Ekotgrapher-BadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:EKOT-Autopilot-Ektographer]
+
+        [TargetData:EKOT-Targeting-Ektographer]
+		
+		[UseDamageDetection:true]
+
+        [WeaponSystem:EKOT-Weapons-Ektographer]
+		
+		[Triggers:EKOT-Trigger-Damage-BadRep]
+		[Triggers:EKOT-Trigger-300RepuationLoss]
+		[Triggers:EKOT-Trigger-3KOutBadRep]
+		[Triggers:EKOT-Trigger-4KOutBadRep-Speedup]
+		[Triggers:EKOT-Trigger-4KOutBadRep-SpawnDrones]
+		[Triggers:EKOT-Trigger-5KOutBadRep]
+		[Triggers:EKOT-Trigger-Ektographer-CommandReceived-RequestEscortSlot]
+		
+        [EscortOffsets:{X:150 Y:150 Z:0}]
+        [EscortOffsets:{X:150 Y:0 Z:150}]
+        [EscortOffsets:{X:-150 Y:-150 Z:0}]
+        [EscortOffsets:{X:-150 Y:0 Z:-150}]
+        [EscortOffsets:{X:0 Y:-150 Z:-150}]
+        [EscortOffsets:{X:0 Y:150 Z:150}]
+		
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+        [EscortOffsets:{X:150 Y:0 Z:300}]
+        [EscortOffsets:{X:-150 Y:-150 Z:-150}]
+        [EscortOffsets:{X:-150 Y:0 Z:-300}]
+        [EscortOffsets:{X:0 Y:-150 Z:-300}]
+        [EscortOffsets:{X:0 Y:150 Z:300}]
+		
+        [EscortOffsets:{X:150 Y:300 Z:0}]
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+        [EscortOffsets:{X:-150 Y:-300 Z:-150}]
+        [EscortOffsets:{X:-150 Y:150 Z:-300}]
+        [EscortOffsets:{X:0 Y:-300 Z:-300}]
+        [EscortOffsets:{X:0 Y:300 Z:300}]
+		
+        [EscortOffsets:{X:300 Y:150 Z:0}]
+        [EscortOffsets:{X:300 Y:0 Z:150}]
+        [EscortOffsets:{X:-300 Y:-150 Z:0}]
+        [EscortOffsets:{X:-300 Y:0 Z:-150}]
+        [EscortOffsets:{X:150 Y:-150 Z:-150}]
+        [EscortOffsets:{X:150 Y:150 Z:150}]
+		
+        [EscortOffsets:{X:300 Y:150 Z:150}]
+        [EscortOffsets:{X:300 Y:0 Z:300}]
+        [EscortOffsets:{X:-300 Y:-150 Z:-150}]
+        [EscortOffsets:{X:-300 Y:0 Z:-300}]
+        [EscortOffsets:{X:-150 Y:-150 Z:-300}]
+        [EscortOffsets:{X:-150 Y:150 Z:300}]
+		
+        [EscortOffsets:{X:300 Y:300 Z:0}]
+        [EscortOffsets:{X:300 Y:150 Z:150}]
+        [EscortOffsets:{X:-300 Y:-300 Z:-150}]
+        [EscortOffsets:{X:-300 Y:150 Z:-300}]
+        [EscortOffsets:{X:150 Y:-300 Z:-300}]
+        [EscortOffsets:{X:150 Y:300 Z:300}]
+      </Description>
+	</EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Autopilot-Ektographer -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Autopilot-Ektographer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:25]
+        [IdealMinSpeed:15]
+        [IdealMaxSpeed:20]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:1000]
+		
+		[UseVelocityCollisionEvasion:true]
+		[CollisionEvasionWaypointDistance:1000]
+		[CollisionEvasionResumeDistance:1000]
+
+		[UseProjectileLeadPrediction:true]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Targeting-Ektographer -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Targeting-Ektographer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:2000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+
+        [MaxLineOfSight:2000]
+        [NonBroadcastVisualRange:2000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+		[MinTargetValue:300]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Weapons-Ektographer -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Weapons-Ektographer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Weapons]
+
+        [UseTurrets:true]
+
+        [WeaponMaxBaseDistanceTarget:8]
+      </Description>
+    </EntityComponent>
+<!-- Ektographer Behavior Basics End -->  
+	
+	
+<!-- Ektographer SpawnGroup Modifiers Start -->	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-SpawnCondition-Ekotgrapher-GoodReputation -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-SpawnCondition-Ekotgrapher-GoodReputation</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:50]
+		[LunarCargoShipChance:10]
+		
+		[FactionOwner:EKOT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+	  	[UsePlayerFactionReputation:true]
+		[MinimumReputation:-500]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-SpawnCondition-Ekotgrapher-BadReputation -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-SpawnCondition-Ekotgrapher-BadReputation</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:20]
+		[LunarCargoShipChance:4]
+		
+		[UsePlayerFactionReputation:true]
+		[MaximumReputation:-501]
+		
+		[FactionOwner:EKOT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Manipulation-Ekotgrapher -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Manipulation-Ekotgrapher</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseRivalAi:true]
+		[RivalAiReplaceRemoteControl:true]
+		
+		[UseLootProfiles:true]
+		[LootGroups:EKOT-Loot-Datapads-Ekotgrapher]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Loot-Datapads-Ekotgrapher -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Loot-Datapads-Ekotgrapher</SubtypeId>
+      </Id>
+      <Description>
+        [MES Loot]
+
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitSeat]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/CockpitOpen]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/RoverCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitSmall]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitLarge]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/BuggyCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockStandingCockpit]
+        [ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockStandingCockpit]
+
+        [AddDatapads:true]
+        [DatapadFileSource:PVT-EKOT-DataPadText.xml]
+        
+        [MinBlocks:1]
+        [MaxBlocks:2]
+      </Description>
+    </EntityComponent>
+<!-- Ektographer SpawnGroup Modifiers End -->	
+
+
+<!-- Trigger/Action Damage Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-Damage -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-Damage</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+	    [UseTrigger:true]
+		
+        [Type:Damage]
+		[DamageTypes:Rocket]
+		[DamageTypes:Bullet]
+		[DamageTypes:Weapon]
+		[DamageTypes:Drill]
+		
+		[StartsReady:true]
+		[MinCooldownMs:120000]
+		[MaxCooldownMs:600000]
+        [MaxActions:-1]
+		
+		[ActionExecution:All]
+		[Actions:EKOT-Action-Chat-Leave]
+		[Actions:EKOT-Action-ChangeSpeedTo60]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-Enable-Trigger-4KOutBadRep]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-Chat-Leave -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-Chat-Leave</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+        [UseChatBroadcast:true]
+	    [ChatData:EKOT-Chat-YouAreNotWelcome]
+      </Description>
+	</EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-SpawnDefenseDrone -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-SpawnDefenseDrone</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+	    [SpawnEncounter:true]
+	    [Spawner:EKOT-Spawner-Ekotgrapher-DefenseDrone-BadRep]
+      </Description>
+	</EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-ChangeSpeedTo60 -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-ChangeSpeedTo60</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+	    [ChangeAutopilotSpeed:true]
+	    [NewAutopilotSpeed:60]
+      </Description>
+	</EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-Enable-Trigger-4KOutBadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-Enable-Trigger-4KOutBadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+	    [EnableTriggers:true]
+	    [EnableTriggerNames:EKOT-Trigger-4KOutBadRep]
+      </Description>
+	</EntityComponent>
+<!-- Trigger/Action Damage End -->
+
+
+<!-- Trigger/Action 4kOut Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-4KOut -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-4KOut</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		  
+		[StartsReady:true]
+		[MinCooldownMs:60000]
+		[MaxCooldownMs:120000]
+		
+		[TargetDistance:4000]		
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-4KOut]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-4KOut -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-4KOut</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+        [UseChatBroadcast:true]
+	    [ChatData:EKOT-Chat-WeComeInPeace]
+      </Description>
+	</EntityComponent>
+<!-- Trigger/Action 4kOut End -->
+
+
+<!-- Trigger/Action 1000Out Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-1000Out -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-1000Out</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		  
+		[StartsReady:true]
+		[MinCooldownMs:30000]
+		[MaxCooldownMs:60000]
+		
+		[TargetDistance:1000]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-1000Out]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-1000Out -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-1000Out</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+        [UseChatBroadcast:true]
+	    [ChatData:EKOT-Chat-VisitorsNotWanting]
+	  
+	    [ChangeAutopilotSpeed:true]
+	    [NewAutopilotSpeed:30]
+      </Description>
+	</EntityComponent>
+<!-- Trigger/Action 500Out End -->
+
+
+<!-- Trigger/Action 300ReputationLoss Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-300RepuationLoss -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-300RepuationLoss</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		  
+		[StartsReady:true]
+		[MinCooldownMs:15000]
+		[MaxCooldownMs:30000]
+		
+		[TargetDistance:300]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-300ReputationLoss]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-300ReputationLoss -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-300ReputationLoss</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+		[ChangeReputationWithPlayers:true]
+		[ReputationChangeAmount:-3]
+		[ReputationChangeRadius:400]
+		[ReputationChangeFactions:{Self}]
+	  </Description>
+	</EntityComponent>
+<!-- Trigger/Action 300ReputationLoss End -->
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-Damage-BadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-Damage-BadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+	    [UseTrigger:true]
+		
+        [Type:Damage]
+		[DamageTypes:Rocket]
+		[DamageTypes:Bullet]
+		[DamageTypes:Weapon]
+		[DamageTypes:Drill]
+		
+		[StartsReady:true]
+		[MinCooldownMs:60000]
+		[MaxCooldownMs:300000]
+        [MaxActions:-1]
+		
+		[ActionExecution:All]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+      </Description>
+    </EntityComponent>
+
+	
+<!-- Trigger/Action 4KOutBadRep-Speedup Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-4KOutBadRep-Speedup -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-4KOutBadRep-Speedup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		
+		[TargetDistance:4000]
+
+		[StartsReady:true]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-ChangeSpeedTo60]
+		[Actions:EKOT-Action-DisableTrigger-Speedup]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-DisableTrigger-Speedup -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Action-DisableTrigger-Speedup</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+		[DisableTriggers:true]
+		[DisableTriggerNames:EKOT-Trigger-4KOutBadRep-Speedup]
+	  </Description>
+	</EntityComponent>
+<!-- Trigger/Action 4KOutBadRep-Speedup End -->
+
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-4KOutBadRep-SpawnDrones -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-4KOutBadRep-SpawnDrones</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		
+		[TargetDistance:4000]
+
+		[StartsReady:true]
+		[MinCooldownMs:30000]
+		[MaxCooldownMs:60000]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-5KOutBadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-5KOutBadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		
+		[TargetDistance:5000]
+
+		[StartsReady:true]
+		[MinCooldownMs:30000]
+		[MaxCooldownMs:60000]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT-Action-Chat-Leave]
+      </Description>
+    </EntityComponent>
+
+
+<!-- Trigger/Action 3kOut BadRep Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-3KOutBadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Trigger-3KOutBadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+        [Type:PlayerNear]
+	    [UseTrigger:true]
+		
+		[TargetDistance:3000]
+
+		[StartsReady:true]
+		[MinCooldownMs:30000]
+		[MaxCooldownMs:60000]
+		
+        [MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:EKOT_Action-3KOutBadRep]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+		[Actions:EKOT-Action-SpawnDefenseDrone]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT_Action-3KOutBadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT_Action-3KOutBadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+	  
+		[ChangeAutopilotSpeed:true]
+		[NewAutopilotSpeed:80]
+
+		[ChangeInertiaDampeners:true]		
+		[InertiaDampenersEnable:false]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:EKOT-Trigger-3KOutBadRep]
+	  </Description>
+	</EntityComponent>
+<!-- Trigger/Action 3kOut BadRep Endd -->
+
+
+<!-- Chat data Start -->	  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Chat-YouAreNotWelcome -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Chat-YouAreNotWelcome</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+        
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [BroadcastRandomly:true]
+        
+        [Author:EKOT {AntennaName}]
+        [Color:Red]
+        
+        [ChatMessages:Welcome you are not.]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:LEAVE]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Frevent chittering]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Do not be kill not]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Infinity awaits]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:We come in peace]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Chat-WeComeInPeace -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Chat-WeComeInPeace</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+        
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [BroadcastRandomly:true]
+        
+        [Author:EKOT {AntennaName}]
+        [Color:White]
+        
+        [ChatMessages:We come in peace]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Satisfied. Drifting peacefully.]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Frevent chittering]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:The knowing is in the stars]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Knowledge. Seekers.]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Not liking visitors. Peaceful.]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Chat-VisitorsNotWanting -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Chat-VisitorsNotWanting</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+        
+        [UseChat:true]
+        [StartsReady:true]
+        [Chance:100]
+        [BroadcastRandomly:true]
+        
+        [Author:EKOT {AntennaName}]
+        [Color:White]
+        
+        [ChatMessages:Peacefullness comes from distanceness]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Visitors not wanting]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Aloneness is liking]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Not approaching pleasing.]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Leaving. We are wanting you.]
+        [BroadcastChatType:Chat]
+        
+        [ChatMessages:Stay away, do not approach.]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- Chat data End -->	  
+
+	
+<!-- Trigger/Action DefenseDrone Request Escort Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-DefenseDrone-SendCommand-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Trigger-DefenseDrone-SendCommand-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:3000]
+        [MaxCooldownMs:3001]
+        [StartsReady:false]
+
+        [MaxActions:-1]
+		[ActionExecution:All]
+        [Actions:EKOT-Action-DefenseDrone-SendCommand-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-DefenseDrone-SendCommand-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Action-DefenseDrone-SendCommand-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:EKOT-Command-DefenseDrone-RequestEscortSlot]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:EKOT-Trigger-DefenseDrone-SendCommand-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Command-DefenseDrone-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Command-DefenseDrone-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:EKOT-CommCode-RequestEscort-DefenseDrone]
+        [MatchSenderReceiverOwners:true]
+        [RequestEscortSlot:true]
+      </Description>
+    </EntityComponent>
+<!-- Trigger/Action DefenseDrone Request Escort End -->
+
+
+<!-- Trigger/Action DefenseDrone Request Escort Slot Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-Ektographer-CommandReceived-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Trigger-Ektographer-CommandReceived-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:EKOT-CommCode-RequestEscort-DefenseDrone]
+
+        [StartsReady:true]
+        [MinCooldownMs:0]
+        [MaxCooldownMs:0]
+		
+        [MaxActions:-1]
+        [Actions:EKOT-Action-Ektographer-CommandReceived-RequestEscort]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-Ektographer-CommandReceived-RequestEscort -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Action-Ektographer-CommandReceived-RequestEscort</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AssignEscortFromCommand:true]
+      </Description>
+    </EntityComponent>
+<!-- Trigger/Action DefenseDrone Request Escort Slot End -->
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Spawner-Ekotgrapher-DefenseDrone -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Spawner-Ekotgrapher-DefenseDrone</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Spawn]
+      
+        [UseSpawn:true]
+        [StartsReady:true]
+      
+		[MaxSpawns:-1]
+	  
+	    [SpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone]
+      
+        [UseRelativeSpawnPosition:false]
+		
+        [MinDistance:8000]
+        [MaxDistance:10000]
+      </Description> 
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Spawner-Ekotgrapher-DefenseDrone-BadRep -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>EKOT-Spawner-Ekotgrapher-DefenseDrone-BadRep</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Spawn]
+      
+        [UseSpawn:true]
+        [StartsReady:true]
+      
+		[MaxSpawns:-1]
+	  
+	    [SpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone-BadRep]
+      
+        [UseRelativeSpawnPosition:false]
+		
+        [MinDistance:6000]
+        [MaxDistance:8000]
+      </Description> 
+    </EntityComponent>
+	
+	
+
+<!-- Ekoforcer Behavior Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Behavior-DefenseDrone-Escort -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Behavior-DefenseDrone-Escort</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:EKOT-Targeting-DefenseDrone]
+
+        [AutopilotData:PVTACS-Autopilot-AssaultDivision-EscortDrone-A]
+        [SecondaryAutopilotData:EKOT-AutoPilot-DefenseDrone-B]
+		
+		[Triggers:EKOT-Trigger-DefenseDrone-SendCommand-RequestEscortSlot]
+		[Triggers:EKOT-Trigger-DefenseDrone-AgressionSwitch]
+		[Triggers:EKOT-Trigger-DefenseDrone-PassiveSwitch]
+      </Description>
+	</EntityComponent>  
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Behavior-DefenseDrone-Escort-BadRep -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Behavior-DefenseDrone-Escort-BadRep</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Horsefly]
+
+        [TargetData:EKOT-Targeting-DefenseDrone]
+
+        [AutoPilot:EKOT-AutoPilot-DefenseDrone-B]
+      </Description>
+	</EntityComponent>  
+	
+	<!-- Trigger/Action DefenseDrone Escort Agression Switch Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Trigger-DefenseDrone-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Trigger-DefenseDrone-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:3000]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+		
+		[ActionExecution:All]
+        [Actions:EKOT-Action-DefenseDrone-AgressionSwitch]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-DefenseDrone-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Action-DefenseDrone-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Horsefly]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Secondary]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:EKOT-Trigger-DefenseDrone-AgressionSwitch]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:EKOT-Trigger-DefenseDrone-PassiveSwitch]
+        [EnableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:EKOT-Trigger-DefenseDrone-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+	<!-- Trigger/Action DefenseDrone Escort Agression Switch End -->
+	
+	
+	<!-- Trigger/Action DefenseDrone Escort PassiveSwitch Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!--- EKOT-Trigger-DefenseDrone-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Trigger-DefenseDrone-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:ChangedTarget]
+
+        [TargetDistance:6000]
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+		
+		[ActionExecution:All]
+        [Actions:EKOT-Action-DefenseDrone-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Action-DefenseDrone-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Action-DefenseDrone-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Escort]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:EKOT-Trigger-DefenseDrone-PassiveSwitch]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatCheck]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:EKOT-Trigger-DefenseDrone-AgressionSwitch]
+      </Description>
+    </EntityComponent>
+	<!-- Trigger/Action DefenseDrone Escort PassiveSwitch End -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-Targeting-DefenseDrone -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-Targeting-DefenseDrone</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:15000]
+		[MaxExistingTargetDistance:1600]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+		[MatchAllFilters:PlayerControlled]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+        [Relations:Neutral]
+
+        [GetTargetBy:Random]
+		[PrioritizePlayerControlled:true]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- EKOT-AutoPilot-DefenseDrone-B -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>EKOT-AutoPilot-DefenseDrone-B</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+		[WaypointTolerance:75]
+
+        [IdealMinSpeed:80]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [UseVelocityCollisionEvasion:true]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1.5]
+
+        [OffsetSpaceMinDistFromTarget:1050]
+        [OffsetSpaceMaxDistFromTarget:1350]
+
+        [AngleAllowedForForwardThrust:75]
+      </Description>
+    </EntityComponent>
+<!-- Ekoforcer Behavior End -->
+	
+  </EntityComponents>
+</Definitions>

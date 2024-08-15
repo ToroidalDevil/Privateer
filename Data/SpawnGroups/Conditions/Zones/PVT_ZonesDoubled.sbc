@@ -1,0 +1,2817 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- 
+	Basic Regions 
+-->
+
+	<!-- Assert -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertSpace -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertSpace</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+			Added: Ektographer 2024-7-25
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert Space]
+
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:BountyTestGrid]
+		[AllowedSpawnGroups:(NPC-ACS) Canis]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler]
+		[AllowedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Canis-M]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-M]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater-M]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly-M]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler-M]
+		[AllowedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-M]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat-M]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I-M]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk-M]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus-M]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz-M]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog-M]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner-M]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp-M]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport-M]
+
+		[AllowedSpawnGroups:(NPC-ACS) Canis-H]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-H]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate-H]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater-H]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly-H]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler-H]
+		[AllowedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-H]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1-H]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat-H]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I-H]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk-H]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus-H]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz-H]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog-H]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner-H]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp-H]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport-H]
+		
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Rammer]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters3]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		
+		[AllowedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-GoodRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-BadRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone-BadRep]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-Monarch]
+		
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:Encounter Droneyard]
+		[RestrictedSpawnGroups:Encounter Mining Outpost]
+		[RestrictedSpawnGroups:Encounter RoidStation]
+		[RestrictedSpawnGroups:Encounter Salvage station]
+		[RestrictedSpawnGroups:Encounter Stealth pirate station]
+		
+		[RestrictedSpawnGroups:Military1]
+		[RestrictedSpawnGroups:Military2]
+		[RestrictedSpawnGroups:Mining1]
+		[RestrictedSpawnGroups:Mining2]
+		[RestrictedSpawnGroups:R.U.S.T. Freighter]
+		[RestrictedSpawnGroups:Trade1]
+		[RestrictedSpawnGroups:Trade2]
+		[RestrictedSpawnGroups:Trade3]
+
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Assert Space]
+		[ZoneLeaveAnnounce:Leaving Assert Space]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:554000 Y:-250000 Z:-550000}]
+        [Radius:476000]
+	  </Description>
+	</EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertSpace-BossEncounterA -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertSpace-BossEncounterA</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert Boss Encounter A]
+		
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:(NPC-ACS) Absolution]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters6]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-Monarch]
+
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Berserker-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Impaler-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Slayer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Thrasher-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Butcher-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Carver-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Devourer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Charger-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Piercer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Aggressor-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Mutilator-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Scourge-L]
+		
+		[RestrictedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:Encounter Mining Vessel]
+		[RestrictedSpawnGroups:Encounter Pirate Raider]
+		[RestrictedSpawnGroups:Encounter Vulture vessel]
+
+		[RestrictedSpawnGroups:Encounter Debris A]
+		[RestrictedSpawnGroups:Encounter Debris B]
+		[RestrictedSpawnGroups:Encounter Ambasador A]
+		[RestrictedSpawnGroups:Encounter Ambasador B]
+		[RestrictedSpawnGroups:Encounter Blue frame]
+		[RestrictedSpawnGroups:Encounter Corvette A]
+		[RestrictedSpawnGroups:Encounter Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette A]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette C]
+		[RestrictedSpawnGroups:Encounter Habitat Pods]
+		[RestrictedSpawnGroups:Encounter Haunted Section]
+		[RestrictedSpawnGroups:Encounter HEC Debris A]
+		[RestrictedSpawnGroups:Encounter HEC Debris B]
+		[RestrictedSpawnGroups:Encounter Hermit Station]
+		[RestrictedSpawnGroups:Encounter Homing beacon]
+		[RestrictedSpawnGroups:Encounter Hydro Tanker]
+		[RestrictedSpawnGroups:Encounter Imp A]
+		[RestrictedSpawnGroups:Encounter Imp B]
+		[RestrictedSpawnGroups:Encounter Mercenary Wreckage]
+		[RestrictedSpawnGroups:Encounter Minefield]
+		[RestrictedSpawnGroups:Encounter MushStation A]
+		[RestrictedSpawnGroups:Encounter MushStation B]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 A]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 B]
+		[RestrictedSpawnGroups:Encounter Prometheus A]
+		[RestrictedSpawnGroups:Encounter Prometheus B]
+		[RestrictedSpawnGroups:Encounter Red A]
+		[RestrictedSpawnGroups:Encounter Red B]
+		[RestrictedSpawnGroups:Encounter RespawnShip]
+		[RestrictedSpawnGroups:Encounter RS-1217 Transporter A]
+		[RestrictedSpawnGroups:Encounter Safehouse station]
+		[RestrictedSpawnGroups:Encounter Section-F]
+		[RestrictedSpawnGroups:Encounter Severed Bow]
+		[RestrictedSpawnGroups:Encounter Shuttle]
+		[RestrictedSpawnGroups:Encounter Skyheart A]
+		[RestrictedSpawnGroups:Encounter Skyheart B]
+		[RestrictedSpawnGroups:Encounter Stingray II A]
+		[RestrictedSpawnGroups:Encounter Stingray II B]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering RESTRICTED Assert Space]
+		[ZoneLeaveAnnounce:Leaving RESTRICTED Assert Space]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:825000 Y:-190000 Z:-650000}]
+        [Radius:100000]
+      </Description>
+	</EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertSpace-BossEncounterB -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertSpace-BossEncounterB</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:AssertSpace-BossB]
+		
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters6]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:Encounter Mining Vessel]
+		[RestrictedSpawnGroups:Encounter Pirate Raider]
+		[RestrictedSpawnGroups:Encounter Vulture vessel]
+		
+		[RestrictedSpawnGroups:Encounter Debris A]
+		[RestrictedSpawnGroups:Encounter Debris B]
+		[RestrictedSpawnGroups:Encounter Ambasador A]
+		[RestrictedSpawnGroups:Encounter Ambasador B]
+		[RestrictedSpawnGroups:Encounter Blue frame]
+		[RestrictedSpawnGroups:Encounter Corvette A]
+		[RestrictedSpawnGroups:Encounter Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette A]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette C]
+		[RestrictedSpawnGroups:Encounter Habitat Pods]
+		[RestrictedSpawnGroups:Encounter Haunted Section]
+		[RestrictedSpawnGroups:Encounter HEC Debris A]
+		[RestrictedSpawnGroups:Encounter HEC Debris B]
+		[RestrictedSpawnGroups:Encounter Hermit Station]
+		[RestrictedSpawnGroups:Encounter Homing beacon]
+		[RestrictedSpawnGroups:Encounter Hydro Tanker]
+		[RestrictedSpawnGroups:Encounter Imp A]
+		[RestrictedSpawnGroups:Encounter Imp B]
+		[RestrictedSpawnGroups:Encounter Mercenary Wreckage]
+		[RestrictedSpawnGroups:Encounter Minefield]
+		[RestrictedSpawnGroups:Encounter MushStation A]
+		[RestrictedSpawnGroups:Encounter MushStation B]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 A]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 B]
+		[RestrictedSpawnGroups:Encounter Prometheus A]
+		[RestrictedSpawnGroups:Encounter Prometheus B]
+		[RestrictedSpawnGroups:Encounter Red A]
+		[RestrictedSpawnGroups:Encounter Red B]
+		[RestrictedSpawnGroups:Encounter RespawnShip]
+		[RestrictedSpawnGroups:Encounter RS-1217 Transporter A]
+		[RestrictedSpawnGroups:Encounter Safehouse station]
+		[RestrictedSpawnGroups:Encounter Section-F]
+		[RestrictedSpawnGroups:Encounter Severed Bow]
+		[RestrictedSpawnGroups:Encounter Shuttle]
+		[RestrictedSpawnGroups:Encounter Skyheart A]
+		[RestrictedSpawnGroups:Encounter Skyheart B]
+		[RestrictedSpawnGroups:Encounter Stingray II A]
+		[RestrictedSpawnGroups:Encounter Stingray II B]
+		
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering RESTRICTED Assert Space]
+		[ZoneLeaveAnnounce:Leaving RESTRICTED Assert Space]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:562500 Y:-450000 Z:-725000}]
+        [Radius:100000]
+      </Description>
+	</EntityComponent>
+
+	<!-- Imber -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberSpace -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberSpace</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+			Added Ektographer 2024-7-25
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber Space]
+		
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ExplosivesShipment]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-DronePatrol]
+		[AllowedSpawnGroups:Imber-SpawnGroup-DelphosSupplyOutpost]
+		[AllowedSpawnGroups:Imber-SpawnGroup-PeriosStation]
+		
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Platinum]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Gold]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Silver]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Magnesium]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Nickel]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Iron]
+		
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-Kite-Miner]
+
+		[AllowedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-GoodRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-BadRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone-BadRep]
+		
+		[UseRestrictedSpawnGroups:true]
+
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Canis	ATS]
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Hecate]
+		[RestrictedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Bear Fly]
+		[RestrictedSpawnGroups:(NPC-ACS) Bulky Ben]
+		[RestrictedSpawnGroups:(NPC-ACS) Cyclops Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) Dory 1]
+		[RestrictedSpawnGroups:(NPC-ACS) Gnat]
+		[RestrictedSpawnGroups:(NPC-ACS) Hestia-I]
+		[RestrictedSpawnGroups:(NPC-ACS) Jolly Citrine]
+		[RestrictedSpawnGroups:(NPC-ACS) Rhombulus]
+		[RestrictedSpawnGroups:(NPC-ACS) SIC-01 Murakoz]
+		[RestrictedSpawnGroups:(NPC-ACS) Skippy the Space Frog]
+		[RestrictedSpawnGroups:(NPC-ACS) Sojourner]
+		[RestrictedSpawnGroups:(NPC-ACS) The Grub]
+		[RestrictedSpawnGroups:(NPC-ACS) The Super Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Voyager]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-864-S Baldrin]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Imber Space]
+		[ZoneLeaveAnnounce:Leaving Imber Space]
+		
+        [Coordinates:{X:-650000 Y:2 Z:700000}]
+        [Radius:276000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberSpace-BossEncounter -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberSpace-BossEncounter</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber Space Boss]
+		
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ImpulseFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-InstinctFrigate]
+	
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Berserker-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Impaler-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Slayer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Thrasher-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Butcher-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Carver-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Devourer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Charger-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Piercer-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Aggressor-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Mutilator-L]
+		[RestrictedSpawnGroups:Reaver-SpawnGroup-Scourge-L]
+		
+		[RestrictedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:Military1]
+		[RestrictedSpawnGroups:Military2]
+		[RestrictedSpawnGroups:Mining1]
+		[RestrictedSpawnGroups:Mining2]
+		[RestrictedSpawnGroups:R.U.S.T. Freighter]
+		[RestrictedSpawnGroups:Trade1]
+		[RestrictedSpawnGroups:Trade2]
+		[RestrictedSpawnGroups:Trade3]
+
+		[RestrictedSpawnGroups:Encounter Debris A]
+		[RestrictedSpawnGroups:Encounter Debris B]
+		[RestrictedSpawnGroups:Encounter Ambasador A]
+		[RestrictedSpawnGroups:Encounter Ambasador B]
+		[RestrictedSpawnGroups:Encounter Blue frame]
+		[RestrictedSpawnGroups:Encounter Corvette A]
+		[RestrictedSpawnGroups:Encounter Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette A]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette B]
+		[RestrictedSpawnGroups:Encounter Ghoul Corvette C]
+		[RestrictedSpawnGroups:Encounter Habitat Pods]
+		[RestrictedSpawnGroups:Encounter Haunted Section]
+		[RestrictedSpawnGroups:Encounter HEC Debris A]
+		[RestrictedSpawnGroups:Encounter HEC Debris B]
+		[RestrictedSpawnGroups:Encounter Hermit Station]
+		[RestrictedSpawnGroups:Encounter Homing beacon]
+		[RestrictedSpawnGroups:Encounter Hydro Tanker]
+		[RestrictedSpawnGroups:Encounter Imp A]
+		[RestrictedSpawnGroups:Encounter Imp B]
+		[RestrictedSpawnGroups:Encounter Mercenary Wreckage]
+		[RestrictedSpawnGroups:Encounter Minefield]
+		[RestrictedSpawnGroups:Encounter MushStation A]
+		[RestrictedSpawnGroups:Encounter MushStation B]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 A]
+		[RestrictedSpawnGroups:Encounter Ponos-F1 B]
+		[RestrictedSpawnGroups:Encounter Prometheus A]
+		[RestrictedSpawnGroups:Encounter Prometheus B]
+		[RestrictedSpawnGroups:Encounter Red A]
+		[RestrictedSpawnGroups:Encounter Red B]
+		[RestrictedSpawnGroups:Encounter RespawnShip]
+		[RestrictedSpawnGroups:Encounter RS-1217 Transporter A]
+		[RestrictedSpawnGroups:Encounter Safehouse station]
+		[RestrictedSpawnGroups:Encounter Section-F]
+		[RestrictedSpawnGroups:Encounter Severed Bow]
+		[RestrictedSpawnGroups:Encounter Shuttle]
+		[RestrictedSpawnGroups:Encounter Skyheart A]
+		[RestrictedSpawnGroups:Encounter Skyheart B]
+		[RestrictedSpawnGroups:Encounter Stingray II A]
+		[RestrictedSpawnGroups:Encounter Stingray II B]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering RESTRICTED Imber Space]
+		[ZoneLeaveAnnounce:Leaving RESTRICTED Imber Space]
+
+        [Coordinates:{X:-775000 Y:-125000 Z:764000}]
+        [Radius:100000]
+      </Description>
+	  
+    </EntityComponent>
+
+	<!-- Reavers -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ReaverSpace -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ReaverSpace</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+			
+			TODO:Restrict other ACS spawns?
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Reaver Space]
+
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Berserker]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Impaler]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Slayer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Thrasher]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Butcher]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Carver]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Devourer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-M]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-H]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+		
+		[AllowedSpawnGroups:Encounter Debris A]
+		[AllowedSpawnGroups:Encounter Debris B]
+		[AllowedSpawnGroups:Encounter Ambasador A]
+		[AllowedSpawnGroups:Encounter Ambasador B]
+		[AllowedSpawnGroups:Encounter Blue frame]
+		[AllowedSpawnGroups:Encounter Corvette A]
+		[AllowedSpawnGroups:Encounter Corvette B]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette A]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette B]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette C]
+		[AllowedSpawnGroups:Encounter Habitat Pods]
+		[AllowedSpawnGroups:Encounter Haunted Section]
+		[AllowedSpawnGroups:Encounter HEC Debris A]
+		[AllowedSpawnGroups:Encounter HEC Debris B]
+		[AllowedSpawnGroups:Encounter Hermit Station]
+		[AllowedSpawnGroups:Encounter Homing beacon]
+		[AllowedSpawnGroups:Encounter Hydro Tanker]
+		[AllowedSpawnGroups:Encounter Imp A]
+		[AllowedSpawnGroups:Encounter Imp B]
+		[AllowedSpawnGroups:Encounter Mercenary Wreckage]
+		[AllowedSpawnGroups:Encounter Minefield]
+		[AllowedSpawnGroups:Encounter MushStation A]
+		[AllowedSpawnGroups:Encounter MushStation B]
+		[AllowedSpawnGroups:Encounter Ponos-F1 A]
+		[AllowedSpawnGroups:Encounter Ponos-F1 B]
+		[AllowedSpawnGroups:Encounter Prometheus A]
+		[AllowedSpawnGroups:Encounter Prometheus B]
+		[AllowedSpawnGroups:Encounter Red A]
+		[AllowedSpawnGroups:Encounter Red B]
+		[AllowedSpawnGroups:Encounter RespawnShip]
+		[AllowedSpawnGroups:Encounter RS-1217 Transporter A]
+		[AllowedSpawnGroups:Encounter Safehouse station]
+		[AllowedSpawnGroups:Encounter Section-F]
+		[AllowedSpawnGroups:Encounter Severed Bow]
+		[AllowedSpawnGroups:Encounter Shuttle]
+		[AllowedSpawnGroups:Encounter Skyheart A]
+		[AllowedSpawnGroups:Encounter Skyheart B]
+		[AllowedSpawnGroups:Encounter Stingray II A]
+		[AllowedSpawnGroups:Encounter Stingray II B]
+		
+		[AllowedSpawnGroups:Encounter Mining Vessel]
+		[AllowedSpawnGroups:Encounter Pirate Raider]
+		[AllowedSpawnGroups:Encounter Vulture vessel]
+		
+		[AllowedSpawnGroups:Military1]
+		[AllowedSpawnGroups:Military2]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[RestrictedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Reaver Space]
+		[ZoneLeaveAnnounce:Leaving Reaver Space]
+
+        [Coordinates:{X:2 Y:462500 Z:50000}]
+        [Radius:350000]
+     </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ReaverSpace-BossEncounter -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ReaverSpace-BossEncounter</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Reaver Space Boss]
+		
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Nikkadudu]
+		
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor]
+
+		[UseRestrictedSpawnGroups:true]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Canis]
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Hecate]
+		[RestrictedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Bear Fly]
+		[RestrictedSpawnGroups:(NPC-ACS) Bulky Ben]
+		[RestrictedSpawnGroups:(NPC-ACS) Cyclops Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) Dory 1]
+		[RestrictedSpawnGroups:(NPC-ACS) Gnat]
+		[RestrictedSpawnGroups:(NPC-ACS) Hestia-I]
+		[RestrictedSpawnGroups:(NPC-ACS) Jolly Citrine]
+		[RestrictedSpawnGroups:(NPC-ACS) Rhombulus]
+		[RestrictedSpawnGroups:(NPC-ACS) SIC-01 Murakoz]
+		[RestrictedSpawnGroups:(NPC-ACS) Skippy the Space Frog]
+		[RestrictedSpawnGroups:(NPC-ACS) Sojourner]
+		[RestrictedSpawnGroups:(NPC-ACS) The Grub]
+		[RestrictedSpawnGroups:(NPC-ACS) The Super Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Voyager]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-864-S Baldrin]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Donzella]
+		[RestrictedSpawnGroups:(NPC-ACS) Angeruppy]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[RestrictedSpawnGroups:(NPC-ACS) Cordoba]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Fuath]
+		[RestrictedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[RestrictedSpawnGroups:(NPC-ACS) Kogia]
+		[RestrictedSpawnGroups:(NPC-ACS) Narwhal]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[RestrictedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[RestrictedSpawnGroups:(NPC-ACS) WHI - Cargo Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) WKX-LG Wasp]
+		[RestrictedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Donzella-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Fuath-H]
+		[RestrictedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Kogia-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Donzella-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Fuath-M]
+		[RestrictedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Kogia-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP]
+		
+		[RestrictedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-Monarch]
+
+		[RestrictedSpawnGroups:Military1]
+		[RestrictedSpawnGroups:Mining1]
+		[RestrictedSpawnGroups:Mining2]
+		[RestrictedSpawnGroups:R.U.S.T. Freighter]
+		[RestrictedSpawnGroups:Trade1]
+		[RestrictedSpawnGroups:Trade2]
+		[RestrictedSpawnGroups:Trade3]
+
+		[RestrictedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Reaver Nest]
+		[ZoneLeaveAnnounce:Leaving Reaver Nest]
+		
+		[Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-125000 Y:600000 Z:100000}]
+        [Radius:100000]
+      </Description>
+    </EntityComponent>
+	
+<!-- 
+	Light Spawns 
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-Light-ConflictZone -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-Light-ConflictZone</SubtypeId>
+      </Id>
+		<!-- TODO:: Add the -m and -H spawns for ACS 
+		-->
+		<!--
+			TEST:: 2024-07-10
+			Added Ekotgrapher 2024-7-25
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Light Conflict Zone]
+
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:(NPC-ACS) Canis]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler]
+		[AllowedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport]
+		
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Berserker-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Impaler-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Slayer-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Thrasher-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Butcher-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Carver-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Devourer-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator-L]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge-L]
+		
+		[AllowedSpawnGroups:TOC-SpawnGroup-WanderingMerchant-EV]
+		[AllowedSpawnGroups:TOC-SpawnGroup-BrazierDockTradeStation]
+		[AllowedSpawnGroups:TOC-SpawnGroup-GSX5010ChronoStation]
+		[AllowedSpawnGroups:TOC-SpawnGroup-NanyangStation]
+		[AllowedSpawnGroups:TOC-SpawnGroup-OrbitalTradeStation]
+		[AllowedSpawnGroups:TOC-SpawnGroup-PoseidonStation]
+		
+		[AllowedSpawnGroups:Encounter Debris A]
+		[AllowedSpawnGroups:Encounter Debris B]
+		[AllowedSpawnGroups:Encounter Ambasador A]
+		[AllowedSpawnGroups:Encounter Ambasador B]
+		[AllowedSpawnGroups:Encounter Blue frame]
+		[AllowedSpawnGroups:Encounter Corvette A]
+		[AllowedSpawnGroups:Encounter Corvette B]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette A]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette B]
+		[AllowedSpawnGroups:Encounter Ghoul Corvette C]
+		[AllowedSpawnGroups:Encounter Habitat Pods]
+		[AllowedSpawnGroups:Encounter Haunted Section]
+		[AllowedSpawnGroups:Encounter HEC Debris A]
+		[AllowedSpawnGroups:Encounter HEC Debris B]
+		[AllowedSpawnGroups:Encounter Hermit Station]
+		[AllowedSpawnGroups:Encounter Homing beacon]
+		[AllowedSpawnGroups:Encounter Hydro Tanker]
+		[AllowedSpawnGroups:Encounter Imp A]
+		[AllowedSpawnGroups:Encounter Imp B]
+		[AllowedSpawnGroups:Encounter Mercenary Wreckage]
+		[AllowedSpawnGroups:Encounter Minefield]
+		[AllowedSpawnGroups:Encounter MushStation A]
+		[AllowedSpawnGroups:Encounter MushStation B]
+		[AllowedSpawnGroups:Encounter Ponos-F1 A]
+		[AllowedSpawnGroups:Encounter Ponos-F1 B]
+		[AllowedSpawnGroups:Encounter Prometheus A]
+		[AllowedSpawnGroups:Encounter Prometheus B]
+		[AllowedSpawnGroups:Encounter Red A]
+		[AllowedSpawnGroups:Encounter Red B]
+		[AllowedSpawnGroups:Encounter RespawnShip]
+		[AllowedSpawnGroups:Encounter RS-1217 Transporter A]
+		[AllowedSpawnGroups:Encounter Safehouse station]
+		[AllowedSpawnGroups:Encounter Section-F]
+		[AllowedSpawnGroups:Encounter Severed Bow]
+		[AllowedSpawnGroups:Encounter Shuttle]
+		[AllowedSpawnGroups:Encounter Skyheart A]
+		[AllowedSpawnGroups:Encounter Skyheart B]
+		[AllowedSpawnGroups:Encounter Stingray II A]
+		[AllowedSpawnGroups:Encounter Stingray II B]
+
+		[AllowedSpawnGroups:Encounter Droneyard]
+		[AllowedSpawnGroups:Encounter Mining Vessel]
+		[AllowedSpawnGroups:Encounter Mining Outpost]
+		[AllowedSpawnGroups:Encounter Pirate Raider]
+		[AllowedSpawnGroups:Encounter RoidStation]
+		[AllowedSpawnGroups:Encounter Salvage station]
+		[AllowedSpawnGroups:Encounter Stealth pirate station]
+		[AllowedSpawnGroups:Encounter Vulture vessel]
+		
+		[AllowedSpawnGroups:Military1]
+		[AllowedSpawnGroups:Military2]
+		[AllowedSpawnGroups:Mining1]
+		[AllowedSpawnGroups:Mining2]
+		[AllowedSpawnGroups:R.U.S.T. Freighter]
+		[AllowedSpawnGroups:Trade1]
+		[AllowedSpawnGroups:Trade2]
+		[AllowedSpawnGroups:Trade3]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-GoodRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ekotgrapher-BadRep]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone]
+		[AllowedSpawnGroups:(EKOT)-SpawnGroup-Ektographer-DefenseDrone-BadRep]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:1 Y:1 Z:1}]
+        [Radius:700000]
+      </Description>
+    </EntityComponent>
+
+	
+<!--
+	Prime Conflict Zone
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-Heavy-ConflictZone -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-Heavy-ConflictZone</SubtypeId>
+      </Id>
+		<!--
+			TODO:: add some ACS fighting vessel spawns that have assault division escorts.
+					Remove non fighting ACS spawns 
+					Remove non-fighting IBR spawns
+					Remove ACS -m and -H because those are part of the light conflict zone
+		-->
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Heavy ConflictZone]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Canis-M]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-M]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater-M]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly-M]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler-M]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat-M]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I-M]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk-M]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus-M]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz-M]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog-M]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner-M]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport-M]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp-M]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport-M]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Canis-H]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Donzella-H]
+		[AllowedSpawnGroups:(NPC-ACS) ACM Hecate-H]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater-H]
+		[AllowedSpawnGroups:(NPC-ACS) Bear Fly-H]
+		[AllowedSpawnGroups:(NPC-ACS) Bulky Ben-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cyclops Hauler-H]
+		[AllowedSpawnGroups:(NPC-ACS) Dory 1-H]
+		[AllowedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) Gnat-H]
+		[AllowedSpawnGroups:(NPC-ACS) Hestia-I-H]
+		[AllowedSpawnGroups:(NPC-ACS) Jolly Citrine-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[AllowedSpawnGroups:(NPC-ACS) Quasi Modo Mk-H]
+		[AllowedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[AllowedSpawnGroups:(NPC-ACS) Rhombulus-H]
+		[AllowedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[AllowedSpawnGroups:(NPC-ACS) SIC-01 Murakoz-H]
+		[AllowedSpawnGroups:(NPC-ACS) Skippy the Space Frog-H]
+		[AllowedSpawnGroups:(NPC-ACS) Sojourner-H]
+		[AllowedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Grub-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Super Guppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) The Voyager-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-864-S Baldrin-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+		[AllowedSpawnGroups:(NPC-ACS) WHI - Cargo Transport-H]
+		[AllowedSpawnGroups:(NPC-ACS) WKX-LG Wasp-H]
+		[AllowedSpawnGroups:(NPC-ACS) WKZ-LG Bio-weapon Transport-H]
+		
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Auburn]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Adrasta]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Thresher]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Devotion]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter PrideAndPrejudice]
+		
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Rammer]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters3]
+
+		[AllowedSpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - M]
+		[AllowedSpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC]
+		[AllowedSpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - O]
+		[AllowedSpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - E]
+		[AllowedSpawnGroups:(NPC-ACS) Ceres-Class Escort Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-FighterPatrol-3Ceries]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-FighterPatrol-Croissant]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-FighterPatrol-Croissant-WHunterDrones]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor-M]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:1 Y:1 Z:1}]
+        [Radius:150000]
+      </Description>
+    </EntityComponent>
+
+<!-- 
+	Border issues
+-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertReaver-ConflictZone -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertReaver-ConflictZone</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert-Reaver ConflictZone]
+
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters3]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters6]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Rammer]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Berserker-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Impaler-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Slayer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Thrasher-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Butcher-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Carver-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Devourer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor-M]
+
+		[UseRestrictedSpawnGroups:true]
+		
+		[RestrictedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[RestrictedSpawnGroups:Imber-SpawnGroup-Monarch]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Assert/Reaver Border Conflict]
+		[ZoneLeaveAnnounce:Leaving Assert/Reaver Border Conflict]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:400000 Y:300000 Z:-325000}]
+        [Radius:150000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberReaver-ConflictZone -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberReaver-ConflictZone</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-10
+			TODO:: add some ACS fighting vessel spawns that have assault division escorts?
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Reaver Border]
+
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+		
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Berserker-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Impaler-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Slayer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Thrasher-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Butcher-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Carver-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Devourer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer-M]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor-M]
+
+		
+		[UseRestrictedSpawnGroups:true]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Canis]
+		[RestrictedSpawnGroups:(NPC-ACS) ACM Hecate]
+		[RestrictedSpawnGroups:(NPC-ACS) AnIn 'Columbus' 01]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[RestrictedSpawnGroups:(NPC-ACS) Bear Fly]
+		[RestrictedSpawnGroups:(NPC-ACS) Bulky Ben]
+		[RestrictedSpawnGroups:(NPC-ACS) Cyclops Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) Dory 1]
+		[RestrictedSpawnGroups:(NPC-ACS) Gnat]
+		[RestrictedSpawnGroups:(NPC-ACS) Hestia-I]
+		[RestrictedSpawnGroups:(NPC-ACS) Jolly Citrine]
+		[RestrictedSpawnGroups:(NPC-ACS) Rhombulus]
+		[RestrictedSpawnGroups:(NPC-ACS) SIC-01 Murakoz]
+		[RestrictedSpawnGroups:(NPC-ACS) Skippy the Space Frog]
+		[RestrictedSpawnGroups:(NPC-ACS) Sojourner]
+		[RestrictedSpawnGroups:(NPC-ACS) The Grub]
+		[RestrictedSpawnGroups:(NPC-ACS) The Super Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Voyager]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-864-S Baldrin]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[RestrictedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP]
+		[RestrictedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Imber/Reaver Border Conflict]
+		[ZoneLeaveAnnounce:Leaving Imber/Reaver Border Conflict]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-400000 Y:225000 Z:425000}]
+        [Radius:150000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberAssert-ConflictZoneA -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberAssert-ConflictZoneA</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-13
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Assert-ConflictZoneA]
+
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Rammer]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters3]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters6]
+
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		
+		[UseZoneAnnounce:true]
+		[ZoneEnterAnnounce:Entering Imber/Assert Border Conflict]
+		[ZoneLeaveAnnounce:Leaving Imber/Assert Border Conflict]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-412500 Y:-375000 Z:450000}]
+        [Radius:150000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberAssert-ConflictZoneB -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberAssert-ConflictZoneB</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-13
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Assert-ConflictZoneB]
+		
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-AquilaStrikeCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ArciosTorpedoCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-EgonTorpedoFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter Rammer]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighter]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters3]
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision-Random-Fighters6]
+
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space-L]
+		
+		[ZoneEnterAnnounce:Entering Imber/Assert Border Conflict]
+		[ZoneLeaveAnnounce:Leaving Imber/Assert Border Conflict]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:0 Y:-550000 Z:50000}]
+        [Radius:150000]
+      </Description>
+    </EntityComponent>
+	
+<!-- 
+	Resource Roids
+-->
+	
+	<!-- 
+		Assert Roids 
+	-->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertMgPlusRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertMgPlusRoid</SubtypeId>
+      </Id>
+		<!-- TODO:: add Imber "Raiding" Spawns -->
+		<!-- TODO:: add extra ACS patrol spawns -->
+		<!-- TODO: special spawns with MG loot for 
+					(NPC-ACS) Automated Division Star Eater
+					(NPC-ACS) Automated Division Heavy Transport
+					(NPC-ACS) Automated Division Light Transport
+		-->
+		<!--
+			TEST:: 2024-07-13
+		-->
+      <Description>
+
+        [MES Zone]
+
+        [PublicName:Assert Mg Roid]
+		
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Magnesium]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:400000 Y:-75000 Z:-250000}]
+        [Radius:27000]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertFePlusPlusRoidA -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertFePlusPlusRoidA</SubtypeId>
+      </Id>
+		<!-- TODO:: add Imber "Raiding" Spawns  "Raiding Party"  In progress. -->
+		<!-- TODO:: add extra ACS patrol spawns -->
+		<!-- TODO: special spawns with FE loot for 
+					(NPC-ACS) Automated Division Star Eater
+					(NPC-ACS) Automated Division Heavy Transport
+					(NPC-ACS) Automated Division Light Transport
+		-->
+		<!--
+			TEST:: 2024-07-15
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert Fe Roid A]
+		
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Magnesium]]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+				
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:400000 Y:-400000 Z:-325000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertFePlusPlusRoidB -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertFePlusPlusRoidB</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-15
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert Fe Roid B]
+
+		[UseAllowedSpawnGroups:true]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Magnesium]]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:875000 Y:-350000 Z:-450000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertCoPlusRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertCoPlusRoid</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-15
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert Co Roid]
+
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		[RestrictedSpawnGroups:(NPC-ACS) Raupe-Magnesium]]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-M]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-M]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-M]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		
+		[RestrictedSpawnGroups:(NPC-ACS) Deep Space Cryo Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Energy Transporter-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Pathfinder-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Quasi Modo Mk1-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Red Wrangler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) SCH Moondancer MKI-H]
+		[RestrictedSpawnGroups:(NPC-ACS) Telesto Gas Hauler-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Guppy-H]
+		[RestrictedSpawnGroups:(NPC-ACS) The Hammerhead-H]
+		[RestrictedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:362500 Y:-425000 Z:-275000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+	<!-- 
+		Imber Roids 
+	-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberMgRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberMgRoid</SubtypeId>
+      </Id>
+		<!--
+			TEST:: 2024-07-15
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber Mg Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Magnesium]
+
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Platinum]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Gold]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Silver]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Nickel]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Iron]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-762500 Y:-112500 Z:750000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberFePlusRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberFePlusRoid</SubtypeId>
+      </Id>
+		<!-- TODO:: Add ACS rading parties -->
+		<!--
+			TEST:: 2024-07-15
+		-->
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber Fe Roid]
+		
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Iron]
+		
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Platinum]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Gold]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Silver]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Nickel]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Magnesium]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-175000 Y:-200000 Z:600000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberNiPlusRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberNiPlusRoid</SubtypeId>
+      </Id>
+ 		<!--
+			TEST:: 2024-07-15
+		-->
+     <Description>
+        [MES Zone]
+
+        [PublicName:Imber Ni Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Nickel]
+
+		[UseRestrictedSpawnGroups:true]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Platinum]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Gold]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Silver]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Iron]
+		[RestrictedSpawnGroups:(NPC-IBR) Buffalo-Magnesium]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-500000 Y:-125000 Z:537500}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+	<!-- 
+		Reaver Roids
+	-->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ReaverFePlusRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ReaverFePlusRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Reaver Fe Plus Roid]
+
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:150000 Y:312500 Z:-312500}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ReaverUrRoidA -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ReaverUrRoidA</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Reaver Ur Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-137500 Y:575000 Z:100000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ReaverUrRoidB -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ReaverUrRoidB</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Reaver Ur Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Berserker]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Impaler]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Invader-Space]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Slayer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Thrasher]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Medium-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-A]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-GroupEncounter-Hard-B]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Crimson]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Havelock]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Scourge]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Tormentor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Aggressor]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Butcher]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Carver]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Charger]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Cockroach]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Devourer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Interloper]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Mutilator]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-Piercer]
+		[AllowedSpawnGroups:Reaver-SpawnGroup-CrimsonTormentor]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-AnicetusHeavyFrigate]
+		[AllowedSpawnGroups:Imber-SpawnGroup-GalvusHeavyCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VitrusAssaultCorvette]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VycusAssaultCorvette]
+		
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:162500 Y:625000 Z:375000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+
+	<!--
+		 Roids Border Conflict Zones
+	-->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberReaverCoRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberReaverCoRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Reaver Co Roid]
+
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-425000 Y:-412500 Z:475000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-AssertReaverAgRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-AssertReaverAgRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Assert-Reaver Ag Roid]
+
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Silver]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:450000 Y:350000 Z:-362500}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberAssertCoRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberAssertCoRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Assert Co Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Cobalt]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Cobalt]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-375000 Y:-412500 Z:375000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-ImberAssertFeRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-ImberAssertFeRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:Imber-Assert Fe Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Iron]
+
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-M]
+		[AllowedSpawnGroups:(NPC-ACS) Angeruppy-H]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-M]
+		[AllowedSpawnGroups:(NPC-ACS) Cordoba-H]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-M]
+		[AllowedSpawnGroups:(NPC-ACS) Fuath-H]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-M]
+		[AllowedSpawnGroups:(NPC-ACS) JXS Valle Crucis-H]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-M]
+		[AllowedSpawnGroups:(NPC-ACS) Kogia-H]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-M]
+		[AllowedSpawnGroups:(NPC-ACS) Narwhal-H]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-M]
+		[AllowedSpawnGroups:(NPC-ACS) THI-842-S Prison Ship-H]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-M]
+		[AllowedSpawnGroups:(NPC-ACS) Thumberbird 1-H]
+
+		[AllowedSpawnGroups:(NPC-ACS) AssaultDivision Random Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Iron]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly]
+		[AllowedSpawnGroups:(NPC-ACS) Fruit Fly-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Mk2-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-G-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Baby Guppy-R-Hunter]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Locust Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly + Space Wasp Drones]
+		[AllowedSpawnGroups:(NPC-ACS) Firefly Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Space Wasp Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Monarch Drone Variants]
+		[AllowedSpawnGroups:(NPC-ACS) Locust Swarm]
+		[AllowedSpawnGroups:(NPC-ACS) Fite Brite and Escorts]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:362500 Y:-537500 Z:-27000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+
+	<!--
+		Roids Prime Conflict Zone
+	-->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-HeavyConflictAuRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-HeavyConflictAuRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:HeavyConflict Au Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Gold]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Gold]
+		
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-62500 Y:-76000 Z:1}]
+        [Radius:27000]
+      </Description>
+	</EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-HeavyConflictPtRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-HeavyConflictPtRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:HeavyConflict Pt Roid]
+		
+		[UseAllowedSpawnGroups:true]
+		
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Platinum]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Platinum]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:-50000 Y:62500 Z:76000}]
+        [Radius:27000]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">		<!-- PVT-Zone-HeavyConflictUrRoid -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Zone-HeavyConflictUrRoid</SubtypeId>
+      </Id>
+      <Description>
+        [MES Zone]
+
+        [PublicName:HeavyConflict Ur Roid]
+		
+		[UseAllowedSpawnGroups:true]
+
+		[AllowedSpawnGroups:(NPC-ACS) Pathfinder]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Star Eater]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Heavy Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Automated Division Light Transport]
+		[AllowedSpawnGroups:(NPC-ACS) Raupe-Uranium]
+		
+		[AllowedSpawnGroups:Imber-SpawnGroup-GravityNetMammon]
+		[AllowedSpawnGroups:Imber-SpawnGroup-Monarch]
+		[AllowedSpawnGroups:Imber-SpawnGroup-ProcessingShip]
+		[AllowedSpawnGroups:Imber-SpawnGroup-VariusUtilityShuttle]
+		[AllowedSpawnGroups:(NPC-IBR) Buffalo-Uranium]
+
+        [Active:true]
+        [Persistent:true]
+        [Strict:false]
+
+        [Coordinates:{X:62500 Y:62500 Z:-50000}]
+        [Radius:27000]
+     </Description>
+    </EntityComponent>
+	
+  </EntityComponents>
+</Definitions>

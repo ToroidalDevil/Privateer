@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+  
+<!-- Buffalo SpawnGroups START -->  
+  
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Platinum -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Platinum</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:true]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationGroups:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Platinum]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+						   
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Uranium -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Uranium</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Uranium]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Gold -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Gold</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Gold]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Silver -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Silver</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Silver]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Magnesium -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Magnesium</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Magnesium]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+      </Prefabs>
+    </SpawnGroup>
+	
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Cobalt -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Cobalt</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Cobalt]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone A">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+      </Prefabs>
+    </SpawnGroup>  
+	
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Nickel -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Nickel</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Nickel]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+      </Prefabs>
+    </SpawnGroup>
+		
+    <SpawnGroup> <!-- (NPC-IBR) Buffalo-Iron -->
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>(NPC-IBR) Buffalo-Iron</SubtypeId>
+      </Id>
+      <Description>
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionsProfiles:(NPC-IBR)SpawnCondition-Space-Buffalo]
+		
+        [FactionOverride:IMBER]
+        [ReplenishSystems:false]
+        [MaxGravity:0.4]
+        [UseFirstConditionsAsPersistent:true]
+		
+        [ManipulationProfiles:Imber-Manipulation-Group]
+        
+		[ManipulationProfiles:(NPC-IBR)SpawnManipulation-Space-Buffalo-Iron]
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+	  
+        <Prefab SubtypeId="(NPC-IBR) Buffalo">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>PVT-Imber-Behavior-CargoShip-4Escorts</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Hellion">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+
+        <Prefab SubtypeId="(NPC-IBR) Escort Drone">
+          <Position>
+            <X>0.0</X>
+            <Y>-150.0</Y>
+            <Z>150.0</Z>
+          </Position>
+          <Speed>12</Speed>
+          <Behaviour>Imber-Behavior-Escort</Behaviour>
+        </Prefab>
+		
+      </Prefabs>
+    </SpawnGroup>
+	
+<!-- Buffalo SpawnGroups END -->  
+  </SpawnGroups>
+</Definitions>

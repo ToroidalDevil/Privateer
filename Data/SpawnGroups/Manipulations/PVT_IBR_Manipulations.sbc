@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- IBR Buffalo Manipulations START -->	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Platinum -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Platinum</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Platinum]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Uranium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Uranium</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Uranium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Gold -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Gold</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Gold]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Silver -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Silver</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Silver]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Magnesium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Magnesium</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Magnesium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Cobalt -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Cobalt</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Cobalt]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Nickel -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Nickel</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Nickel]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnManipulation-Space-Buffalo-Iron -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnManipulation-Space-Buffalo-Iron</SubtypeId>
+      </Id>
+      <Description>
+		[MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[lootProfiles:PVT-IBR-Loot-DataPads]
+		[LootProfiles:PVT-IBR-Loot-Buffalo-Iron]
+      </Description>
+    </EntityComponent>
+	
+<!-- IBR Buffalo Manipulations END -->	
+
+  </EntityComponents>
+</Definitions>

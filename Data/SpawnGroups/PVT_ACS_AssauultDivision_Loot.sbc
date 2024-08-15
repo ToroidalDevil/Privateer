@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<EntityComponents>
+	<!-- NEW Loot Profiles START -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-DataPads -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-DataPads</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[Chance:50]
+				[MinBlocks:1]
+				[MaxBlocks:2]
+				
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitSeat]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/DBSmallBlockFighterCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/CockpitOpen]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/RoverCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitSmall]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitLarge]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockCockpitIndustrial]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/BuggyCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/SmallBlockStandingCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockStandingCockpit]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+				
+				[AddDatapads:true]
+				[DatapadFileSource:PVT-ACS-DataPadText.xml]
+				[DatapadCount:1]
+			</Description>
+		</EntityComponent>
+		
+		<!-- Raupe Profiles START -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Platinum -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Platinum</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Platinum]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Uranium -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Uranium</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Uranium]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Gold -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Gold</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Gold]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Silver -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Silver</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Silver]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Magnesium -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Magnesium</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Magnesium]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Cobalt -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Cobalt</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Cobalt]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-Loot-Raupe-Iron -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>PVT-ACS-Loot-Raupe-Iron</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+				
+				[MinBlocks:3]
+				[MaxBlocks:10]
+				
+				[ContainerTypes:PVTACS-ContainerTypes-Raupe-Iron]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLargeIndustrialContainer]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockSmallContainer]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		<!-- Raupe Profiles END -->
+		
+	<!-- NEW Loot Profiles END -->
+
+		
+	<!-- Re-define existing ACS lootGroups to include location information -->
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-LootGroupSpace -->
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>ACS-LootGroupSpace</SubtypeId> 
+			</Id>
+			<Description>
+				[MES Loot Group]
+				
+				[LootProfiles:(NPC-ACS)-ArmoryLootInv]
+				[LootProfiles:(NPC-ACS)-CockpitLootInv]
+				[LootProfiles:(NPC-ACS)-GenericLootInv]
+				[LootProfiles:(NPC-ACS)-LockerLootInv]
+				[LootProfiles:(NPC-ACS)-ThrusterLootSpaceInv]
+				[LootProfiles:PVT-ACS-Loot-DataPads]
+			</Description>
+		</EntityComponent>
+	<!-- Redefine END -->
+	
+<!--
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">  (NPC-ACS)-ArmoryLootInv 
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>(NPC-ACS)-ArmoryLootInv</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+
+				[MinBlocks:0]
+				[MaxBlocks:8]
+				
+				[MatchBlocksContainingName:true]
+				[MatchedName:6D-ACS]
+				
+				[ContainerTypes:(NPC-ACS)-ArmoryLoot]
+				
+				[AddDatapads:true]
+				[DatapadFileSource:PVT-ACS-DataPadText.xml]
+				[DatapadCount:1]
+				
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLockerRoom]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLockerRoomCorner]
+				[ContainerBlockTypes:MyObjectBuilder_CargoContainer/LargeBlockLockerWeaponRack]
+		
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+		
+		<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+			<Id>
+				<TypeId>Inventory</TypeId>
+				<SubtypeId>(NPC-ACS)-CockpitLootInv</SubtypeId>
+			</Id>
+			<Description>
+				[MES Loot]
+
+				[MinBlocks:0]
+				[MaxBlocks:5]
+				
+				[MatchBlocksContainingName:true]
+				[MatchedName:9K-ACS]
+				
+				[ContainerTypes:(NPC-ACS)-CockpitLoot]
+				
+				[AddDatapads:true]
+				[DatapadFileSource:PVT-ACS-DataPadText.xml]
+				[DatapadCount:1]
+				
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/OpenCockpitLarge]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/PassengerSeatLarge]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpit]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/CockpitOpen]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitSeat]
+				[ContainerBlockTypes:MyObjectBuilder_Cockpit/LargeBlockCockpitIndustrial]
+				
+				[AppendNameToBlock:true]
+				[AppendedName: (Loot)]
+			</Description>
+		</EntityComponent>
+-->	
+	</EntityComponents>
+</Definitions>

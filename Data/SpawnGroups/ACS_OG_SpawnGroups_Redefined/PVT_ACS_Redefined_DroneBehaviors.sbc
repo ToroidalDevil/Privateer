@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- Small drone behaviors Start -->  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneSmall-Behavior-100K -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneSmall-Behavior-100K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneSmall-Behavior-200K -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneSmall-Behavior-200K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-200K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneSmall-Behavior-300K -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneSmall-Behavior-300K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-300K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneSmall-Behavior-400K -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneSmall-Behavior-400K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-400K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneSmall-Behavior-600K -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneSmall-Behavior-600K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
+      </Description>
+    </EntityComponent>
+<!-- Small drone behaviors End -->  
+	
+	
+     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-DroneBig-Behavior -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-DroneBig-Behavior</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:ACS-SmallDrone-Autopilot]
+        
+        [FighterEngageDistancePlanet:400]
+        [FighterDisengageDistancePlanet:1000]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneBigDeath-Trigger]
+        [Triggers:ACS-DroneSmallRetreat-Trigger]
+        [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+      
+    </EntityComponent>
+	
+  </EntityComponents>
+</Definitions>

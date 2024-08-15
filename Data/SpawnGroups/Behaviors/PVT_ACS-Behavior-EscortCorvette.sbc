@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+
+<!-- PVT_ACS-Behavior-EscortCorvette-Mining START -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Behavior-EscortCorvette-Mining -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Behavior-EscortCorvette-Mining</SubtypeId>
+      </Id>
+	  
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:PVT_ACS-Targeting-EscortCorvette]
+		
+        [AutopilotData:PVT_ACS-EscortCorvette-Autopilot-Untriggered]
+		[SecondaryAutopilotData:PVT_ACS-EscortCorvette-Autopilot-Triggered]
+		
+		[Triggers:PVTACS-Trigger-RequestEscortSlot]
+		
+		[Triggers:PVTACS-Trigger-AggressionSwitchEscort]
+		[Triggers:PVTACS-Trigger-PassiveSwitchEscort]
+		
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+      </Description>
+    </EntityComponent>
+<!--
+        [Triggers:Imber-Trigger-RequestEscortSlot]
+		
+        [Triggers:Imber-Trigger-ReaverPresenceNoChat]
+        [Triggers:Imber-Trigger-ReaverPresenceClear]
+-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Behavior-EscortCorvette-Mining -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Behavior-EscortCorvette-Mining-Brawler</SubtypeId>
+      </Id>
+	  
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:PVT_ACS-Targeting-EscortCorvette]
+		
+        [AutopilotData:PVT_ACS-EscortCorvette-Autopilot-Untriggered]
+		[SecondaryAutopilotData:PVT_ACS-EscortCorvette-Autopilot-Triggered-Brawler]
+		
+		[Triggers:PVTACS-Trigger-RequestEscortSlot]
+		
+		[Triggers:PVTACS-Trigger-AggressionSwitchEscort]
+		[Triggers:PVTACS-Trigger-PassiveSwitchEscort]
+		
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-Targeting-EscortCorvette -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT_ACS-Targeting-EscortCorvette</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:2000]
+        [MaxExistingTargetDistance:4000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-EscortCorvette-Autopilot-Untriggered -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT_ACS-EscortCorvette-Autopilot-Untriggered</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:true]
+        [FlyLevelWithGravity:false]
+        [MinimumPlanetAltitude:75]
+        [IdealPlanetAltitude:150]
+        [WaypointTolerance:5]
+        [UseVelocityCollisionEvasion:true]
+        [WaypointWaitTimeTrigger:20]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.75]
+
+        [EscortSpeedMatchMinDistance:5]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-EscortCorvette-Autopilot-Triggered -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT_ACS-EscortCorvette-Autopilot-Triggered</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1.5]
+
+        [OffsetSpaceMinDistFromTarget:700]
+        [OffsetSpaceMaxDistFromTarget:1300]
+
+        [OffsetPlanetMinDistFromTarget:200]
+        [OffsetPlanetMaxDistFromTarget:450]
+        [OffsetPlanetMinTargetAltitude:1200]
+        [OffsetPlanetMaxTargetAltitude:1500]
+        [ReverseOffsetDistAltAboveHeight:true]
+
+        [AngleAllowedForForwardThrust:75]
+      </Description>
+    </EntityComponent>
+	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-EscortCorvette-Autopilot-Triggered-Brawler -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-EscortCorvette-Autopilot-Triggered-Brawler</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:1.5]
+
+        [OffsetSpaceMinDistFromTarget:450]
+        [OffsetSpaceMaxDistFromTarget:750]
+
+        [OffsetPlanetMinDistFromTarget:200]
+        [OffsetPlanetMaxDistFromTarget:450]
+        [OffsetPlanetMinTargetAltitude:1200]
+        [OffsetPlanetMaxTargetAltitude:1500]
+        [ReverseOffsetDistAltAboveHeight:true]
+
+        [AngleAllowedForForwardThrust:75]
+      </Description>
+    </EntityComponent>
+<!-- PVT_ACS-Behavior-EscortCorvette-Mining END -->
+
+  </EntityComponents>
+</Definitions>

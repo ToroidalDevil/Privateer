@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<TextTemplate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <DataPadEntries>
+  
+	<!-- Assert Space ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>ACS</DataPadTitle>
+      <DataPadBody>
+	  MG:{X:400000 Y:-75000 Z:-250000}
+	  FE:{X:400000 Y:-400000 Z:-325000}
+	  FE:{X:875000 Y:-350000 Z:-450000}
+	  CO:{X:362500 Y:-425000 Z:-275000}
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- Imber Space ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>IBR</DataPadTitle>
+      <DataPadBody>
+	  MG:{X:-762500 Y:-112500 Z:750000}
+	  FE:{X:-175000 Y:-200000 Z:600000}
+	  NI:{X:-500000 Y:-125000 Z:537500}
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- Reaver Space ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>RVR</DataPadTitle>
+	  FE:{X:150000 Y:312500 Z:-312500}
+	  UR:{X:-137500 Y:575000 Z:100000}
+	  UR{X:162500 Y:625000 Z:375000}
+      <DataPadBody>
+	  
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- Contested ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>AIR</DataPadTitle>
+      <DataPadBody>
+	  CO:{X:-425000 Y:-412500 Z:475000}
+	  CO{X:-375000 Y:-412500 Z:375000}
+	  AG:{X:450000 Y:350000 Z:-362500}
+	  FE:{X:362500 Y:-537500 Z:-27000}
+	  AU:{X:-62500 Y:-76000 Z:1}
+	  PT:{X:-50000 Y:62500 Z:76000}
+	  UR:{X:62500 Y:62500 Z:-50000}
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- Imber/Assert ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>I*A</DataPadTitle>
+      <DataPadBody>
+	  CO:{X:-375000 Y:-412500 Z:375000}
+	  FE:{X:362500 Y:-537500 Z:-27000}
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- Assert/Reaver ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>A*R</DataPadTitle>
+      <DataPadBody>
+	  AG:{X:450000 Y:350000 Z:-362500}
+      </DataPadBody>
+    </DataPadEntry>
+
+	<!-- Imber/Reaver ROIDS -->
+    <DataPadEntry> 
+      <DataPadTitle>I*R</DataPadTitle>
+      <DataPadBody>
+	  CO:{X:-425000 Y:-412500 Z:475000}
+      </DataPadBody>
+    </DataPadEntry>
+
+	<!-- All ROIDS 1 -->
+    <DataPadEntry> 
+      <DataPadTitle>*#$</DataPadTitle>
+      <DataPadBody>
+	  MG:{X:400000 Y:-75000 Z:-250000}
+	  FE:{X:400000 Y:-400000 Z:-325000}
+	  FE:{X:875000 Y:-350000 Z:-450000}
+	  CO:{X:362500 Y:-425000 Z:-275000}
+	  
+	  CO:{X:-425000 Y:-412500 Z:475000}
+	  CO{X:-375000 Y:-412500 Z:375000}
+	  AG:{X:450000 Y:350000 Z:-362500}
+	  FE:{X:362500 Y:-537500 Z:-27000}
+	  AU:{X:-62500 Y:-76000 Z:1}
+	  PT:{X:-50000 Y:62500 Z:76000}
+	  UR:{X:62500 Y:62500 Z:-50000}
+      </DataPadBody>
+    </DataPadEntry>
+
+	<!-- All ROIDS 2 -->
+    <DataPadEntry> 
+      <DataPadTitle>*#$</DataPadTitle>
+      <DataPadBody>
+	  MG:{X:400000 Y:-75000 Z:-250000}
+	  FE:{X:400000 Y:-400000 Z:-325000}
+	  FE:{X:875000 Y:-350000 Z:-450000}
+	  CO:{X:362500 Y:-425000 Z:-275000}
+	  
+	  CO:{X:-425000 Y:-412500 Z:475000}
+	  CO{X:-375000 Y:-412500 Z:375000}
+	  AG:{X:450000 Y:350000 Z:-362500}
+	  FE:{X:362500 Y:-537500 Z:-27000}
+	  AU:{X:-62500 Y:-76000 Z:1}
+	  PT:{X:-50000 Y:62500 Z:76000}
+	  UR:{X:62500 Y:62500 Z:-50000}
+      </DataPadBody>
+    </DataPadEntry>
+	
+	<!-- All ROIDS 3 -->
+    <DataPadEntry> 
+      <DataPadTitle>*#$</DataPadTitle>
+      <DataPadBody>
+	  MG:{X:400000 Y:-75000 Z:-250000}
+	  FE:{X:400000 Y:-400000 Z:-325000}
+	  FE:{X:875000 Y:-350000 Z:-450000}
+	  CO:{X:362500 Y:-425000 Z:-275000}
+
+	  MG:{X:-762500 Y:-112500 Z:750000}
+	  FE:{X:-175000 Y:-200000 Z:600000}
+	  NI:{X:-500000 Y:-125000 Z:537500}
+	  
+	  FE:{X:150000 Y:312500 Z:-312500}
+	  UR:{X:-137500 Y:575000 Z:100000}
+	  UR{X:162500 Y:625000 Z:375000}
+	  
+	  CO:{X:-425000 Y:-412500 Z:475000}
+	  CO{X:-375000 Y:-412500 Z:375000}
+	  AG:{X:450000 Y:350000 Z:-362500}
+	  FE:{X:362500 Y:-537500 Z:-27000}
+	  AU:{X:-62500 Y:-76000 Z:1}
+	  PT:{X:-50000 Y:62500 Z:76000}
+	  UR:{X:62500 Y:62500 Z:-50000}
+      </DataPadBody>
+    </DataPadEntry>
+  </DataPadEntries>
+</TextTemplate>

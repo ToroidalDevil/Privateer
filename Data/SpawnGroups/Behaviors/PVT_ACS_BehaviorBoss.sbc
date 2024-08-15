@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>ACS-Behavior-Boss-Absolution</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:HorseFighter]
+
+        [AutopilotData:Imber-AutoPilot-Boss-A]
+        [SecondaryAutopilotData:Imber-AutoPilot-Boss-B]
+        [TargetData:Imber-Targeting-Boss]
+		
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+        [Triggers:ACS-Trigger-BossGreet-Absolution]
+
+      </Description>
+<!--
+		[TargetData:ACS-EscortDrone-Target]
+		
+        [TargetData:Imber-Targeting-Boss]
+        [Triggers:Imber-Trigger-BossAutopilotSwitchA]
+        [Triggers:Imber-Trigger-BossAutopilotSwitchB]
+-->
+    </EntityComponent>
+<!--
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Targeting-Boss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:15000]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [GetTargetBy:ClosestDistance]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-AutoPilot-Boss-A</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+        [FlyLevelWithGravity:true]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:18]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:500]
+        [IdealPlanetAltitude:600]
+
+        [WaypointTolerance:50]
+
+        [WaypointWaitTimeTrigger:8]
+
+        [AllowStrafing:true]
+        [StrafeMaxDurationMs:3000]
+        [StrafeSpeedCutOff:20]
+
+        [OffsetSpaceMinDistFromTarget:300]
+        [OffsetSpaceMaxDistFromTarget:600]
+        [OffsetPlanetMinDistFromTarget:300]
+        [OffsetPlanetMaxDistFromTarget:600]
+        [OffsetPlanetMinTargetAltitude:500]
+        [OffsetPlanetMaxTargetAltitude:600]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.4]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-AutoPilot-Boss-B</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:250]
+        [FlyLevelWithGravity:false]
+        [ForceDampenersEnabled:true]
+
+        [IdealMinSpeed:18]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:500]
+        [IdealPlanetAltitude:600]
+
+        [WaypointTolerance:50]
+
+        [WaypointWaitTimeTrigger:8]
+
+        [AllowStrafing:true]
+        [StrafeMaxDurationMs:3000]
+        [StrafeSpeedCutOff:20]
+
+        [OffsetSpaceMinDistFromTarget:300]
+        [OffsetSpaceMaxDistFromTarget:600]
+        [OffsetPlanetMinDistFromTarget:300]
+        [OffsetPlanetMaxDistFromTarget:600]
+        [OffsetPlanetMinTargetAltitude:500]
+        [OffsetPlanetMaxTargetAltitude:600]
+
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.6]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Trigger-BossAutopilotSwitchA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerC]
+
+        [MinCooldownMs:0]
+        [MaxCooldownMs:1]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:Imber-Action-BossAutopilotSwitchA]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-BossAutopilotSwitchA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Secondary]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Trigger-BossAutopilotSwitchB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerA]
+
+        [MinCooldownMs:0]
+        [MaxCooldownMs:1]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:Imber-Action-BossAutopilotSwitchB]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Imber-Action-BossAutopilotSwitchB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+
+      </Description>
+
+    </EntityComponent>
+-->
+  </EntityComponents>
+</Definitions>

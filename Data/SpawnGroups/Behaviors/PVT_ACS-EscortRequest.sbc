@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- Parent ship Trigger  START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:3000]
+        [MaxCooldownMs:3001]
+        [StartsReady:false]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-Action-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:PVTACS-Command-RequestEscortSlot]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-Trigger-RequestEscortSlot]
+		
+        [DebugMessage:Requesting Escort]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Command-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:PVT-ACS-ComCode-EscortRequest]
+        [MatchSenderReceiverOwners:true]
+        [RequestEscortSlot:true]
+      </Description>
+    </EntityComponent>
+<!-- Parent ship Trigger  END -->
+
+
+<!-- Escort ship Trigger  START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-ProcessEscortRequest</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:PVT-ACS-ComCode-EscortRequest]
+
+        [StartsReady:true]
+        [MinCooldownMs:0]
+        [MaxCooldownMs:0]
+		
+        [MaxActions:-1]
+        [Actions:PVTACS-Action-ProcessEscortRequest]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-ProcessEscortRequest</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AssignEscortFromCommand:true]
+        [DebugMessage:Assigning Escort From Received Command]
+      </Description>
+    </EntityComponent>
+<!-- Escort ship Trigegr  END -->
+    
+  </EntityComponents>
+</Definitions>

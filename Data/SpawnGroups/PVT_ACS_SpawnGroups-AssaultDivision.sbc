@@ -1,0 +1,1435 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+<!-- ALWAYS SPAWN START -->
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Random Hunter -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Random Hunter</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always-Random]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<!-- Adrasta hunter Variants Start -->
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-LongRange</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-LongRange-NoRgRammer</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-LongRange-NoRgRetreat</Behaviour>
+				</Prefab>
+				<!-- Adrasta hunter Variants End -->
+
+				<!-- Auburn Hunter Variants Start -->
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-AssaultDivision-Hunter-ShortRange</Behaviour>
+				</Prefab>
+				<!-- Auburn Hunter Variants Start -->
+
+				<!-- Thresher Hunter Variants Start -->
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgOrArtilleryRetreat</Behaviour>
+				</Prefab>
+				<!-- Thresher Hunter Variants End -->
+				
+				<!-- Devotion Artillery Crusier variants Start -->
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoArtilleryRetreat</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgOrArtilleryRetreat</Behaviour>
+				</Prefab>
+				<!-- Devotion Artillery Crusier variants End -->
+				
+				<Prefab SubtypeId="(NPC-ACS) Pride and Predjudice">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ShortRange-150M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter Auburn -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter Auburn</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ShortRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter PrideAndPrejudice -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter PrideAndPrejudice</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Pride and Predjudice">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ShortRange-150M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter Devotion -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter Devotion</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter Thresher -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter Thresher</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter Adrasta -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter Adrasta</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-LongRange-NoRgRammer</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter Rammer -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter Rammer</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Rammer-Auburn</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ALWAYS SPAWN END -->
+
+
+<!-- ThreatScore 600+ START -->		
+	<!-- TODO: ensure proper zone spawning -->
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-600</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-TS-600]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Rammer-Auburn</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore 600+ END -->		
+
+
+<!-- ThreatScore 800+ START -->		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ShortRange</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>150.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-ShortRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore 800+ END -->		
+
+
+<!-- ThreatScore 1200+ START -->		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Firefly Drone Mk2">
+				  <Position>
+					<X>-150.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				  </Position>
+				  <Speed>18</Speed>
+				  <Behaviour>Imber-Behavior-Escort</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone Mk2">
+				  <Position>
+					<X>150.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				  </Position>
+				  <Speed>18</Speed>
+				  <Behaviour>Imber-Behavior-Escort</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore 1200+ END -->		
+
+
+<!-- ThreatScore 1800+ START -->		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				[ReplenishSystems:false]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore 1800+ END -->		
+
+
+<!-- ThreatScore 2400+ START -->
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Pride and Predjudice">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore 2400+ END -->
+
+
+<!-- Reputation START -->
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-FighterPatrol-3Ceries -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-FighterPatrol-3Ceries</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-FighterPatrol]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>25.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>-25.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-FighterPatrol-Croissant -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-FighterPatrol-Croissant</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-FighterPatrol]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-LongRange</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - E">
+					<Position>
+						<X>25.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-1M</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - E">
+					<Position>
+						<X>-25.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-1M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-FighterPatrol-Croissant-WHunterDrones -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-FighterPatrol-Croissant-WHunterDrones</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-FighterPatrol]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>2</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-LongRange-WaitForContact</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - E">
+					<Position>
+						<X>40.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>2</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-WaitForContact-1M</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - E">
+					<Position>
+						<X>-40.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>2</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-WaitForContact-1M</Behaviour>
+				</Prefab>
+
+				<Prefab SubtypeId="(NPC-ACS) Space Wasp Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>100.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-EstablishContact-100K</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Locust Drone">
+					<Position>
+						<X>100.0</X>
+						<Y>100.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-EstablishContact-100K</Behaviour>
+				</Prefab>
+				
+				<Prefab SubtypeId="(NPC-ACS) Fruit Fly">
+					<Position>
+						<X>-100.0</X>
+						<Y>-100.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-EstablishContact-100K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-Random-Fighter -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-Random-Fighter</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-Random-Fighters3 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-Random-Fighters3</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random3]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision-Random-Fighters6 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision-Random-Fighters6</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[UsePlayerFactionReputation:true]
+				[MaximumReputation:-1250]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random3]
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-DroneSmallHunter-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- Reputation END -->
+
+
+<!-- ThreatScore + Reputation START -->
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision HunterRammerAuburn-TS-800WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-Rammer</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Adrasta-TS-1200WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Adrasta-WEscorts-TS-1200WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Firefly Drone Mk2">
+				  <Position>
+					<X>-150.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				  </Position>
+				  <Speed>18</Speed>
+				  <Behaviour>Imber-Behavior-Escort</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone Mk2">
+				  <Position>
+					<X>150.0</X>
+					<Y>0.0</Y>
+					<Z>0.0</Z>
+				  </Position>
+				  <Speed>18</Speed>
+				  <Behaviour>Imber-Behavior-Escort</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Devotion-TS-1800WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Thresher-TS-1800WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Hunter-Pridepredjudice-TS-2400WREP</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400WREP
+				[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-AssaultDivision]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Pride and Predjudice">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>(NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- ThreatScore + Reputation END -->
+
+<!-- Drones and Fighters Start -->
+		<SpawnGroup>															<!-- (NPC-ACS) 'Combat Croissant' Heavy Fighter - M -->						
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) 'Combat Croissant' Heavy Fighter - M</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-RivalAI-Only]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[FactionOverride:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Fighter-ExtremeRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) 'Combat Croissant' Heavy Fighter - AC -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-RivalAI-Only]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[FactionOverride:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Fighter-LongRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) 'Combat Croissant' Heavy Fighter - O -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) 'Combat Croissant' Heavy Fighter - O</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-RivalAI-Only]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[FactionOverride:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Fighter-ShortRange-1M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) 'Combat Croissant' Heavy Fighter - E -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) 'Combat Croissant' Heavy Fighter - E</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-RivalAI-Only]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[FactionOverride:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - E">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Fighter-ShortRange-1M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															<!-- (NPC-ACS) Ceres-Class Escort Fighter -->																
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) Ceres-Class Escort Fighter</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-RivalAI-Only]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-FighterDroneEnhancement]
+				
+				[FactionOwner:ASSERT]
+				[FactionOverride:ASSERT]
+				[ReplenishSystems:true]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Fighter-ShortRange</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- Drones and Fighters End -->
+  </SpawnGroups>
+</Definitions>

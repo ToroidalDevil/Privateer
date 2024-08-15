@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-IBR)SpawnCondition-Space-Buffalo -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-IBR)SpawnCondition-Space-Buffalo</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:IMBER]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

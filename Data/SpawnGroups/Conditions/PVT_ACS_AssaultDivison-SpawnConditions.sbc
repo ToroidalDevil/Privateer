@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+<!-- Spawn Conditions Raupe START -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+<!-- Spawn Conditions Raupe END -->
+
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-All -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-All</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+
+<!-- Random Spawn Groups START -->  
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-Random -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-Random3 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random3</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:RandomFixedCount]
+		[PrefabFixedCount:3]
+		[PrefabOffsetOverrides:{X:0 Y:0 Z:0}]
+		[PrefabOffsetOverrides:{X:50 Y:0 Z:-10}]
+		[PrefabOffsetOverrides:{X:-50 Y:0 Z:-10}]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-Random6 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-Random6</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:RandomFixedCount]
+		[PrefabFixedCount:6]
+		[PrefabOffsetOverrides:{X:0 Y:0 Z:0}]
+		[PrefabOffsetOverrides:{X:50 Y:0 Z:-10}]
+		[PrefabOffsetOverrides:{X:-50 Y:0 Z:-10}]
+		[PrefabOffsetOverrides:{X:-50 Y:50 Z:-10}]
+		[PrefabOffsetOverrides:{X:-50 Y:-50 Z:-10}]
+		[PrefabOffsetOverrides:{X:-50 Y:0 Z:0}]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+<!-- Random Spawn Groups END -->  
+
+	
+<!-- Spawn Conditions AssualtDivision By Threat Score START -->	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-400 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-400</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:400]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-TS-600 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-TS-600</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:600]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:800]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1000 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1000</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:1000]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:1200]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800 -->
+	
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:1800]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400 -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:2400]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+
+<!-- Spawn Conditions AssualtDivision By Threat Score END -->	
+
+
+<!-- Spawn Conditions Threat Score AND Reputation START -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800WREP -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-800WREP</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UsePlayerFactionReputation:true]
+		[MaximumReputation:-1250]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:800]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200WREP -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1200WREP</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UsePlayerFactionReputation:true]
+		[MaximumReputation:-1250]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:1200]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800WREP -->
+	
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-1800WREP</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UsePlayerFactionReputation:true]
+		[MaximumReputation:-1250]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:1800]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400WREP -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnCondition-Space-AssaultDivision-TS-2400WREP</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		[IgnoreCombatPhase:true]
+		
+		[UsePlayerFactionReputation:true]
+		[MaximumReputation:-1250]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatScoreMinimum:2400]
+		[ThreatIncludeOtherNpcOwners:false]
+		[ThreatLevelCheckRange:10000]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+
+<!-- Spawn Conditions Threat Score AND Reputation END -->
+  </EntityComponents>
+</Definitions>

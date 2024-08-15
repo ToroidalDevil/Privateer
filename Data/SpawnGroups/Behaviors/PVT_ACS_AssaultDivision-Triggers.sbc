@@ -1,0 +1,718 @@
+<?xml version="1.0"?>
+
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+<!-- Assault Division SupportCall START -->
+<!-- OG
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-TargetDetected-SupportCall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:AcquiredTarget]
+		
+	    [StartsReady:true]
+	    [MinCooldownMs:90000]
+	    [MaxCooldownMs:500000]
+		
+	    [ActionExecution:Random]
+	    [Actions:PVTACS-Action-TargetDetected-ADSupportCall]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+	  <Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PVTACS-AD-Action-TargetDetected-SupportCall</SubtypeId>
+	  </Id>
+	  <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-Chat-TargetDetected]
+
+		[SpawnEncounter:true]
+		[Spawner:ACS-ShipSpawnerDrone-IonHard]	  
+		[Spawner:ACS-ShipSpawnerDrone-IonMed]	 	 
+
+		[EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-SupportCall-Reply]
+		
+	    [ResetCooldownTimeOfTriggers:true]
+	    [ResetTriggerCooldownNames:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Chat-TargetDetected</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		
+        [Author:ACS Commander]
+        [Color:Red]
+
+        [ChatMessages:Target detected, requesting attack drones.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Enemy identified. Send in the drones, we are engaging.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Alpha Nine requesting drone support, engaging hostiles.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+		[ChatMessages:Hello, my name is Inigo Montoya. You killed my father. Prepare to die.]
+        [ChatAudio:ArcHudGPSNotification1]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+-->	
+<!-- Assault Division SupportCall END -->
+
+
+<!-- Assault Division Reinforcements Call START -->
+
+<!-- TODO::finish
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-SendReinforcements</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:AcquiredTarget]
+		
+	    [StartsReady:false]
+	    [MinCooldownMs:120000]
+	    [MaxCooldownMs:500000]
+		
+	    [ActionExecution:Random]
+	    [Actions:PVTACS-AD-Action-SendReinforcements-Easy]
+	    [Actions:PVTACS-AD-Action-SendReinforcements-Medium]
+	    [Actions:PVTACS-AD-Action-SendReinforcements-Hard]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 
+	  <Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PVTACS-AD-Action-SendReinforcements-Easy</SubtypeId>
+	  </Id>
+	  <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:]
+
+		[SpawnEncounter:true]
+		[Spawner:ACS-ShipSpawnerDrone-IonHard]	  
+		[Spawner:ACS-ShipSpawnerDrone-IonMed]	 	 
+
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-SendReinforcements]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 
+	  <Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PVTACS-AD-Action-SendReinforcements-Medium</SubtypeId>
+	  </Id>
+	  <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:]
+
+		[SpawnEncounter:true]
+		[Spawner:]	  
+		[Spawner:]	 	 
+
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-SendReinforcements]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 
+	  <Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PVTACS-AD-Action-SendReinforcements-Hard</SubtypeId>
+	  </Id>
+	  <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:]
+
+		[SpawnEncounter:true]
+		[Spawner:]	  
+		[Spawner:]	 	 
+
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-SendReinforcements]
+      </Description>
+    </EntityComponent>
+-->	
+<!-- Assault Division Reinforcements Call END -->
+
+
+<!-- Assault Division Warning START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-Warning -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Trigger-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:PlayerNear]
+		
+	    [TargetDistance:7000]
+	    [StartsReady:true]
+		
+	    [ActionExecution:Random]
+		[Actions:ACS-AssaultDivision-Action-Warning]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Action-Warning-->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Action-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:ACS-AssaultDivision-Chat-Warning]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:ACS-AssaultDivision-Trigger-Warning]
+      </Description>
+    </EntityComponent>
+<!-- Assault Division Warning END -->	
+
+	
+<!-- Assault Division Announce START -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Trigger-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:PlayerNear]
+		
+	    [TargetDistance:10000]
+	    [StartsReady:true]
+		
+	    [ActionExecution:Random]
+		[Actions:ACS-AssaultDivision-Action-Announce]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Action-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Action-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:ACS-AssaultDivision-Chat-Announce]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:ACS-AssaultDivision-Trigger-Announce]
+      </Description>
+    </EntityComponent>
+<!-- Assault Division Announce END -->	
+
+	
+<!-- Assault Division Chats START -->	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Chat-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Chat-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+		[ChatMessages:This area is considered off-limits to non-ASSERT vessels.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:This is restricted ASSERT Space. Intruders will be destroyed.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:ASSERT claims this sector of space. Non-Assert vessels must leave.]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Chat-Warning -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>ACS-AssaultDivision-Chat-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+		[ChatMessages:This area is off limits. Leave while you can.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:Non-ASSERT vessels in the area will be destroyed.]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Chat-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>ACS-AssaultDivision-Chat-Ramming</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+        [ChatMessages: Time to meet your maker infidel!]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages: You can't get old if you doe young!]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages: Ramming Speed!]
+        [BroadcastChatType:Chat]
+      </Description>
+	  <!--
+		-->
+    </EntityComponent>
+<!-- Assault Division Chats END -->	
+
+
+  
+
+<!-- Assault Division RandomRamming START -->  
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-RandomRamming -->
+  	  <Id>
+		<TypeId>Inventory</TypeId>
+		<SubtypeId>ACS-AssaultDivision-Trigger-RandomRamming</SubtypeId>
+	  </Id>
+ 	  <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:TargetNear]
+		[TargetDistance:600]
+		[MinCooldownMs:60000]
+		[MaxCooldownMs:120000]
+		[StartsReady:true]
+
+		[MaxActions:-1]
+		[Actions:ACS-AssaultDivision-Action-RandomRamming]
+	  </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Action-RandomRamming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>ACS-AssaultDivision-Action-RandomRamming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:8]
+        [Ramming:true]
+      </Description>
+	  <!--
+        [UseChatBroadcast:true]
+        [ChatData:Reaver-Chat-Ramming]
+	  -->
+    </EntityComponent>
+<!-- Assault Division RandomRamming END -->  
+
+
+<!-- Assault Division Ramming  START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>ACS-AssaultDivision-Trigger-Ramming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+		
+        [TargetDistance:600]
+        [MinCooldownMs:75000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:ACS-AssaultDivision-Action-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoWeapons-Ramming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:NoWeapon]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:ACS-AssaultDivision-Action-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Action-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>ACS-AssaultDivision-Action-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Ramming:true]
+		
+        [UseChatBroadcast:true]
+        [ChatData:ACS-AssaultDivision-Chat-Ramming]
+      </Description>
+    </EntityComponent>
+<!-- Assault Division Ramming END -->
+
+
+<!-- Escorts 5k Warning START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Trigger-Escort-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-Escort-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:5000]
+
+        [StartsReady:true]
+        [MaxActions:1]
+		
+        [Actions:PVTACS-Action-Escort-5kWarning]
+      </Description>
+    </EntityComponent>
+    
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Action-Escort-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-Escort-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-Chat-Escort-5kWarning]
+      </Description>
+    </EntityComponent>
+    
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Chat-Escort-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Chat-Escort-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Escort Corvette]
+        [Color:Red]
+
+        [ChatMessages:You are too close to our flight path, turn around now.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Keep your distance, or you will be considered Hostile.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:If you're not the pizza guy, you're not welcome here.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- Escorts 5k Warning END -->
+
+<!-- Escorts Agression Switch START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Trigger-Escort-AggressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-Escort-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:3000]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+		
+        [Actions:PVTACS-Action-Escort-AggressionSwitch]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Action-Escort-AggressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-Escort-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-Chat-Escort-AggressionSwitch]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Strike]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Secondary]
+
+        [ChangeAutopilotSpeed:true]
+        [NewAutopilotSpeed:-1]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-Trigger-Escort-AggressionSwitch]
+		[DisableTriggerNames:PVTACS-Trigger-Escort-5kWarning]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:PVTACS-Trigger-Escort-PassiveSwitch]
+        [EnableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:PVTACS-Trigger-Escort-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Chat-AggressionSwitchEscort -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Chat-Escort-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Escort Corvette]
+        [Color:Red]
+
+        [ChatMessages:Hostile entity approaching. Strike mode activated.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Deviating from escort to intercept hostile entity.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages:Engaging hostile. This looks dangerous, save us some pizza.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]	
+      </Description>
+    </EntityComponent>
+<!-- Escorts Agression Switch END -->
+
+
+<!-- Escorts Passive Switch START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Trigger-PassiveSwitchEscort -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-Escort-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:ChangedTarget]
+
+        [TargetDistance:6000]
+        [MinCooldownMs:2000]
+        [MaxCooldownMs:2001]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+        [Actions:PVTACS-Action-Escort-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Action-Escort-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-Escort-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-Chat-Escort-PassiveSwitch]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Escort]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-Trigger-Escort-PassiveSwitch]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatCheck]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:PVTACS-Trigger-Escort-AggressionSwitch]
+		[EnableTriggerNames:PVTACS-Trigger-Escort-5kWarning]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Chat-Escort-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Chat-Escort-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Escort Corvette]
+        [Color:Red]
+
+        [ChatMessages:Returning to escort formation.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Disengaging from combat.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages:Hostiles have been driven off, returning to escort duties.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- Escorts Passive Switch END -->
+
+<!-- Trigger=>compromised remotecontrol. Action=>pay Bounty Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Trigger-RemoteCompromisedBounty -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-RemoteCompromisedBounty</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+        [MaxActions:1]
+        [Actions:PVTACS-Action-RemoteCompromisedBounty]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Trigger-GridDamagedBountyIDAssignment -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Trigger-GridDamagedBountyIDAssignment</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Action-RemoteCompromisedBounty -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-Action-RemoteCompromisedBounty</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:250000]
+      </Description>
+    </EntityComponent>
+<!-- Trigger=>compromised remotecontrol. Action=>pay Bounty End -->
+
+	</EntityComponents>
+</Definitions>

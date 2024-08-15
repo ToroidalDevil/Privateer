@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<TextTemplate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <DataPadEntries>
+  
+	<!-- Assert Space POI's START -->
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-MgPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-FePlusPlusA -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-FePlusPlusB -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-CoPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-BossLocationA -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertSpace-BossLocationB -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+	<!-- Assert Space POI's END -->
+	
+	
+	<!-- Assert Conflict Space POI's START -->
+    <DataPadEntry> <!-- PVT-ACS-AssertReaver-Conflict -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertReaver-Conflict-AgPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertImber-Conflict-ZoneA-CoPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertImber-Conflict-ZoneB-FePlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-AssertImber-Uncontested-NiPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-Suspected-PlayerStartPosition -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+	<!-- Assert Conflict Space POI's END -->
+	
+	<!-- Assert PrimeConflict POIs START -->
+    <DataPadEntry> <!-- PVT-ACS-Assert-PrimeConflict-PtPLus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-PrimeConflict-AuPLus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-PrimeConflict-UrPLus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+	<!-- Assert PrimeConflict POIs END -->
+	
+	<!-- Assert Suspected Reaver Locations START -->
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedReaver-SpaceCenter -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedReaver-BossEncounter -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedReaver-UrPlusA -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedReaver-UrPlusB -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedReaver-FePlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+	<!-- Assert Suspected Reaver Locations END -->
+	
+	<!-- Assert Suspected Imber Locations START -->
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedImberReaverConflict-CoPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedImber-MgPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedImber-FePlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+    <DataPadEntry> <!-- PVT-ACS-Assert-SuspectedImber-NiPlus -->
+      <DataPadTitle>Assert TopSecret clearance ONLY R1</DataPadTitle>
+      <DataPadBody>
+        Type: Message Broadcast
+        From: Chief Security Officer Wingamdingam
+        To: Chief Of Mining Officer Bigamholeio
+        Subject: New Resource identifed.
+    
+        Message: 
+      </DataPadBody>
+    </DataPadEntry>
+	<!-- Assert Suspected Imber Locations END -->
+	
+  </DataPadEntries>
+ 
+</TextTemplate>

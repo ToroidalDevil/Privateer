@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+	
+<!-- 100K Bounties Start -->	
+		<SpawnGroup> <!-- (NPC-ACS) Firefly Drone -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Firefly Drone</SubtypeId>
+			</Id>
+			<Description>
+
+			[Modular Encounters SpawnGroup]
+			[SpaceCargoShip:false]
+			[LunarCargoShip:false]
+			[SpaceRandomEncounter:false]
+			[AtmosphericCargoShip:false]
+			[PlanetaryInstallation:false]
+			[RivalAiSpawn:true]
+			[FactionOwner:ASSERT]
+			[ReplenishSystems:false]
+
+			[UseBlockReplacerProfile:true]
+			[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+			[NpcIonThrustForceMultiply:3]
+			[NpcIonThrustPowerMultiply:0.2]
+			[ConfigureSpecialNpcThrusters:true]
+			[RestrictNpcIonThrust:false]
+			
+			[UseRivalAi:true]
+			[RivalAiReplaceRemoteControl:true]
+
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Firefly Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-100K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 100K Bounties End -->	
+
+	
+<!-- 200K Bounties Start -->		
+		<SpawnGroup>	<!-- (NPC-ACS) Firefly Drone Mk2 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Firefly Drone Mk2</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Firefly Drone Mk2">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>	<!-- (NPC-ACS) Fruit Fly -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Fruit Fly</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Fruit Fly">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>	<!-- (NPC-ACS) Locust Drone -->						
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Locust Drone</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Locust Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>	<!-- (NPC-ACS) Space Wasp Drone -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Space Wasp Drone</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Space Wasp Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 200K Bounties End-->		
+		
+		
+<!-- 300K Bounties Start -->		
+		<SpawnGroup>	<!-- (NPC-ACS) Space Wasp Drone Mk2 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Space Wasp Drone Mk2</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Space Wasp Drone Mk2">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>	<!-- (NPC-ACS) Locust Drone Mk2 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Locust Drone Mk2</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Locust Drone Mk2">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 300K Bounties End -->		
+		
+		
+<!-- 400K Bounties Start -->		
+		<SpawnGroup>	<!-- (NPC-ACS) Monarch Drone -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Monarch Drone</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+							
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-400K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 400K Bounties END -->	
+
+
+<!-- 600K Bounties Start -->		
+		<SpawnGroup>	<!-- (NPC-ACS) Monarch Drone Mk2 -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Monarch Drone Mk2</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone Mk2">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-600K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 600K Bounties END -->	
+
+<!-- 1M+ Bounties Start -->
+		<SpawnGroup>	<!-- (NPC-ACS) Fite Brite -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> <!--Do Not Edit-->
+				<SubtypeId>(NPC-ACS) Fite Brite</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Fite Brite">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneBig-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+<!-- 1M+ Bounties End -->
+
+	</SpawnGroups>
+</Definitions>

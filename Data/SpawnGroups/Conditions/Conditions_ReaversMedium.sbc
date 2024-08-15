@@ -1,0 +1,263 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-Easy-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:125]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:8]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:20]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:333]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-Medium-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:125]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:6]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:10]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:666]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-MediumGroup-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:125]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:1]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:20]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:666]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]
+        [PrefabOffsetOverrides:{X:100 Y:100 Z:100}]
+        [PrefabOffsetOverrides:{X:-100 Y:-100 Z:-100}]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-MediumHover-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:125]
+        [CargoShipTerrainPath:true]
+        [CustomPathStartAltitude:50]
+        [CustomPathEndAltitude:50]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:666]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-Hard-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:125]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:1]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:8]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:999]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-HardGroup-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:250]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:125]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:1]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:8]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:999]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:0]
+        [PrefabIndexGroupNames:First]
+        [PrefabIndexGroupValues:1]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:2]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:3]
+        [PrefabIndexGroupNames:Second]
+        [PrefabIndexGroupValues:4]
+        [PrefabOffsetOverrides:{X:200 Y:0 Z:200}]
+        [PrefabOffsetOverrides:{X:-200 Y:0 Z:-200}]
+
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Reaver-SpawnConditions-VeryHard-M</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [ChanceCeiling:275]
+
+        [SpaceCargoShip:true]
+        [SpaceCargoShipChance:135]
+
+        [AtmosphericCargoShip:true]
+        [AtmosphericCargoShipChance:1]
+        [SkipAirDensityCheck:true]
+
+        [GravityCargoShip:true]
+        [GravityCargoShipChance:8]
+
+        [FactionOwner:REAVER]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1500]
+        
+        [UseCombatPhase:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

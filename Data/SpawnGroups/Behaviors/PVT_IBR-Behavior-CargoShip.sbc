@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVT-Imber-Behavior-CargoShip-4Escorts</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:Imber-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:Imber-AutoPilot-CargoShip-B]
+        [TertiaryAutopilotData:Imber-AutoPilot-Boss-B]
+
+        [Triggers:Imber-Trigger-AggressionSwitch]
+        [Triggers:Imber-Trigger-PassiveSwitch]
+        [Triggers:Imber-Trigger-PassiveSwitchNoTarget]
+        [Triggers:Imber-Trigger-PathDeviation]
+        [Triggers:Imber-Trigger-ReturnToDespawn]
+        [Triggers:Imber-Trigger-ShipDamage]
+        [Triggers:Imber-Trigger-ReturnToSpeed]
+        [Triggers:Imber-Trigger-BotCrew]
+        [Triggers:Imber-Trigger-ProcessEscortRequest]
+        [Triggers:Imber-Trigger-StationAssistDirect]
+
+        [TriggerGroups:Imber-TriggerGroup-Interactions]
+
+        [EscortOffsets:{X:-150 Y:0 Z:150}]
+        [EscortOffsets:{X:150 Y:0 Z:150}]
+        [EscortOffsets:{X:0 Y:150 Z:150}]
+        [EscortOffsets:{X:0 Y:-150 Z:150}]
+
+        [TargetData:Imber-Targeting-CargoShip]
+        [OverrideTargetData:Imber-Targeting-CargoShip-Override]
+
+      </Description>
+
+    </EntityComponent>
+  </EntityComponents>
+</Definitions>

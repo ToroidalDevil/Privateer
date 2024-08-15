@@ -1,0 +1,3167 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+<!-- BEHAVIOR Hunter START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-Rammer-Auburn -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-Rammer-Auburn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-Secondary]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-NoArtillery]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+        [Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+		[Triggers:PVTACS-AD-Trigger-NoArtilleryCannons-GetInClose]
+		[Triggers:PVTACS-AD-Trigger-RamIfClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+        [Triggers:PVTACS-AD-Trigger-RandomRamming]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-ShortRange-150M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-ShortRange-150M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+        [Triggers:PVTACS-AD-Trigger-RandomRamming]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-150M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-LongRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-LongRange-NoRgRammer -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-LongRange-NoRgRammer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-LongRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		[Triggers:PVTACS-AD-Trigger-NoRailGuns-EnableRamming]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-65M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-LongRange-NoRgRetreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-LongRange-NoRgRetreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-LongRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGuns-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgRetreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ExtremeRange]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGuns-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-ExtremeRange-NoArtilleryRetreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoArtilleryRetreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ExtremeRange]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoArtilleryCannons-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgOrArtilleryRetreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-ExtremeRange-NoRgOrArtilleryRetreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ExtremeRange]
+
+        [TargetData:PVTACS-AD-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce]
+		[Triggers:PVTACS-AD-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100M]
+      </Description>
+    </EntityComponent>
+<!-- BEHAVIOR Hunter End -->
+
+
+<!-- BEHAVIOR Fighter START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Fighter-ExtremeRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-Fighter-ExtremeRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:PVTACS-AD-Autopilot-Fighter-ExtremeRange]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Fighter-LongRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-Fighter-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:PVTACS-AD-Autopilot-Fighter-LongRange]
+        [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Fighter-ShortRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-Fighter-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+		
+        [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Fighter-ShortRange-1M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-Fighter-ShortRange-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Fighter]
+        
+        [AutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+        [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+<!-- BEHAVIOR Fighter END -->
+
+
+<!-- BEHAVIOR PATROL Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-ExtremeRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-ExtremeRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ExtremeRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-LongRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-LongRange-WaitForContact -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-LongRange-WaitForContact</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-WaitForContact]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-LongRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-1M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-WaitForContact-1M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-WaitForContact-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-WaitForContact]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-EstablishContact-100K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Patrol-ForFighters-ShortRange-EstablishContact-100K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Patrol]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+
+        [TargetData:PVTACS-AD-Patrol-Targeting-ForFighters]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100K]
+		
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired]
+		[Triggers:PVTACS-AD-Trigger-PatrolForFighters-EstablishContact-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+<!-- BEHAVIOR PATROL End -->
+
+
+<!-- AUTOPILOT START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Primary -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Primary</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:true]
+        [WaypointTolerance:25]
+        [IdealMinSpeed:15]
+        [IdealMaxSpeed:30]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:150]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-Secondary -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-Secondary</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [EngageDistanceSpace:1600]
+	
+        [DisengageDistanceSpace:2000]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:4000]
+        [StrafeMaxDurationMs:6000]
+		
+		[RamMinDurationMs:45000]
+		[RamMaxDurationMs:75000]
+      </Description>	
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-NoArtillery -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-NoArtillery</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [EngageDistanceSpace:650]
+	
+        [DisengageDistanceSpace:800]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:4000]
+        [StrafeMaxDurationMs:6000]
+		
+		[RamMinDurationMs:45000]
+		[RamMaxDurationMs:75000]
+      </Description>	
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:500]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:750]
+
+        [EngageDistanceSpace:500]
+        [EngageDistancePlanet:500]
+		
+        [DisengageDistanceSpace:800]
+        [DisengageDistancePlanet:800]
+      </Description>	
+    </EntityComponent>
+    
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Secondary-LongRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Secondary-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:1100]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:1200]
+
+        [EngageDistanceSpace:1200]
+        [EngageDistancePlanet:1200]
+		
+        [DisengageDistanceSpace:2000]
+        [DisengageDistancePlanet:2000]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-Secondary-ExtremeRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-Secondary-ExtremeRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:20]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:1600]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:1900]
+
+        [EngageDistanceSpace:1600]
+        [EngageDistancePlanet:1600]
+		
+        [DisengageDistanceSpace:2000]
+        [DisengageDistancePlanet:2000]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:400]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:1200]
+
+        [EngageDistanceSpace:500]
+        [EngageDistancePlanet:500]
+		
+        [DisengageDistanceSpace:800]
+        [DisengageDistancePlanet:800]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Fighter-ExtremeRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Autopilot-Fighter-ExtremeRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+        [DisableInertiaDampeners:false]
+        
+        [EngageDistanceSpace:1000]
+		[DisengageDistanceSpace:1400]
+		
+		[UseVelocityCollisionEvasion:true]
+		[CollisionEvasionWaypointDistance:200]
+		[CollisionEvasionResumeDistance:20]
+		[CollisionEvasionResumeTime:4000]
+		
+		[OffsetSpaceMinDistFromTarget:900]
+		[WaypointTolerance:20]
+		
+		[UseProjectileLeadPrediction:true]
+		
+		[IdealMaxSpeed:100]
+		[MaxSpeedTolerance:5]
+		
+		[AllowStrafing:true]
+		[StrafeMinDurationMs:6000]
+		[StrafeMaxDurationMs:10000]
+		[StrafeMinCooldownMs:10000]
+		[StrafeMaxCooldownMs:20000]
+		[StrafeMinimumTargetDistance:800]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Fighter-LongRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Autopilot-Fighter-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+        [DisableInertiaDampeners:false]
+        
+        [EngageDistanceSpace:700]
+		[DisengageDistanceSpace:1000]
+		
+		[UseVelocityCollisionEvasion:true]
+		[CollisionEvasionWaypointDistance:200]
+		[CollisionEvasionResumeDistance:20]
+		[CollisionEvasionResumeTime:4000]
+		
+		[OffsetSpaceMinDistFromTarget:500]
+		[WaypointTolerance:20]
+		
+		[UseProjectileLeadPrediction:true]
+		
+		[IdealMaxSpeed:100]
+		[MaxSpeedTolerance:5]
+		
+		[AllowStrafing:true]
+		[StrafeMinDurationMs:6000]
+		[StrafeMaxDurationMs:10000]
+		[StrafeMinCooldownMs:10000]
+		[StrafeMaxCooldownMs:20000]
+		[StrafeMinimumTargetDistance:700]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Fighter-ShortRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Autopilot-Fighter-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+        [DisableInertiaDampeners:false]
+        
+        [EngageDistanceSpace:400]
+		[DisengageDistanceSpace:550]
+		
+		[UseVelocityCollisionEvasion:true]
+		[CollisionEvasionWaypointDistance:300]
+		[CollisionEvasionResumeDistance:20]
+		[CollisionEvasionResumeTime:6000]
+		
+		[OffsetSpaceMinDistFromTarget:300]
+		[WaypointTolerance:20]
+		
+		[UseProjectileLeadPrediction:true]
+		
+		[IdealMaxSpeed:100]
+		[MaxSpeedTolerance:5]
+		
+		[AllowStrafing:true]
+		[StrafeMinDurationMs:4000]
+		[StrafeMaxDurationMs:6000]
+		[StrafeMinCooldownMs:10000]
+		[StrafeMaxCooldownMs:15000]
+		[StrafeMinimumTargetDistance:300]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Autopilot-Patrol-FighterGroup-Primary</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+		
+		[OffsetSpaceMinDistFromTarget:2900]
+		[OffsetSpaceMaxDistFromTarget:10000]
+		
+		[OffsetPlanetMinDistFromTarget:2900]
+		[OffsetPlanetMaxDistFromTarget:10000]
+		
+		[OffsetPlanetMinTargetAltitude:590]
+		[OffsetPlanetMaxTargetAltitude:2850]
+		
+		[FlyLevelWithGravity:true]
+		[LevelWithGravityWhenIdle:true]
+		[MaxVerticalSpeed:25]
+		
+		[IdealMaxSpeed:45]
+		[IdealMinSpeed:40]
+		
+		[SlowDownOnWaypointApproach:true]
+		[WaypointAbandonTimeTrigger:300]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-Patrol-WaitForContact -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Autopilot-Patrol-WaitForContact</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Autopilot]
+
+		[UseVelocityCollisionEvasion:true]
+
+		[FlyLevelWithGravity:true]
+		[LevelWithGravityWhenIdle:true]
+		[MaxVerticalSpeed:25]
+		
+		[IdealMaxSpeed:1]
+		[IdealMinSpeed:4]
+		
+		[SlowDownOnWaypointApproach:true]
+      </Description>
+    </EntityComponent>
+<!-- AUTOPILOT END -->
+
+
+<!-- TARGETING START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Hunter-Targeting -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Hunter-Targeting</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:PlayerAndGrid]
+
+        [MaxDistance:5000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+        [MatchAnyFilters:MovementScore]
+		
+        [MinMovementScore:1000]
+        [MaxMovementDetectableDistance:5000]
+
+        [MaxLineOfSight:3250]
+        [NonBroadcastVisualRange:3000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+		[MinTargetValue:300]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Patrol-Targeting-ForFighters -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Patrol-Targeting-ForFighters</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:Grid]
+
+        [MaxDistance:3000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+        [MatchAnyFilters:MovementScore]
+		
+        [MinMovementScore:1000]
+        [MaxMovementDetectableDistance:3300]
+
+        [MaxLineOfSight:3000]
+        [NonBroadcastVisualRange:3000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-15k -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Targeting-15k</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:Grid]
+
+        [MaxDistance:15000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [MatchAnyFilters:LineOfSight]
+		[MatchAnyFilters:Broadcasting]
+        [MatchAnyFilters:MovementScore]
+		
+        [MinMovementScore:1000]
+        [MaxMovementDetectableDistance:5000]
+
+        [MaxLineOfSight:10000]
+        [NonBroadcastVisualRange:15000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+      </Description>
+    </EntityComponent>
+<!-- TARGETING END -->
+
+
+<!-- WEAPONS START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Weapons-Standard -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Weapons-Standard</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Weapons]
+
+        [UseStaticGuns:true]
+        [UseTurrets:true]
+
+        [MaxStaticWeaponRange:7500]
+        [WeaponMaxAngleFromTarget:5]
+        [WeaponMaxBaseDistanceTarget:17]
+
+        [UseBarrageFire:true]
+        [MaxFireRateForBarrageWeapons:200]
+      </Description>
+    </EntityComponent>
+<!-- WEAPONS END -->
+
+
+<!-- TRIGGERS START -->
+	<!-- Trigger/Action Standard ACS AD braodcasts Start -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:PlayerNear]
+		
+	    [StartsReady:true]
+		
+	    [TargetDistance:10000]
+		
+	    [ActionExecution:All]
+		[Actions:PVTACS-AD-Action-Announce]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Announce]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-Announce]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Warning -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:PlayerNear]
+		
+	    [TargetDistance:6500]
+		
+	    [StartsReady:false]
+		
+	    [MinCooldownMs:15000]
+	    [MaxCooldownMs:60000]
+		
+	    [ActionExecution:Random]
+		[Actions:PVTACS-AD-Action-Warning]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Warning-->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Warning]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-Warning]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-TargetDetected-SupportCall -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-TargetDetected-SupportCall</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:BehaviorTriggerA]
+		
+	    [StartsReady:true]
+		
+	    [MinCooldownMs:60000]
+	    [MaxCooldownMs:180000]
+		
+        [MaxActions:-1]		
+	    [Actions:PVTACS-AD-Action-TargetDetected-SupportCall]
+      </Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-TargetDetected-SupportCall -->
+	  <Id>
+		  <TypeId>Inventory</TypeId>
+		  <SubtypeId>PVTACS-AD-Action-TargetDetected-SupportCall</SubtypeId>
+	  </Id>
+	  <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-TargetDetected]
+
+		[SpawnEncounter:true]
+		[Spawner:PVTACS-AD-Spawner-SupportCall-Standard]	  
+		[Spawner:PVTACS-AD-Spawner-SupportCall-Standard]	 	 
+
+		[EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-SupportCall-Reply]
+		
+	    [ResetCooldownTimeOfTriggers:true]
+	    [ResetTriggerCooldownNames:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+      </Description>
+	  <!-- 	
+		TODO:: Create::  [EnableTriggerNames:PVTACS-AD-Trigger-SendReinforcements]
+	  -->
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-SupportCall-Reply  -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-SupportCall-Reply</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+		
+		[UseTrigger:true]
+        [Type:Timer]
+		
+		[StartsReady:false]
+		
+		[MinCooldownMs:3500]
+		[MaxCooldownMs:4000]
+		
+		[Actions:PVTACS-AD-Action-SupportCall-Reply]
+      </Description>  
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-SupportCall-Reply -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-SupportCall-Reply</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+      
+        [UseChatBroadcast:true]
+        [ChatData:ACS-ShipProxNearReply-Chat]
+	  
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-SupportCall-Reply]
+
+		[ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+      </Description>
+    </EntityComponent>
+	<!-- Trigger/Action Standard ACS AD braodcasts End -->	
+
+	
+	<!-- Trigger=>compromised remotecontrol. Action=>pay Bounty Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-GridDamagedBountyIDAssignment -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-GridDamagedBountyIDAssignment</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+
+        [StartsReady:true]
+		
+        [MaxActions:-1]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-150M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-150M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-150M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-150M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-150M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:150000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-150M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-100M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-100M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-100M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-100M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-100M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:100000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-100M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-65M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-65M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-65M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-65M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-65M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:65000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-65M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-50M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-50M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-50M]
+      </Description>
+    </EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-50M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-50M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:50000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-1M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-1M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:1000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-600K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-600K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-600K]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-600K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-600K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:600000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-400K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-400K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-400K]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-400K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-400K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:400000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-400K]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-300K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-300K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-300K]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-300K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-300K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:300000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-300K]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-200K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-200K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-200K]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-200K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-200K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:200000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-200K]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-100K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-100K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-100K]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-100K -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-100K</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:100000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-100K]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	<!-- Trigger=>compromised remotecontrol. Action=>pay Bounty End -->
+
+
+	<!-- Trigger/Condition/Action Ramming Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RandomRamming -->
+  	  <Id>
+		<TypeId>Inventory</TypeId>
+		<SubtypeId>PVTACS-AD-Trigger-RandomRamming</SubtypeId>
+	  </Id>
+ 	  <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:TargetNear]
+		
+		[StartsReady:true]
+		
+		[TargetDistance:600]
+		[MinCooldownMs:60000]
+		[MaxCooldownMs:120000]
+
+		[MaxActions:-1]
+		[Actions:PVTACS-AD-Action-RandomRamming]
+	  </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RamIfClose -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RamIfClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:600]
+        [MinCooldownMs:75000]
+        [MaxCooldownMs:120000]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoWeapons-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoWeapons-Ramming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:NoWeapon]
+		
+        [StartsReady:true]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoWeapons-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoWeapons-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:NoWeapon]
+		
+        [StartsReady:true]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-Retreat-Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRockets-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoRockets-Ramming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRocketLaunchers]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Ramming]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRailGuns-EnableRamming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoRailGuns-EnableRamming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRailGuns]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-EnableTrigger-RamIfClose]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoArtilleryCannons-GetInClose -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoArtilleryCannons-GetInClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoArtilleryCannons]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-ChangeToTertiaryAutoPilot]
+		[Actions:PVTACS-AD-Action-EnableTrigger-NoRockets-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoArtilleryCannons-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoArtilleryCannons-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoArtilleryCannons]
+		
+        [MaxActions:1]
+		[Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-Retreat-Chat]
+		[Actions:PVTACS-AD-Action-DisableTrigger-NoArtillery-Retreat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRailGuns-GetInClose -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoRailGuns-GetInClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRailGuns]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-ChangeToTertiaryAutoPilot]
+		[Actions:PVTACS-AD-Action-EnableTrigger-NoRockets-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoArtilleryCannons-GetInClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRailGunsOrArtillery]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-ChangeToTertiaryAutoPilot]
+		[Actions:PVTACS-AD-Action-EnableTrigger-Random-Ramming]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRailGunsOrArtillery-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoRailGunsOrArtillery-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRailGunsOrArtillery]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-Retreat-Chat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-NoRailGuns-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-NoRailGuns-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:PlayerNear]
+		
+        [StartsReady:true]
+		
+        [TargetDistance:5000]
+
+		[Conditions:PVTACS-AD-Condition-NoRailGuns]
+		
+        [MaxActions:1]
+		
+        [Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-Retreat-Chat]
+		[Actions:PVTACS-AD-Action-DisableTrigger-NoRailGuns-Retreat]
+      </Description>
+    </EntityComponent>
+
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Condition-NoArtilleryCannons -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Condition-NoArtilleryCannons</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Condition]
+		
+		[UseConditions:true]
+		[MatchAnyCondition:true]
+		  
+		[UseRequiredFunctionalBlocks:true]
+		[RequiredNoneFunctionalBlockNames:Artillery]
+		[RequiredNoneFunctionalBlockNames:Artillery Turret]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Condition-NoRocketLaunchers -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Condition-NoRocketLaunchers</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Condition]
+		
+		[UseConditions:true]
+		[MatchAnyCondition:true]
+		  
+		[UseRequiredFunctionalBlocks:true]
+		[RequiredNoneFunctionalBlockNames:Rocket Launcher]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Condition-NoRailGuns -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Condition-NoRailGuns</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Condition]
+		
+		[UseConditions:true]
+		[MatchAnyCondition:true]
+		  
+		[UseRequiredFunctionalBlocks:true]
+		[RequiredNoneFunctionalBlockNames:Railgun]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Condition-NoRailGunsOrArtillery -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Condition-NoRailGunsOrArtillery</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Condition]
+		
+		[UseConditions:true]
+		[MatchAnyCondition:true]
+		  
+		[UseRequiredFunctionalBlocks:true]
+		[RequiredNoneFunctionalBlockNames:Railgun]
+		[RequiredNoneFunctionalBlockNames:Artillery]
+		[RequiredNoneFunctionalBlockNames:Artillery Turret]
+      </Description>
+    </EntityComponent>
+
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Ramming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Ramming:true]
+		
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-AD-Chat-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RandomRamming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RandomRamming</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Chance:8]
+        [Ramming:true]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-ChangeToTertiaryAutoPilot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-ChangeToTertiaryAutoPilot</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+		[AutopilotProfile:Tertiary]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-NoRockets-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-NoRockets-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-NoRockets-Ramming]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-Random-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-Random-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-RandomRamming]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-RamIfClose -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-RamIfClose</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+		
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-RamIfClose]
+      </Description>
+    </EntityComponent>
+	<!-- Trigger/Condition/Action Ramming End -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Fighter-NoTarget-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-Fighter-NoTarget-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:NoTarget]
+		
+        [StartsReady:false]
+		
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-DisableTrigger-Fighter-NoTarget-Retreat]
+		{Actions:PVTACS-AD-Action-Fighter-NoTarget-Retreat-Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:NoWeapon]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-Retreat]
+		[Actions:PVTACS-AD-Action-DisableTrigger-Fighter-NoWeapons-Retreat]
+		[Actions:PVTACS-AD-Action-Fighter-NoWeapons-Retreat-Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-TargetInRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-TargetInRange</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:PlayerNear]
+		[TargetDistance:2900]
+		
+        [StartsReady:true]
+		
+		[MaxActions:-1]
+		
+		[Actions:PVTACS-AD-Action-SwitchToFighter]
+		[Actions:PVTACS-AD-Action-ChangeToSecondaryAutopilot]
+
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetInRange]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-TargetAquired -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-TargetAquired</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:HasTarget]
+		
+        [StartsReady:true]
+		
+		[MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetAquired-Chat]
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-ReceiveTarget]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetAquired-ShareTarget]
+		
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-Attacked-TargetAcquired</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[Type:Damage]
+		[UseTrigger:true]
+
+		[StartsReady:true]
+		
+		[MinCooldownMs:1000]
+		[MaxCooldownMs:2000]
+
+		[MaxActions:-1]
+		[ActionExecution:Sequential]
+		[Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol]
+		
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-ReceiveTarget]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetAquired-ShareTarget]
+		
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-TargetLost-GoPatrol -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-TargetLost-GoPatrol</SubtypeId>
+      </Id>
+      <Description>
+		  [RivalAI Trigger]
+		  
+		  [Type:LostTarget]
+		  [UseTrigger:true]
+		  
+		  [StartsReady:true]
+		  
+		  [MaxActions:-1]
+		  [Actions:PVTACS-AD-Action-SwitchToPatrol]
+		  [Actions:PVTACS-AD-Action-ChangeToPrimaryAutopilot]
+		  
+		  [Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetInRange]
+		  [Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-ReceiveTarget]
+	  </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:CommandReceived]
+		[CommandReceiveCode:PVTACS-AD-ComCode-FighterPatrol-FoundTarget]
+		
+        [StartsReady:true]
+
+		[MaxActions:-1]
+		[ActionExecution:All]
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired]
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetInRange]
+		
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetReceived-Switch]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetReceived-Chat]
+		
+		[Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol]
+		
+		[Actions:PVTACS-AD-Action-ChangeToSecondaryAutopilot]
+		[Actions:PVTACS-AD-Action-SwitchToFighter]
+	  </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget-DelayedChat -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget-DelayedChat</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:Timer]
+
+		[StartsReady:true]
+		
+		[MinCooldownMs:5000]
+		[MaxCooldownMs:30000]	  
+
+		[MaxActions:1]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetReceived-Chat]
+	  </Description>
+    </EntityComponent>
+	  
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-PatrolForFighters-EstablishContact-ReceiveTarget -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-PatrolForFighters-EstablishContact-ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:CommandReceived]
+		[CommandReceiveCode:PVTACS-AD-ComCode-FighterPatrol-FoundTarget]
+
+        [StartsReady:true]
+
+		[MaxActions:-1]
+		[ActionExecution:All]
+		
+		[Actions:PVTACS-AD-Action-SwitchToFighter]
+		[Actions:PVTACS-AD-Action-ChangeToSecondaryAutopilot]
+		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetInRange]
+		
+		[Actions:PVTACS-AD-Action-PatrolForFighters-TargetReceived-Switch]
+		[Actions:PVTACS-AD-Action-PatrolForFighters-EstablishContact-TargetReceived-Chat]
+	
+		[Actions:PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol]
+ 		[Actions:PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired]
+	  </Description>
+    </EntityComponent>
+<!-- TRIGGERS END -->
+
+
+<!-- ACTIONS START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [Retreat:true]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Retreat-Chat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Retreat-Chat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+		
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-AD-Chat-Retreat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-NoRailGuns-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-NoRailGuns-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-NoRailGuns-Retreat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-NoArtillery-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-NoArtillery-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-NoArtilleryCannons-Retreat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-Fighter-NoTarget-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-Fighter-NoTarget-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-Fighter-NoWeapons-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-Fighter-NoWeapons-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-Fighter-NoWeapons-Retreat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-PatrolForFighters-ReceiveTarget -->
+	  <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-PatrolForFighters-ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired -->
+	  <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetAcquired</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetInRange -->
+	  <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-DisableTrigger-PatrolForFighters-TargetInRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+      </Description>
+    </EntityComponent>
+
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetLost-GoPatrol</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-TargetLost-GoPatrol]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetAcquired -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetAcquired</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-TargetAquired]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetInRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-PatrolForFighters-TargetInRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-TargetInRange]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-PatrolForFighters-ReceiveTarget -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-PatrolForFighters-ReceiveTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget]
+      </Description>
+    </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-EnableTrigger-PatrolForFighters-ReceiveTarget-DelayedChat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-EnableTrigger-PatrolForFighters-ReceiveTarget-DelayedChat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+		[EnableTriggerNames:PVTACS-AD-Trigger-PatrolForFighters-ReceiveTarget-DelayedChat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Fighter-NoTarget-Retreat-Chat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Fighter-NoTarget-Retreat-Chat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Fighter-NoTarget-Retreat]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Fighter-NoWeapons-Retreat-Chat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Fighter-NoWeapons-Retreat-Chat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Fighter-NoWeapons-Retreat]
+      </Description>
+    </EntityComponent>
+
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-PatrolForFighters-TargetAquired-ShareTarget -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-PatrolForFighters-TargetAquired-ShareTarget</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:PVTACS-AD-Command-PatrolForFighters-ShareTarget]
+	  </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-PatrolForFighters-TargetAquired-Chat -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-PatrolForFighters-TargetAquired-Chat</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Fighter-Patrol-TargetAcquired-Chat]
+	  </Description>
+    </EntityComponent>
+
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-PatrolForFighters-TargetReceived-Switch -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-PatrolForFighters-TargetReceived-Switch</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[SwitchToReceivedTarget:true]
+	  </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-PatrolForFighters-TargetReceived-Chat -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-PatrolForFighters-TargetReceived-Chat</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Fighter-Patrol-TargetReceived]
+	  </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-PatrolForFighters-EstablishContact-TargetReceived-Chat -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-PatrolForFighters-EstablishContact-TargetReceived-Chat</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Fighter-Patrol-EstablishContact-TargetReceived]
+	  </Description>
+    </EntityComponent>
+
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-SwitchToFighter -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-SwitchToFighter</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[ChangeBehaviorSubclass:true]
+		[NewBehaviorSubclass:Fighter]
+	  </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-SwitchToPatrol -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-SwitchToPatrol</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[ChangeBehaviorSubclass:true]
+		[NewBehaviorSubclass:Patrol]
+	  </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-ChangeToPrimaryAutopilot -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-ChangeToPrimaryAutopilot</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[ChangeAutopilotProfile:true]
+		[AutopilotProfile:Primary]
+	  </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-ChangeToSecondaryAutopilot -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-ChangeToSecondaryAutopilot</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[ChangeAutopilotProfile:true]
+		[AutopilotProfile:Secondary]
+	  </Description>
+    </EntityComponent>
+<!-- ACTIONS END -->
+
+
+<!-- COMMAND PROFILES START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Command-PatrolForFighters-ShareTarget-->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Command-PatrolForFighters-ShareTarget</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:PVTACS-AD-ComCode-FighterPatrol-FoundTarget]
+        [MatchSenderReceiverOwners:true]
+		[SendTargetEntityId:true]
+		[CommandDelayTicks:120]
+		
+		[IgnoreAntennaRequirement:true]
+		[IgnoreReceiverAntennaRequirement:true]
+		[Radius:15000]
+      </Description>
+    </EntityComponent>
+<!-- COMMAND PROFILES END -->
+
+
+<!-- CHAT START -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Announce -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Chat-Announce</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+		[ChatMessages:This area is considered off-limits to non-ASSERT vessels.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:This is restricted ASSERT Space. Intruders will be destroyed.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:ASSERT claims this sector of space. Non-Assert vessels must leave.]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Warning -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Chat-Warning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+		[ChatMessages:This area is off limits. Leave while you can.]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:Non-ASSERT vessels in the area will be destroyed.]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Ramming -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Ramming</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Chat]
+      
+		[UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+		[Chance:100]
+		[BroadcastRandomly:true]
+
+        [Author:ACS Commander]
+		[Color:Red]
+
+        [ChatMessages: Time to meet your maker infidel!]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages: You can't get old if you doe young!]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages: Ramming Speed!]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages: Luke, I AM your father.]
+        [BroadcastChatType:Chat]
+      </Description>
+	  <!--
+		-->
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-TargetDetected -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-TargetDetected</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		[Chance:100]
+		
+        [Author:ACS Commander]
+        [Color:Red]
+
+        [ChatMessages:Target detected, requesting attack drones.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Enemy identified. Send in the drones, we are engaging.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Alpha Nine requesting drone support, engaging hostiles.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+		[ChatMessages:Hello, my name is Inigo Montoya. You killed my father. Prepare to die.]
+        [ChatAudio:ArcHudGPSNotification1]
+		[BroadcastChatType:Chat]
+      </Description>
+	  <!-- TODO:: Finish chat messages!! ^^ -->
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		[Chance:100]
+		
+        [Author:ACS Commander]
+        [Color:Red]
+
+        [ChatMessages:Main Guns Disabled! We need support to get back to base!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:You win this battle, but we shall meet again!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Bravo Bravo! Alpha-niner is some seriously deep doo doo, we gotta hightail our lilly white asses outa here. Get us some support Pronto!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+		[ChatMessages:You just wait till we get this ship refitted! You haven't seen the last of us!]
+        [ChatAudio:ArcHudGPSNotification1]
+		[BroadcastChatType:Chat]
+
+		[ChatMessages:They're murdering us out here! Send in support!]
+        [ChatAudio:ArcHudGPSNotification1]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Fighter-NoTarget-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Fighter-NoTarget-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		
+        [Author:ACS FighterPilot]
+        [Color:Red]
+
+        [ChatMessages:All targets destroyed, heading back to base.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:No more targets on the scope time to get back and reload.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Alpha-Niner to Delta-Tango we have a distinct lack of active hostiles, heading home.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+		[ChatMessages:That's the last of them, time for some well deserved RnR.]
+        [ChatAudio:ArcHudGPSNotification1]
+		[BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Fighter-NoWeapons-Retreat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Fighter-NoWeapons-Retreat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		
+        [Author:ACS Fighter Pilot]
+        [Color:Red]
+
+        [ChatMessages:Guns destroyed! Trying to return to base!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:This things seen better days, returning to base!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Main guns destryoed, getting desperate!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Fighter-Patrol-TargetReceived -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Fighter-Patrol-TargetReceived</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+		[StartsReady:true]
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+		[Chance:100]
+		
+        [Author:ACS Fighter Pilot]
+        [Color:Red]
+
+        [ChatMessages:Target Acknowledged. Engaging.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Roger Alpha-Niner, changing course to intercept.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Fighter-Patrol-EstablishContact-TargetReceived -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Fighter-Patrol-EstablishContact-TargetReceived</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+		
+		[IgnoreAntennaRequirement:true]
+		[IgnoredAntennaRangeOverride:15000]		
+		
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+		
+        [Author:ACS Hunter Drone]
+        [Color:Red]
+
+        [ChatMessages:Threat acknowledged. Initiating eradication protocol.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Five Alive not so alive for so long Johnny Five. Eradication protocal engaged.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Fighter-Patrol-TargetAcquired-Chat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Fighter-Patrol-TargetAcquired-Chat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+		[Chance:100]
+		
+        [Author:ACS Fighter Pilot]
+        [Color:Red]
+
+        [ChatMessages:Bogie identified, beginning attack run!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Hostiles spotted form up on me.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- CHAT END -->
+
+
+<!-- SPAWN CONDITIONS START -->
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-Space-Always -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-Space-Always</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:true]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-Space-Always-Random -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-Space-Always-Random</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[RivalAiSpawn:true]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:Random]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-RivalAI-Only -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-RivalAI-Only</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[RivalAiSpawn:true]
+		
+		[SpaceCargoShip:false]
+		[LunarCargoShip:false]
+		[SpaceRandomEncounter:false]
+		[AtmosphericCargoShip:false]
+		[PlanetaryInstallation:false]
+      </Description>
+    </EntityComponent>
+	
+  	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-FighterPatrol -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-FighterPatrol</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[SpaceCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		[LunarCargoShipChance:100]
+		
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+      </Description>
+    </EntityComponent>
+<!-- SPAWN CONDITIONS END -->
+
+
+<!-- SPAWN MANIPULATIONS START -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseRivalAi:true]
+		[RivalAiReplaceRemoteControl:true]
+		
+		[UseBlockReplacerProfile:true]
+		[BlockReplacerProfileNames:MES-NpcThrusters-Ion]
+		[BlockReplacerProfileNames:MES-NpcThrusters-Hydro]	
+		
+		[ConfigureSpecialNpcThrusters:true]
+
+		[RestrictNpcIonThrust:false]
+		[NpcIonThrustForceMultiply:1.5]
+		[NpcIonThrustPowerMultiply:0.75]
+		
+		[RestrictNpcHydroThrust:false]
+		[NpcHydroThrustForceMultiply:1.5]
+		[NpcHydroThrustPowerMultiply:.75]
+
+		[SetNpcGyroscopeMultiplier:true]
+		[NpcGyroscopeMultiplier:1.5]
+
+		[UseLootProfiles:true]
+		[LootGroups:ACS-LootGroupSpace]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-FighterDroneEnhancement -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-FighterDroneEnhancement</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseRivalAi:true]
+		[RivalAiReplaceRemoteControl:true]
+		
+		[UseBlockReplacerProfile:true]
+		[BlockReplacerProfileNames:MES-NpcThrusters-Ion]	
+		[BlockReplacerProfileNames:MES-NpcThrusters-Hydro]	
+		
+		[ConfigureSpecialNpcThrusters:true]
+
+		[RestrictNpcIonThrust:false]
+		[NpcIonThrustForceMultiply:1.5]
+		[NpcIonThrustPowerMultiply:0.75]
+		
+		[RestrictNpcHydroThrust:false]
+		[NpcHydroThrustForceMultiply:1.5]
+		[NpcHydroThrustPowerMultiply:.75]
+
+		[SetNpcGyroscopeMultiplier:true]
+		[NpcGyroscopeMultiplier:2]
+      </Description>
+    </EntityComponent>
+<!-- SPAWN MANIPULATIONS END -->
+
+
+<!-- RIVAL AI SPAWNS Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Spawner-SupportCall-Standard -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Spawner-SupportCall-Standard</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Spawn]
+
+		[UseSpawn:true]
+		[StartsReady:true]
+
+		[SpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - M]
+		[SpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC]
+		[SpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - O]
+		[SpawnGroups:(NPC-ACS) 'Combat Croissant' Heavy Fighter - E]
+		[SpawnGroups:(NPC-ACS) Ceres-Class Escort Fighter]
+		
+		[UseRelativeSpawnPosition:false]
+		[MinDistance:200]
+		[MaxDistance:400]
+      </Description> 
+<!--
+        [SpawnGroups:(NPC-ACS) Space Wasp Drone Mk2]
+		[SpawnGroups:(NPC-ACS) Firefly Drone Mk2]
+		[SpawnGroups:(NPC-ACS) Monarch Drone Mk2]
+        [SpawnGroups:(NPC-ACS) Locust Drone Mk2]
+        [SpawnGroups:(NPC-ACS) Fite Brite]
+--> 	  
+    </EntityComponent>
+<!-- RIVAL AI SPAWNS End -->
+  </EntityComponents>
+</Definitions>

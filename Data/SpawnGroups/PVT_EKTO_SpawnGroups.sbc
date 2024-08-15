@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+		<SpawnGroup>															
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(EKOT)-SpawnGroup-Ekotgrapher-GoodRep</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[ReplenishSystems:false]
+				
+				[SpawnConditionsProfiles:EKOT-SpawnCondition-Ekotgrapher-GoodReputation]
+				
+				[ManipulationProfiles:EKOT-Manipulation-Ekotgrapher]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>false</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="Ektographer_One_Door_Open">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-Ekotgrapher-GoodRep</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(EKOT)-SpawnGroup-Ekotgrapher-BadRep</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[ReplenishSystems:false]
+				
+				[SpawnConditionsProfiles:EKOT-SpawnCondition-Ekotgrapher-BadReputation]
+				
+				[ManipulationProfiles:EKOT-Manipulation-Ekotgrapher]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="Ektographer_Doors_Off">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-Ekotgrapher-BadRep</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>150.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>-150.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>150.0</X>
+						<Y>150.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>150.0</X>
+						<Y>-150.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>20</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(EKOT)-SpawnGroup-Ektographer-DefenseDrone</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:EKOT]
+				[ReplenishSystems:false]
+				
+				[SkipVoxelSpawnChecks:true]
+				[SkipGridSpawnChecks:true]
+				
+				[ManipulationProfiles:MES-Manipulation-RivalAi]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>80</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+		<SpawnGroup>															
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(EKOT)-SpawnGroup-Ektographer-DefenseDrone-BadRep</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:EKOT]
+				[ReplenishSystems:false]
+				
+				[SkipVoxelSpawnChecks:true]
+				[SkipGridSpawnChecks:true]
+				
+				[ManipulationProfiles:MES-Manipulation-RivalAi]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="Ekoforcer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>80</Speed>
+					<Behaviour>EKOT-Behavior-DefenseDrone-Escort-BadRep</Behaviour>
+					<BehaviourActivationDistance>15000</BehaviourActivationDistance>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+	</SpawnGroups>
+</Definitions>	

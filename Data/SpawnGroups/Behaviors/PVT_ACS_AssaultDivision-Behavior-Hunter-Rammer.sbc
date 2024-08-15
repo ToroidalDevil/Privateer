@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+  
+<!-- BEHAVIOR START -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-Behavior-AssaultDivision-Hunter-Rammer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Rammer-Secondary]
+
+        [TargetData:(NPC-ACS)-AssaultDivision-Hunter-Targeting]
+
+        [EngageOnTargetLineOfSight:true]
+        [EngageOnWeaponActivation:true]
+
+        [WeaponSystem:(NPC-ACS)-AssaultDivision-Weapons-Standard]
+
+		[Triggers:ACS-AssaultDivision-Trigger-Announce]
+		[Triggers:ACS-AssaultDivision-Trigger-Warning]
+		[Triggers:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+		
+        [Triggers:ACS-AssaultDivision-Trigger-Ramming]
+
+      </Description>
+    </EntityComponent>
+<!-- BEHAVIOR END -->
+
+<!-- Autopilot START-->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-AssaultDivision-Autopilot-Hunter-Secondary-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)-AssaultDivision-Autopilot-Hunter-Rammer-Secondary</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [FlyLevelWithGravity:false]
+        [WaypointTolerance:40]
+        [IdealMinSpeed:50]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:400]
+
+        [MinimumPlanetAltitude:400]
+        [IdealPlanetAltitude:500]
+
+        [AllowStrafing:true]
+        [StrafeMinDurationMs:2000]
+        [StrafeMaxDurationMs:5000]
+
+        [StrafeMinCooldownMs:2000]
+        [StrafeMaxCooldownMs:5000]
+
+        [StrafeMinimumTargetDistance:500]
+        [StrafeSpeedCutOff:60]
+        [StrafeDistanceCutOff:750]
+
+        [EngageDistanceSpace:1200]
+        [EngageDistancePlanet:1200]
+		
+        [DisengageDistanceSpace:1400]
+        [DisengageDistancePlanet:1400]
+		
+		[RamMinDurationMs:45000]
+		[RamMaxDurationMs:75000]
+      </Description>	
+    </EntityComponent>
+<!-- Autopilot END-->
+
+  </EntityComponents>
+</Definitions>
