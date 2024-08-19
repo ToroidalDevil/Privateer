@@ -3,88 +3,6 @@
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
   
-<!-- Assault Division SupportCall START -->
-<!-- OG
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-          <TypeId>Inventory</TypeId>
-          <SubtypeId>PVTACS-AD-Trigger-TargetDetected-SupportCall</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-	    [UseTrigger:true]
-        [Type:AcquiredTarget]
-		
-	    [StartsReady:true]
-	    [MinCooldownMs:90000]
-	    [MaxCooldownMs:500000]
-		
-	    [ActionExecution:Random]
-	    [Actions:PVTACS-Action-TargetDetected-ADSupportCall]
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-	  <Id>
-		  <TypeId>Inventory</TypeId>
-		  <SubtypeId>PVTACS-AD-Action-TargetDetected-SupportCall</SubtypeId>
-	  </Id>
-	  <Description>
-		[RivalAI Action]
-
-		[UseChatBroadcast:true]
-		[ChatData:PVTACS-Chat-TargetDetected]
-
-		[SpawnEncounter:true]
-		[Spawner:ACS-ShipSpawnerDrone-IonHard]	  
-		[Spawner:ACS-ShipSpawnerDrone-IonMed]	 	 
-
-		[EnableTriggers:true]
-		[EnableTriggerNames:PVTACS-AD-Trigger-SupportCall-Reply]
-		
-	    [ResetCooldownTimeOfTriggers:true]
-	    [ResetTriggerCooldownNames:PVTACS-AD-Trigger-TargetDetected-SupportCall]
-      </Description>
-    </EntityComponent>
-	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-Chat-TargetDetected</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Chat]
-
-        [UseChat:true]
-        [StartsReady:true]
-        [MaxChats:1]
-        [BroadcastRandomly:true]
-		
-        [Author:ACS Commander]
-        [Color:Red]
-
-        [ChatMessages:Target detected, requesting attack drones.]
-        [ChatAudio:ArcHudGPSNotification1]
-        [BroadcastChatType:Chat]
-
-        [ChatMessages:Enemy identified. Send in the drones, we are engaging.]
-        [ChatAudio:ArcHudGPSNotification1]
-        [BroadcastChatType:Chat]
-
-        [ChatMessages:Alpha Nine requesting drone support, engaging hostiles.]
-        [ChatAudio:ArcHudGPSNotification1]
-        [BroadcastChatType:Chat]
-
-		[ChatMessages:Hello, my name is Inigo Montoya. You killed my father. Prepare to die.]
-        [ChatAudio:ArcHudGPSNotification1]
-		[BroadcastChatType:Chat]
-      </Description>
-    </EntityComponent>
--->	
-<!-- Assault Division SupportCall END -->
-
-
 <!-- Assault Division Reinforcements Call START -->
 
 <!-- TODO::finish
@@ -391,26 +309,6 @@
 		
         [TargetDistance:600]
         [MinCooldownMs:75000]
-        [MaxCooldownMs:120000]
-        [StartsReady:true]
-
-        [MaxActions:-1]
-        [Actions:ACS-AssaultDivision-Action-Ramming]
-      </Description>
-    </EntityComponent>
-	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-AssaultDivision-Trigger-Ramming -->
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-AD-Trigger-NoWeapons-Ramming</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Trigger]
-
-        [UseTrigger:true]
-        [Type:NoWeapon]
-		
-        [MinCooldownMs:60000]
         [MaxCooldownMs:120000]
         [StartsReady:true]
 

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SpawnGroups>
+
+		<SpawnGroup>
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) Canis</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[SpawnConditionsProfiles:(NPC-ACS)SpawnSpaceCargoShipEasy]
+				[ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipEasy]
+
+				[ReplenishSystems:false]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId=" (NPC-ACS) Canis">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId=" (NPC-ACS) Canis AT">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId=" (NPC-ACS) Canis ATS">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId=" (NPC-ACS) Canis ATW">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+		
+	</SpawnGroups>
+</Definitions>

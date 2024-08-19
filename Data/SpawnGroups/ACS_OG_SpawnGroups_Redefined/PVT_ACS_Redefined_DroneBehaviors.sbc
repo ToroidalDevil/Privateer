@@ -23,6 +23,7 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 		
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-100K]
       </Description>
@@ -48,6 +49,7 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 		
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-200K]
       </Description>
@@ -73,6 +75,7 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 		
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-300K]
       </Description>
@@ -98,6 +101,7 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 		
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-400K]
       </Description>
@@ -123,6 +127,7 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 		
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
       </Description>
@@ -136,7 +141,6 @@
           <SubtypeId>PVTACS-RD-DroneBig-Behavior</SubtypeId>
       </Id>
       <Description>
-
         [RivalAI Behavior]
         [BehaviorName:Fighter]
         
@@ -151,10 +155,10 @@
         [Triggers:ACS-DroneSmallRetreat-Trigger]
         [Triggers:ACS-DroneOperations-DroneCounter-Trigger]
 
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
 		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
       </Description>
-      
     </EntityComponent>
 	
   </EntityComponents>
