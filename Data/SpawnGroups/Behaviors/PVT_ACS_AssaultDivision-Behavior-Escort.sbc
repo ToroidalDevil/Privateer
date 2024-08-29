@@ -13,32 +13,27 @@
 
         [BehaviorName:Escort]
 
-        [TargetData:PVT-ACS-AssaultDivision-Targeting-EscortDrone]
+        [TargetData:PVTACS-AD-Targeting-EscortDrone]
 
-        [AutopilotData:PVT-ACS-AssaultDivision-EscortDrone-A]
-        [SecondaryAutopilotData:Imber-AutoPilot-EscortDrone-B]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortDrone-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-EscortDrone-Secondary]
 
-        [Triggers:Imber-Trigger-RequestEscortSlot]
+        [Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
         [Triggers:Imber-Trigger-AggressionSwitchEscort]
         [Triggers:Imber-Trigger-PassiveSwitchEscort]
 
         [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
         [Triggers:MES-Trigger-NoTargetRetreatCheck]
       </Description>
-<!--
-        [Triggers:Imber-Trigger-ReaverPresenceNoChat]
-        [Triggers:Imber-Trigger-ReaverPresenceClear]
-		
-		WOULD BE GREAT to add a trigger where the grid being escorted can decide to attack, and that triggers the escorts to attack...
--->	  
     </EntityComponent>
 <!-- BEHAVIOR End -->	
 
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT-ACS-AssaultDivision-Targeting-EscortDrone -->
+<!-- TARGETING Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-EscortDrone -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVT-ACS-AssaultDivision-Targeting-EscortDrone</SubtypeId>
+        <SubtypeId>PVTACS-AD-Targeting-EscortDrone</SubtypeId>
       </Id>
       <Description>
         [RivalAI Target]
@@ -53,6 +48,7 @@
         [MatchAllFilters:Owner]
         [MatchAllFilters:Relation]
         [MatchAllFilters:Powered]
+		
         [GetTargetBy:ClosestDistance]
 
         [Owners:Player]
@@ -60,11 +56,14 @@
         [Relations:Enemy]
       </Description>
     </EntityComponent>
+<!-- TARGETING End -->
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+<!-- AUTOPILOT Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortDrone-Primary -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-Autopilot-AssaultDivision-EscortDrone-A</SubtypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortDrone-Primary</SubtypeId>
       </Id>
       <Description>
         [RivalAI Autopilot]
@@ -89,10 +88,10 @@
       </Description>
     </EntityComponent>
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortDrone-Secondary -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>Imber-AutoPilot-EscortDrone-B</SubtypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortDrone-Secondary</SubtypeId>
       </Id>
       <Description>
         [RivalAI Autopilot]
@@ -124,6 +123,10 @@
         [AngleAllowedForForwardThrust:75]
       </Description>
     </EntityComponent>
+<!-- AUTOPILOT End -->
+
+
+
 
   </EntityComponents>
 </Definitions>

@@ -317,6 +317,252 @@
 				</Prefab>
 			</Prefabs>
 		</SpawnGroup>
+
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Reinforcements Easy Auburn -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Reinforcements Easy Auburn</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Auburn">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Rammer-Reinforcements-Auburn</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Baby Guppy-G">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Firefly Drone Mk2">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Reinforcements Easy PrideAndPrejudice -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Reinforcements Easy PrideAndPrejudice</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Pride and Predjudice">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Reinforcements-ShortRange-150M</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone Mk2">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-600K</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Fite Brite">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneBig-Behavior</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Reinforcements Easy Devotion -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Reinforcements Easy Devotion</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) AFP - Devotion class Artillery Crusier">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Reinforcements-LongRange-NoRgRammer</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-600K</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Space Wasp Drone Mk2">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Reinforcements Easy Thresher -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Reinforcements Easy Thresher</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) ONRC  'Thresher' class Torpedo-boat Destroyer">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Reinforcements-LongRange-NoRgRammer</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Monarch Drone">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-400K</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Locust Drone Mk2">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>															<!-- (NPC-ACS) AssaultDivision Reinforcements Easy Adrasta -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId> 
+				<SubtypeId>(NPC-ACS) AssaultDivision Reinforcements Easy Adrasta</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+				
+				[SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-Always]
+				[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space]
+				
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+				[Reactors:On]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Adrasta Class Cruiser">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-AD-Behavior-Hunter-Reinforcements-LongRange-NoRgRammer</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Baby Guppy-R">
+					<Position>
+						<X>50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+				<Prefab SubtypeId="(NPC-ACS) Baby Guppy-R">
+					<Position>
+						<X>-50.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
 <!-- ALWAYS SPAWN END -->
 
 

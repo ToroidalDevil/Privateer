@@ -14,7 +14,7 @@
       <AutoAcceptMember>false</AutoAcceptMember>
     </Faction>
 	
-    <Faction Tag="PAOG" Founder="The Great Spaghetti Monster">
+    <Faction Tag="PRVT" Founder="The Great Spaghetti Monster">
       <Id>
         <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
         <SubtypeId>Privateers-of-Ganth</SubtypeId>

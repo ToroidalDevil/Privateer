@@ -351,6 +351,147 @@
 		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
       </Description>
     </EntityComponent>
+
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-Rammer-Reinforcements-Auburn -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-Rammer-Reinforcements-Auburn</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-Secondary]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Rammer-Auburn-NoArtillery]
+
+        [TargetData:PVTACS-AD-Targeting-Reinforcements-8k]
+		[OverrideTargetData:PVTACS-AD-Targeting-15k]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce-Reinforcements]
+		
+        [Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+		[Triggers:PVTACS-AD-Trigger-NoArtilleryCannons-GetInClose]
+		[Triggers:PVTACS-AD-Trigger-RamIfClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-NoTarget-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-TargetFar-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-Reinforcements-ShortRange -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-Reinforcements-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Targeting-Reinforcements-8k]
+		[OverrideTargetData:PVTACS-AD-Targeting-Reinforcements-15k]
+		
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce-Reinforcements]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+        [Triggers:PVTACS-AD-Trigger-RandomRamming]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-50M]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-NoTarget-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-TargetFar-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-Reinforcements-ShortRange-150M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-Reinforcements-ShortRange-150M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-ShortRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Targeting-Reinforcements-8k]
+		[OverrideTargetData:PVTACS-AD-Targeting-Reinforcements-15k]
+		
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+
+		[Triggers:PVTACS-AD-Trigger-Announce-Reinforcements]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Ramming]
+        [Triggers:PVTACS-AD-Trigger-RandomRamming]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-150M]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-NoTarget-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-TargetFar-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-Hunter-Reinforcements-LongRange-NoRgRammer -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-Hunter-Reinforcements-LongRange-NoRgRammer</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Hunter]
+
+        [AutopilotData:PVTACS-AD-Autopilot-Hunter-Primary]
+        [SecondaryAutopilotData:PVTACS-AD-Autopilot-Hunter-Secondary-LongRange]
+		[TertiaryAutopilotData:PVTACS-AD-Autopilot-Hunter-PrimaryWeaponsDestroyed]
+
+        [TargetData:PVTACS-AD-Targeting-Reinforcements-8k]
+		[OverrideTargetData:PVTACS-AD-Targeting-Reinforcements-15k]
+
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+				  
+		[Triggers:PVTACS-AD-Trigger-Announce-Reinforcements]
+		
+		[Triggers:PVTACS-AD-Trigger-NoWeapons-Retreat]
+		[Triggers:PVTACS-AD-Trigger-NoRailGunsOrArtillery-GetInClose]
+		[Triggers:PVTACS-AD-Trigger-NoRailGuns-EnableRamming]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-65M]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-NoTarget-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-TargetFar-Send-AskForTarget]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Receive-AskForTarget]
+      </Description>
+    </EntityComponent>
 <!-- BEHAVIOR Hunter End -->
 
 
@@ -366,12 +507,14 @@
         [BehaviorName:Fighter]
         
         [AutopilotData:PVTACS-AD-Autopilot-Fighter-ExtremeRange]
-        
         [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
         
         [Triggers:ACS-DroneSmallDeath-Trigger]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
       </Description>
     </EntityComponent>
@@ -393,6 +536,8 @@
         [Triggers:ACS-DroneSmallDeath-Trigger]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
       </Description>
     </EntityComponent>
@@ -408,13 +553,14 @@
         [BehaviorName:Fighter]
         
         [AutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
-		
         [TargetData:ACS-SmallDrone-Target]
         [WeaponSystem:PVTACS-AD-Weapons-Standard]
         
         [Triggers:ACS-DroneSmallDeath-Trigger]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
       </Description>
     </EntityComponent>
@@ -436,6 +582,8 @@
         [Triggers:ACS-DroneSmallDeath-Trigger]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoTarget-Retreat]
 		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
 		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
       </Description>
     </EntityComponent>
@@ -1159,7 +1307,7 @@
         [GetTargetBy:HighestTargetValue]
       </Description>
     </EntityComponent>
-	
+
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-2k -->
       <Id>
         <TypeId>Inventory</TypeId>
@@ -1186,6 +1334,64 @@
 		
         [MaxLineOfSight:2000]
         [NonBroadcastVisualRange:2000]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-Reinforcements-15k -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Targeting-Reinforcements-15k</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:Grid]
+
+        [MaxDistance:15000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
+
+        [Owners:Player]
+        [Owners:NPC]
+        [Relations:Enemy]
+
+        [GetTargetBy:HighestTargetValue]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-Reinforcements-8k -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Targeting-Reinforcements-8k</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Target]
+
+        [UseCustomTargeting:true]
+        [Target:Grid]
+
+        [MaxDistance:8000]
+
+        [TimeUntilTargetAcquisition:10]
+        [TimeUntilNextEvaluation:3]
+
+        [MatchAllFilters:OutsideOfSafezone]
+        [MatchAllFilters:Owner]
+        [MatchAllFilters:Relation]
+        [MatchAllFilters:Powered]
 
         [Owners:Player]
         [Owners:NPC]
@@ -1237,6 +1443,7 @@
 		
 	    [TargetDistance:10000]
 		
+        [MaxActions:1]
 	    [ActionExecution:All]
 		[Actions:PVTACS-AD-Action-Announce]
       </Description>
@@ -1275,7 +1482,7 @@
 	    [MinCooldownMs:15000]
 	    [MaxCooldownMs:60000]
 		
-	    [ActionExecution:Random]
+        [MaxActions:1]
 		[Actions:PVTACS-AD-Action-Warning]
       </Description>
     </EntityComponent>
@@ -1376,6 +1583,41 @@
 
 		[ResetCooldownTimeOfTriggers:true]
         [ResetTriggerCooldownNames:PVTACS-AD-Trigger-TargetDetected-SupportCall]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Announce-Reinforcements -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-Announce-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+	    [UseTrigger:true]
+        [Type:PlayerNear]
+		
+	    [StartsReady:true]
+		
+	    [TargetDistance:10000]
+		
+        [MaxActions:1]
+		[Actions:PVTACS-AD-Action-Announce-Reinforcements]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-Announce-Reinforcements -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Action-Announce-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Action]
+
+		[UseChatBroadcast:true]
+		[ChatData:PVTACS-AD-Chat-Announce]
+		
+		[DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-Announce]
       </Description>
     </EntityComponent>
 	<!-- Trigger/Action Standard ACS AD braodcasts End -->	
@@ -1535,6 +1777,482 @@
       </Description>
     </EntityComponent>
 
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-24M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-24M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-24M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-24M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-24M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:24000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-24M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-22M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-22M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-22M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-22M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-22M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:22000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-22M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-19M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-19M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-19M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-19M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-19M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:19000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-19M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-18M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-18M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-18M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-18M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-18M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:18000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-18M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-17M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-17M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-17M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-17M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:17000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-15M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-15M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-15M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-15M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:15000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-14M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-14M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-14M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-14M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:14000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-13M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-13M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-13M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-13M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-13M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:13000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-13M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-12M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-12M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-12M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-12M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-12M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:12000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-12M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-11M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-11M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-11M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-11M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:11000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-10M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-10M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-10M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-10M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:10000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-9M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-9M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-9M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-9M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-9M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:9000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-9M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-7M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-7M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-7M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-7M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:7000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-6M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-6M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-6M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-6M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:6000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-5M -->
       <Id>
         <TypeId>Inventory</TypeId>
@@ -1565,6 +2283,40 @@
 		
         [DisableTriggers:true]
 		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
+		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-RemoteCompromisedBounty-4M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RemoteCompromisedBounty-4M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Compromised]
+
+        [StartsReady:true]
+		
+        [MaxActions:1]
+        [Actions:PVTACS-AD-Action-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Action-RemoteCompromisedBounty-4M -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-RemoteCompromisedBounty-4M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[ChangeAttackersFactionAccount:true]
+		[ChangeAttackersFactionAccountByAmount:4000000]
+		
+        [DisableTriggers:true]
+		[DisableTriggerNames:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
 		[DisableTriggerNames:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
       </Description>
     </EntityComponent>
@@ -2271,9 +3023,6 @@
 		[Actions:PVTACS-AD-Action-Chat-Send-TargetResponse]
 		[Actions:PVTACS-AD-Action-Send-Command-RespondWithTarget]
       </Description>
-<!--
-		[Actions:PVTACS-AD-Action-EnableTrigger-Send-TargetResponse]
--->	  
     </EntityComponent>
 
     <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Command-Send-TargetResponse -->

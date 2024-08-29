@@ -3,12 +3,11 @@
   <EntityComponents>
 
 
-<!-- PVT_ACS-Behavior-EscortCorvette-Mining START -->
-
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Behavior-EscortCorvette-Mining -->
+<!-- BEHAVIOR Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortCorvette-Mining -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-Behavior-EscortCorvette-Mining</SubtypeId>
+        <SubtypeId>PVTACS-AD-Behavior-EscortCorvette-Mining</SubtypeId>
       </Id>
 	  
       <Description>
@@ -16,30 +15,32 @@
 
         [BehaviorName:Escort]
 
-        [TargetData:PVT_ACS-Targeting-EscortCorvette]
+        [TargetData:PVTACS-AD-Targeting-EscortCorvette]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Triggered]
 		
-        [AutopilotData:PVT_ACS-EscortCorvette-Autopilot-Untriggered]
-		[SecondaryAutopilotData:PVT_ACS-EscortCorvette-Autopilot-Triggered]
+		[UseDamageDetection:true]
 		
-		[Triggers:PVTACS-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
 		
-		[Triggers:PVTACS-Trigger-AggressionSwitchEscort]
-		[Triggers:PVTACS-Trigger-PassiveSwitchEscort]
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
 		
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
         [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
         [Triggers:MES-Trigger-NoTargetRetreatCheck]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
       </Description>
     </EntityComponent>
-<!--
-        [Triggers:Imber-Trigger-RequestEscortSlot]
-		
-        [Triggers:Imber-Trigger-ReaverPresenceNoChat]
-        [Triggers:Imber-Trigger-ReaverPresenceClear]
--->
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-Behavior-EscortCorvette-Mining -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortCorvette-Mining-Brawler -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-Behavior-EscortCorvette-Mining-Brawler</SubtypeId>
+        <SubtypeId>PVTACS-AD-Behavior-EscortCorvette-Mining-Brawler</SubtypeId>
       </Id>
 	  
       <Description>
@@ -47,25 +48,204 @@
 
         [BehaviorName:Escort]
 
-        [TargetData:PVT_ACS-Targeting-EscortCorvette]
+        [TargetData:PVTACS-AD-Targeting-EscortCorvette]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Triggered-Brawler]
+
+		[UseDamageDetection:true]
 		
-        [AutopilotData:PVT_ACS-EscortCorvette-Autopilot-Untriggered]
-		[SecondaryAutopilotData:PVT_ACS-EscortCorvette-Autopilot-Triggered-Brawler]
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
 		
-		[Triggers:PVTACS-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
 		
-		[Triggers:PVTACS-Trigger-AggressionSwitchEscort]
-		[Triggers:PVTACS-Trigger-PassiveSwitchEscort]
-		
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
         [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
         [Triggers:MES-Trigger-NoTargetRetreatCheck]
+
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortCorvette-Mining-Sniper -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Behavior-EscortCorvette-Mining-Sniper</SubtypeId>
+      </Id>
+	  
+      <Description>
+        [RivalAI Behavior]
+
+        [BehaviorName:Escort]
+
+        [TargetData:PVTACS-AD-Targeting-EscortCorvette]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Triggered-Sniper]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+		
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+	
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortFighter-ExtremeRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Escort]
+        
+        [TargetData:PVTACS-AD-Targeting-EscortCorvette]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ExtremeRange]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+		
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+        
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+		
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortFighter-LongRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-EscortFighter-LongRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Escort]
+        
+        [TargetData:PVTACS-AD-Targeting-EscortCorvette]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-LongRange]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+		
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+        
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
       </Description>
     </EntityComponent>
 
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-Targeting-EscortCorvette -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortFighter-ShortRange -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-EscortFighter-ShortRange</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Escort]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+		
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+        
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-600K]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-EscortFighter-ShortRange-1M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Behavior-EscortFighter-ShortRange-1M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:Escort]
+        
+        [TargetData:ACS-SmallDrone-Target]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
+        [AutopilotData:PVTACS-AD-Autopilot-EscortCorvette-Untriggered]
+		[SecondaryAutopilotData:PVTACS-AD-Autopilot-Fighter-ShortRange]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:PVTACS-AD-Trigger-RequestEscortSlot]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+		
+		[Triggers:PVTACS-AD-Trigger-Escort-5kWarning]
+		[Triggers:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+        
+        [Triggers:MES-Trigger-NoTargetRetreatInitialCheck]
+        [Triggers:MES-Trigger-NoTargetRetreatCheck]
+        
+        [Triggers:ACS-DroneSmallDeath-Trigger]
+		[Triggers:PVTACS-AD-Trigger-Fighter-NoWeapon-Retreat]
+		
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers"PVTACS-AD-Trigger-RemoteCompromisedBounty-1M]
+      </Description>
+    </EntityComponent>
+<!-- BEHAVIOR End -->
+
+
+<!-- TARGETING Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Targeting-EscortCorvette -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVT_ACS-Targeting-EscortCorvette</SubtypeId>
+        <SubtypeId>PVTACS-AD-Targeting-EscortCorvette</SubtypeId>
       </Id>
       <Description>
         [RivalAI Target]
@@ -73,8 +253,8 @@
         [UseCustomTargeting:true]
         [Target:PlayerAndGrid]
 
-        [MaxDistance:2000]
-        [MaxExistingTargetDistance:4000]
+        [MaxDistance:5000]
+        [MaxExistingTargetDistance:6000]
 
         [MatchAllFilters:OutsideOfSafezone]
         [MatchAllFilters:Owner]
@@ -87,11 +267,14 @@
         [Relations:Enemy]
       </Description>
     </EntityComponent>
-	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-EscortCorvette-Autopilot-Untriggered -->
+<!-- TARGETING End -->
+
+
+<!-- AUTOPILOT Start -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortCorvette-Untriggered -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVT_ACS-EscortCorvette-Autopilot-Untriggered</SubtypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortCorvette-Untriggered</SubtypeId>
       </Id>
       <Description>
         [RivalAI Autopilot]
@@ -116,10 +299,10 @@
       </Description>
     </EntityComponent>
 	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVT_ACS-EscortCorvette-Autopilot-Triggered -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortCorvette-Triggered -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVT_ACS-EscortCorvette-Autopilot-Triggered</SubtypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortCorvette-Triggered</SubtypeId>
       </Id>
       <Description>
         [RivalAI Autopilot]
@@ -128,19 +311,19 @@
         [ExtraSlowDownDistance:50]
         [FlyLevelWithGravity:false]
 
-        [IdealMinSpeed:12]
+        [IdealMinSpeed:80]
         [IdealMaxSpeed:100]
         [MaxSpeedTolerance:3]
 
         [MinimumPlanetAltitude:150]
         [IdealPlanetAltitude:300]
 
-        [UseVelocityCollisionEvasion:false]
+        [UseVelocityCollisionEvasion:true]
         [LimitRotationSpeed:true]
-        [MaxRotationMagnitude:1.5]
+        [MaxRotationMagnitude:2]
 
         [OffsetSpaceMinDistFromTarget:700]
-        [OffsetSpaceMaxDistFromTarget:1300]
+        [OffsetSpaceMaxDistFromTarget:2000]
 
         [OffsetPlanetMinDistFromTarget:200]
         [OffsetPlanetMaxDistFromTarget:450]
@@ -152,10 +335,10 @@
       </Description>
     </EntityComponent>
 	  
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-EscortCorvette-Autopilot-Triggered-Brawler -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortCorvette-Triggered-Brawler -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>PVTACS-EscortCorvette-Autopilot-Triggered-Brawler</SubtypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortCorvette-Triggered-Brawler</SubtypeId>
       </Id>
       <Description>
         [RivalAI Autopilot]
@@ -171,9 +354,9 @@
         [MinimumPlanetAltitude:150]
         [IdealPlanetAltitude:300]
 
-        [UseVelocityCollisionEvasion:false]
+        [UseVelocityCollisionEvasion:true]
         [LimitRotationSpeed:true]
-        [MaxRotationMagnitude:1.5]
+        [MaxRotationMagnitude:2]
 
         [OffsetSpaceMinDistFromTarget:450]
         [OffsetSpaceMaxDistFromTarget:750]
@@ -187,7 +370,610 @@
         [AngleAllowedForForwardThrust:75]
       </Description>
     </EntityComponent>
-<!-- PVT_ACS-Behavior-EscortCorvette-Mining END -->
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Autopilot-EscortCorvette-Triggered-Sniper -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Autopilot-EscortCorvette-Triggered-Sniper</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:50]
+        [FlyLevelWithGravity:false]
+
+        [IdealMinSpeed:12]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:3]
+
+        [MinimumPlanetAltitude:150]
+        [IdealPlanetAltitude:300]
+
+        [UseVelocityCollisionEvasion:true]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:2]
+
+        [OffsetSpaceMinDistFromTarget:1500]
+        [OffsetSpaceMaxDistFromTarget:2000]
+
+        [OffsetPlanetMinDistFromTarget:200]
+        [OffsetPlanetMaxDistFromTarget:450]
+        [OffsetPlanetMinTargetAltitude:1200]
+        [OffsetPlanetMaxTargetAltitude:1500]
+        [ReverseOffsetDistAltAboveHeight:true]
+
+        [AngleAllowedForForwardThrust:75]
+      </Description>
+    </EntityComponent>
+<!-- AUTOPILOT End -->	
+
+
+<!-- TRIGGERS Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Trigger-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:3000]
+        [MaxCooldownMs:3001]
+        [StartsReady:false]
+
+        [MaxActions:-1]
+		
+		[Actions:PVTACS-AD-Action-Command-Send-RequestEscortSlot]
+		[Actions:PVTACS-AD-Action-Escort-Disable-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Trigger-ProcessEscortRequest -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-ProcessEscortRequest</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:PVTACS-AD-ComCode-EscortRequest]
+
+        [StartsReady:true]
+        [MinCooldownMs:0]
+        [MaxCooldownMs:0]
+		
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Escort-AssignFromCommand]
+		[Actions:PVTACS-AD-Action-Command-Send-EscortAccepted]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Trigger-ProcessEscortRequestAccepted -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-ProcessEscortRequestAccepted</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:CommandReceived]
+        [CommandReceiveCode:PVTACS-AD-ComCode-EscortRequestAccepted]
+
+        [StartsReady:true]
+        [MinCooldownMs:0]
+        [MaxCooldownMs:0]
+		
+        [MaxActions:-1]
+        [Actions:PVTACS-AD-Action-Escort-Disable-ProcessEscortRequestAccepted]
+		[Actions:PVTACS-AD-Action-Escort-Disable-NoTargetRetreatInitialCheck]
+		[Actions:PVTACS-AD-Action-Escort-Disable-NoTargetRetreatCheck]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Trigger-Escort-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-Escort-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:5000]
+
+        [StartsReady:true]
+        [MaxActions:1]
+		
+        [Actions:PVTACS-AD-Action-Escort-5kWarning-Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Trigger-Escort-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-Escort-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:TargetNear]
+
+        [TargetDistance:3000]
+
+        [StartsReady:true]
+		
+		[Actions:PVTACS-AD-Action-Escort-ChangeToFighter]
+		[Actions:PVTACS-AD-Action-Escort-ChangeToSecondaryAutopilot]
+		[Actions:PVTACS-AD-Action-Escort-Chat-AgressionSwitch]
+		[Actions:PVTACS-AD-Action-Escort-SpawnSupportDrones-MedPlusHard]
+		
+		[Actions:PVTACS-AD-Action-Escort-Enable-PassiveSwitch]
+		[Actions:PVTACS-AD-Action-Escort-ResetCooldown-PassiveSwitch]
+		
+		[Actions:PVTACS-AD-Action-Escort-Disable-5kWarning]
+		[Actions:PVTACS-AD-Action-Escort-Disable-AgressionSwitch]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Trigger-Escort-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Trigger-Escort-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:ChangedTarget]
+
+        [TargetDistance:6000]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+		
+		[Actions:PVTACS-AD-Action-Escort-ChangeToEscort]
+		[Actions:PVTACS-AD-Action-Escort-ChangeToPrimaryAutopilot]
+		[Actions:PVTACS-AD-Action-Escort-Chat-PassiveSwitch]
+		
+		[Actions:PVTACS-AD-Action-Escort-Enable-AgressionSwitch]
+		
+		[Actions:PVTACS-AD-Action-Escort-Disable-NoTargetRetreatCheck]
+		[Actions:PVTACS-AD-Action-Escort-Disable-NoTargetRetreatInitialCheck]
+		[Actions:PVTACS-AD-Action-Escort-Disable-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+<!-- TRIGGERS End -->
+
+
+<!-- ACTIONS Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Action-Command-Send-EscortAccepted -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Command-Send-EscortAccepted</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:PVTACS-AD-Command-EscortRequestAccepted]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Action-Command-Send-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Command-Send-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:PVTACS-AD-Command-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-5kWarning-Chat -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-5kWarning-Chat</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-AD-Chat-Escort-5kWarning]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Action-Escort-AssignFromCommand -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-AssignFromCommand</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [AssignEscortFromCommand:true]
+      </Description>
+<!--
+        [DebugMessage:Assigning Escort From Received Command]
+-->	  
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-ChangeToFighter -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-ChangeToFighter</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Fighter]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-ChangeToEscort -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-ChangeToEscort</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Escort]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-ChangeToPrimaryAutopilot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-ChangeToSecondaryAutopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-ChangeToSecondaryAutopilot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-ChangeToSecondaryAutopilot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Secondary]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Chat-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Chat-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-AD-Chat-Escort-AggressionSwitch]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Chat-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Chat-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-Chat-Escort-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-ResetCooldown-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-ResetCooldown-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:PVTACS-AD-Trigger-Escort-PassiveSwitch]
+     </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-SpawnSupportDrones-MedPlusHard -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-SpawnSupportDrones-MedPlusHard</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[SpawnEncounter:true]
+	    [Spawner:ACS-ShipSpawnerDrone-IonMed]	  
+	    [Spawner:ACS-ShipSpawnerDrone-IonHard]	  
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-AD-Trigger-Escort-5kWarning]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+							 PVTACS-AD-Trigger-Escort-AggressionSwitch
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-AD-Trigger-Escort-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-ProcessEscortRequestAccepted -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-ProcessEscortRequestAccepted</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-AD-Trigger-ProcessEscortRequestAccepted]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-NoTargetRetreatCheck -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-NoTargetRetreatCheck</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatCheck]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Disable-NoTargetRetreatInitialCheck -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-NoTargetRetreatInitialCheck</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Action-Escort-Disable-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Disable-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:PVTACS-AD-Trigger-RequestEscortSlot]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Enable-AgressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Enable-AgressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:PVTACS-AD-Trigger-Escort-AgressionSwitch]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Enable-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Enable-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:PVTACS-AD-Trigger-Escort-PassiveSwitch]
+      </Description>
+    </EntityComponent>
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Escort-Enable-NoTargetRetreatinitialCheck -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Escort-Enable-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:MES-Trigger-NoTargetRetreatInitialCheck]
+      </Description>
+    </EntityComponent>
+<!-- ACTIONS End -->
+
+
+<!-- COMMANDS Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Command-RequestEscortSlot -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Command-RequestEscortSlot</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:PVTACS-AD-ComCode-EscortRequest]
+        [MatchSenderReceiverOwners:true]
+        [RequestEscortSlot:true]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">	<!-- PVTACS-AD-Command-EscortRequestAccepted -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Command-EscortRequestAccepted</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Command]
+
+        [CommandCode:PVTACS-AD-ComCode-EscortRequestAccepted]
+        [MatchSenderReceiverOwners:true]
+		[CommandDelayTicks:1800]
+      </Description>
+    </EntityComponent>
+	<!-- 
+	This command is supposed to fire 30 seconds after the first escort request is processed. 
+	This will turn off all Escort requests from all potential escorts. This turns off retreat triggers 
+	that we do not want the escorts to have if they have been assigned. This results in any batch of newly 
+	spawned escorts having 30 seconds to sign up, before they retreat.
+	-->
+<!-- COMMANDS End -->
+
+
+<!-- CHAT Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Escort-5kWarning -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Escort-5kWarning</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [ChatMessages:You are too close to our flight path, turn around now.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Keep your distance, or you will be considered Hostile.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:If you're not the pizza guy, you're not welcome here.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Escort-AggressionSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Escort-AggressionSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [ChatMessages:Hostile entity approaching. We are engaging, send in the drones.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Deviating from escort to intercept hostile entity. Requesting drone support.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages:Engaging hostile. This looks dangerous, save us some pizza.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]	
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Escort-PassiveSwitch -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Escort-PassiveSwitch</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [ChatMessages:Returning to escort formation.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Disengaging from combat.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+		
+        [ChatMessages:Hostiles have been driven off, returning to escort duties.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- CHAT End -->
+
 
   </EntityComponents>
 </Definitions>

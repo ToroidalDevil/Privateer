@@ -9,8 +9,8 @@
 				<SubtypeId>(NPC-ACS) Firefly Drone</SubtypeId>
 			</Id>
 			<Description>
-
 			[Modular Encounters SpawnGroup]
+			
 			[SpaceCargoShip:false]
 			[LunarCargoShip:false]
 			[SpaceRandomEncounter:false]
@@ -206,11 +206,54 @@
 				[UseRivalAi:true]
 				[RivalAiReplaceRemoteControl:true]
 			</Description>
-			<Icon>Textures\GUI\Icons\Fake.dds</Icon>  <!--Do Not Edit-->
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>
 			<IsPirate>true</IsPirate>
 			<Frequency>5.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="(NPC-ACS) Space Wasp Drone">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-200K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>	<!-- (NPC-ACS) Baby Guppy-G -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>(NPC-ACS) Baby Guppy-G</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Baby Guppy-G">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>
@@ -300,6 +343,49 @@
 			<Frequency>5.0</Frequency>
 			<Prefabs>
 				<Prefab SubtypeId="(NPC-ACS) Locust Drone Mk2">
+					<Position>
+						<X>0.0</X>
+						<Y>0.0</Y>
+						<Z>0.0</Z>
+					</Position>
+					<Speed>25</Speed>
+					<Behaviour>PVTACS-RD-DroneSmall-Behavior-300K</Behaviour>
+				</Prefab>
+			</Prefabs>
+		</SpawnGroup>
+
+		<SpawnGroup>	<!-- (NPC-ACS) Baby Guppy-R -->
+			<Id>
+				<TypeId>SpawnGroupDefinition</TypeId>
+				<SubtypeId>(NPC-ACS) Baby Guppy-R</SubtypeId>
+			</Id>
+			<Description>
+				[Modular Encounters SpawnGroup]
+
+				[SpaceCargoShip:false]
+				[LunarCargoShip:false]
+				[SpaceRandomEncounter:false]
+				[AtmosphericCargoShip:false]
+				[PlanetaryInstallation:false]
+				[RivalAiSpawn:true]
+				[FactionOwner:ASSERT]
+				[ReplenishSystems:false]
+
+				[UseBlockReplacerProfile:true]
+				[BlockReplacerProfileNames:MES-NpcThrusters-Ion,MES-ProprietaryCompRichBlocks]
+				[NpcIonThrustForceMultiply:3]
+				[NpcIonThrustPowerMultiply:0.2]
+				[ConfigureSpecialNpcThrusters:true]
+				[RestrictNpcIonThrust:false]
+					
+				[UseRivalAi:true]
+				[RivalAiReplaceRemoteControl:true]
+			</Description>
+			<Icon>Textures\GUI\Icons\Fake.dds</Icon>
+			<IsPirate>true</IsPirate>
+			<Frequency>5.0</Frequency>
+			<Prefabs>
+				<Prefab SubtypeId="(NPC-ACS) Baby Guppy-R">
 					<Position>
 						<X>0.0</X>
 						<Y>0.0</Y>

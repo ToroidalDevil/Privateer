@@ -1,62 +1,12 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <EntityComponents>
-  
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange -->
-      <Id>
-        <TypeId>Inventory</TypeId>
-        <SubtypeId>(NPC-ACS)-Behavior-MiningDivision-Raupe</SubtypeId>
-      </Id>
-      <Description>
-        [RivalAI Behavior]
-
-        [BehaviorName:CargoShip]
-
-		[AutopilotData:ACS-AutoPilot-CargoShip]
-        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
-		
-		[Triggers:PVTACS-Trigger-ProcessEscortRequest]
-        [EscortOffsets:{X:-150 Y:0 Z:0}]
-        [EscortOffsets:{X:150 Y:0 Z:0}]
-
-		[Triggers:ACS-Ship-ProxLong-Trigger]
-        [Triggers:ACS-Ship-ProxLongReply-Trigger]
-
-        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
-        [Triggers:ACS-Ship-Death-Trigger]
-
-        [Triggers:ACS-ShipPathDeviation-Trigger]
-        [Triggers:ACS-ShipPathReturn-Trigger]
-
-        [Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
-        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
-        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
-        [Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
-
-        [Triggers:ACS-Ship-Grinder-Trigger]
-        [Triggers:ACS-Ship-GrinderEscape-Trigger]
-        [Triggers:ACS-Ship-Grinder-Enable-Trigger]
-
-        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
-        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
-        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]		
-		
-        [Triggers:Triggers:ACS-ShipSpace-DamageMed-Trigger]
-		
-      </Description>
-<!--
-		== These are the options for escape difficulty ==
-
-        [Triggers:ACS-ShipSpace-DamageEasy-Trigger]
-        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
-        [Triggers:ACS-ShipSpace-DamageHard-Trigger]
--->
-    </EntityComponent>
 	
-	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)-Behavior-AssaultDivision-Hunter-LongRange -->
+<!-- BEHAVIOR Start -->	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Behavior-MiningDivision-Raupe -->
       <Id>
         <TypeId>Inventory</TypeId>
-        <SubtypeId>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</SubtypeId>
+        <SubtypeId>PVTACS-AD-Behavior-MiningDivision-Raupe</SubtypeId>
       </Id>
       <Description>
         [RivalAI Behavior]
@@ -65,8 +15,13 @@
 
 		[AutopilotData:ACS-AutoPilot-CargoShip]
         [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+
+		[UseDamageDetection:true]
+
+        [TargetData:PVTACS-AD-Targeting-2k]
+        [WeaponSystem:PVTACS-AD-Weapons-Standard]
 		
-		[Triggers:PVTACS-Trigger-ProcessEscortRequest]
+		[Triggers:PVTACS-AD-Trigger-ProcessEscortRequest]
         [EscortOffsets:{X:-150 Y:-150 Z:0}]
         [EscortOffsets:{X:150 Y:150 Z:0}]
         [EscortOffsets:{X:0 Y:-150 Z:-150}]
@@ -94,17 +49,248 @@
         [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
         [Triggers:ACS-DroneOperations-ShipCounter-Trigger]		
 		
-        [Triggers:Triggers:ACS-ShipSpace-DamageMed-Trigger]
-		
+        [Triggers:PVTACS-AD-Trigger-Damage-Raupe]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
       </Description>
-<!--
-		== These are the options for escape difficulty ==
-
-        [Triggers:ACS-ShipSpace-DamageEasy-Trigger]
-        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
-        [Triggers:ACS-ShipSpace-DamageHard-Trigger]
--->
     </EntityComponent>
+<!-- BEHAVIOR End -->	
+
+
     
+<!-- TRIGGERS Start -->	
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Trigger-Damage-Raupe -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Trigger-Damage-Raupe</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Trigger]
+
+		[UseTrigger:true]
+		[Type:Damage]
+
+		[DamageTypes:Rocket]
+		[DamageTypes:Bullet]
+		[DamageTypes:Drill]
+		[DamageTypes:Weapon]
+
+		[MaxActions:3]
+		[StartsReady:true]
+		[MinCooldownMs:180000]
+		[MaxCooldownMs:540000]
+
+		[Actions:ACS-ShipSpace-DamageHard-Action]
+		[Actions:ACS-BaseLunarSupportCall-Action]
+		[Actions:PVTACS-AD-Spawn-Reinforcements-Easy]
+      </Description>
+    </EntityComponent>
+<!-- TRIGGERS End -->	
+
+
+<!-- ACTIONS Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> 	<!-- PVTACS-AD-Action-Spawn-Reinforcements-Easy -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Action-Spawn-Reinforcements-Easy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Action]
+
+		[Chance:50]
+
+        [UseChatBroadcast:true]
+        [ChatData:PVTACS-AD-Chat-Reinforcements-Spawned]
+
+		[SpawnEncounter:true]
+		[Spawner:PVTACS-AD-Spawner-Reinforcements-Easy]
+      </Description>
+    </EntityComponent>
+<!-- ACTIONS End -->
+
+
+<!-- CHAT Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Chat-Reinforcements-Spawned -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-Chat-Reinforcements-Spawned</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+		
+        [Author:ACS Commander]
+        [Color:Red]
+
+        [ChatMessages:Request for assistance granted.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Assault Divison inbound.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Help is on the way try and hold on!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+      </Description>
+    </EntityComponent>
+<!-- CHAT End -->
+
+
+<!-- SPAWNERS Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-Spawner-Reinforcements-Easy -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-Spawner-Reinforcements-Easy</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Spawn]
+      
+        [UseSpawn:true]
+        [StartsReady:true]
+      
+        [SpawnGroups:(NPC-ACS) AssaultDivision Reinforcements Easy Auburn]
+		[SpawnGroups:(NPC-ACS) AssaultDivision Reinforcements Easy PrideAndPrejudice]
+		[SpawnGroups:(NPC-ACS) AssaultDivision Reinforcements Easy Devotion]
+		[SpawnGroups:(NPC-ACS) AssaultDivision Reinforcements Easy Thresher]
+		[SpawnGroups:(NPC-ACS) AssaultDivision Reinforcements Easy Adrasta]
+      
+        [UseRelativeSpawnPosition:false]
+
+        [MinDistance:4000]
+        [MaxDistance:5000]
+        [MinAltitude:2000]
+        [MaxAltitude:2500]
+      </Description> 
+    </EntityComponent>
+<!-- SPAWNERS End -->
+
+
+<!-- SPAWN CONDITIONS Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe</SubtypeId> 
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		
+        [ChanceCeiling:100]
+        [SpaceCargoShipChance:100]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:false]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:All]
+		
+		[Reactors:On]
+      </Description>
+    </EntityComponent>
+<!-- SPAWN CONDITIONS End -->
+
+
+<!-- MANIPULATIONS Start -->
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Platinum -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Platinum</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Platinum]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Uranium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Uranium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Uranium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Gold -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Gold</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Gold]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Silver -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Silver</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Silver]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Magnesium -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Magnesium</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Magnesium]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Cobalt-->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Cobalt</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Cobalt]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Iron -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Iron</SubtypeId>
+      </Id>
+      <Description>
+        [MES Manipulation]
+		
+		[UseLootProfiles:true]
+		[LootProfiles:PVT-ACS-Loot-Raupe-Iron]
+      </Description>
+    </EntityComponent>
+<!-- MANIPULATIONS End -->
+
   </EntityComponents>
 </Definitions>

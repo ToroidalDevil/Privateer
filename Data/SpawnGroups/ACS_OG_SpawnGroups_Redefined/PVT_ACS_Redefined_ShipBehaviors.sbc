@@ -3,10 +3,11 @@
   <EntityComponents>
   
 <!-- BEHAVIORS Start -->  
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-ShipSpaceEasy-Behavior-5M -->
+	<!-- EASY Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-4M -->
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>ACS-ShipSpaceEasy-Behavior-5M</SubtypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-4M</SubtypeId>
       </Id>
       <Description>
 		[RivalAI Behavior]
@@ -17,6 +18,98 @@
 		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
         [TargetData:PVTACS-AD-Targeting-2k]
 
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-4M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-4M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-AD-ShipSpaceEasy-Behavior-5M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-AD-ShipSpaceEasy-Behavior-5M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
 		[Triggers:ACS-Ship-ProxLong-Trigger]
 		[Triggers:ACS-Ship-ProxLongReply-Trigger]
 
@@ -47,11 +140,10 @@
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
       </Description>
     </EntityComponent>
-	
-    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-5M -->
       <Id>
           <TypeId>Inventory</TypeId>
-          <SubtypeId>ACS-ShipSpaceEasyNoPathDeviation-Behavior-5M</SubtypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-5M</SubtypeId>
       </Id>
       <Description>
 		[RivalAI Behavior]
@@ -61,6 +153,8 @@
 		[AutopilotData:ACS-AutoPilot-CargoShip]
 		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
         [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
 		
 		[Triggers:ACS-Ship-ProxLong-Trigger]
 		[Triggers:ACS-Ship-ProxLongReply-Trigger]
@@ -89,6 +183,3603 @@
 		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
       </Description>
     </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-8M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-8M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-8M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-8M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-8M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-8M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-9M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-9M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-9M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-9M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-9M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-9M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-13M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-13M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-13M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-13M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-13M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-13M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-18M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-18M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-18M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-18M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-18M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-18M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-19M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-19M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-19M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-19M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-19M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-19M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-22M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-22M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-22M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-22M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-22M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-22M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasy-Behavior-24M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasy-Behavior-24M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-24M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-24M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceEasyNoPathDeviation-Behavior-24M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearEasy-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageEasy-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-24M]
+      </Description>
+    </EntityComponent>
+	<!-- EASY End -->
+	
+	<!-- MEDIUM Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-4M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-4M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+		
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-4M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-4M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-5M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-5M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-5M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-5M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+	    [Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-8M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-8M</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+	    [Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-8M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-8M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-8M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-8M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-9M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-9M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-9M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+	    [Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+	    [Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-13M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-13M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-13M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:CargoShip]
+
+        [AutopilotData:ACS-AutoPilot-CargoShip]
+        [SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+	    [Triggers:ACS-Ship-ProxLong-Trigger]
+        [Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+        [Triggers:ACS-Ship-EvasionSuccess-Trigger]
+        [Triggers:ACS-Ship-Death-Trigger]
+
+        [Triggers:ACS-ShipPathDeviation-Trigger]
+        [Triggers:ACS-ShipPathReturn-Trigger]
+
+        [Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+        [Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+        [Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+        [Triggers:ACS-Ship-Grinder-Trigger]
+        [Triggers:ACS-Ship-GrinderEscape-Trigger]
+        [Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+        [Triggers:ACS-Ship-Despawn-Disable-Trigger]
+        [Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+        [Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+		
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMed-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMed-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+        [RivalAI Behavior]
+		
+        [BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-18M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-18M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-18M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-19M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-19M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-19M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-22M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-22M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-22M]
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-24M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceMedNoPathDeviation-Behavior-24M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearMed-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearMed-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageMed-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]          
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-24M]
+      </Description>
+    </EntityComponent>
+	<!-- MEDIUM End -->
+
+	<!-- HARD Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-4M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-4M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-4M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-4M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-4M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-5M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-5M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-5M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-5M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-5M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-6M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-6M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-6M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-7M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-7M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-7M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-8M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-8M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-8M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-9M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-9M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-9M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-10M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-10M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-10M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+	</EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-11M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-11M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-11M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-13M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-13M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-13M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-14M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-14M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-14M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-15M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-15M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-15M]
+      </Description>
+    </EntityComponent>	
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHard-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHard-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+	</EntityComponent>
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-17M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-17M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-17M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-18M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-18M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-18M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-19M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-19M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-19M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-22M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-22M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-22M]
+      </Description>
+    </EntityComponent>	
+
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-24M -->
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>PVTACS-RD-ShipSpaceHardNoPathDeviation-Behavior-24M</SubtypeId>
+      </Id>
+      <Description>
+		[RivalAI Behavior]
+
+		[BehaviorName:CargoShip]
+
+		[AutopilotData:ACS-AutoPilot-CargoShip]
+		[SecondaryAutopilotData:ACS-AutoPilot-CargoShip-B]
+        [TargetData:PVTACS-AD-Targeting-2k]
+		
+		[UseDamageDetection:true]
+
+		[Triggers:ACS-Ship-ProxLong-Trigger]
+		[Triggers:ACS-Ship-ProxLongReply-Trigger]
+
+		[Triggers:ACS-Ship-EvasionSuccess-Trigger]
+		[Triggers:ACS-Ship-Death-Trigger]
+
+		[Triggers:ACS-ShipPathDeviation-Trigger]
+		[Triggers:ACS-ShipPathReturn-Trigger]
+
+		[Triggers:ACS-ShipSpace-ProxNearHard-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearReply-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle1-Trigger]
+		[Triggers:ACS-ShipSpace-ProxNearHard-Cycle2-Trigger]
+
+		[Triggers:ACS-ShipSpace-DamageHard-Trigger]
+
+		[Triggers:ACS-Ship-Grinder-Trigger]
+		[Triggers:ACS-Ship-GrinderEscape-Trigger]
+		[Triggers:ACS-Ship-Grinder-Enable-Trigger]
+
+		[Triggers:ACS-Ship-Despawn-Disable-Trigger]
+		[Triggers:ACS-Ship-PlayerFar-Despawn-Trigger]
+		[Triggers:ACS-DroneOperations-ShipCounter-Trigger]
+
+		[Triggers:PVTACS-AD-Trigger-Command-Send-TargetResponse]
+		[Triggers:PVTACS-AD-Trigger-Command-Send-DamagerAsTargetResponse]
+		[Triggers:PVTACS-AD-Trigger-GridDamagedBountyIDAssignment]
+		[Triggers:PVTACS-AD-Trigger-RemoteCompromisedBounty-24M]
+      </Description>
+    </EntityComponent>	
+	<!-- HARD End -->
+	
 <!-- BEHAVIORS End -->  
 
 	
@@ -102,5 +3793,64 @@
 	
 <!-- ACTIONS Start -->
 <!-- ACTIONS End -->
+
+
+<!-- SPAWN CONDITIONS Start -->
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnSpaceCargoShipEasy-PVT -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnSpaceCargoShipEasy-PVT</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[PrefabSpawningMode:Random]
+		[IgnoreCombatPhase:true]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatLevelCheckRange:8000]
+		[ThreatScoreMaximum:449]
+      </Description>
+    </EntityComponent>
+	
+	<EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition"> <!-- (NPC-ACS)SpawnSpaceCargoShipMedium1-PVT -->
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>(NPC-ACS)SpawnSpaceCargoShipMedium1-PVT</SubtypeId>
+      </Id>
+      <Description>
+        [MES Spawn Conditions]
+
+		[AtmosphericCargoShip:false]
+		[SpaceCargoShip:true]
+		[LunarCargoShip:true]
+		
+		[RivalAiSpawn:false]
+		[FactionOwner:ASSERT]
+		
+		[UseThreatLevelCheck:true]
+		[ThreatLevelCheckRange:8000]
+		[ThreatScoreMinimum:450]
+		[ThreatScoreMaximum:799]
+		[IgnoreCombatPhase:true]
+		
+		[PrefabSpawningMode:RandomSelectedIndexes]
+			[PrefabIndexGroupNames:Main]
+			[PrefabIndexGroupValues:0]
+			[PrefabIndexGroupNames:Main]
+			[PrefabIndexGroupValues:1]
+			[PrefabIndexGroupNames:Main]
+			[PrefabIndexGroupValues:2]
+      </Description>
+    </EntityComponent>
+
+<!-- SPAWN CONDITIONS End -->
   </EntityComponents>
 </Definitions>

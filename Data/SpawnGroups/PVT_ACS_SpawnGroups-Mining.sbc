@@ -10,7 +10,7 @@
       <Description>
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -21,12 +21,11 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Platinum]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Platinum]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-	  
         <Prefab SubtypeId="(NPC-ACS) Capital Mining Ship - Raupe">
           <Position>
             <X>0.0</X>
@@ -34,7 +33,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Escort Corvette">
@@ -44,7 +43,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining-Sniper</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -54,7 +53,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Escort Corvette">
@@ -64,7 +63,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -74,9 +73,8 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
-		
       </Prefabs>
     </SpawnGroup>
 
@@ -86,10 +84,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Uranium</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -100,12 +97,11 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Uranium]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Uranium]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-	  
         <Prefab SubtypeId="(NPC-ACS) Capital Mining Ship - Raupe">
           <Position>
             <X>0.0</X>
@@ -113,7 +109,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Escort Corvette">
@@ -123,7 +119,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining-Sniper</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Escort Corvette">
@@ -133,7 +129,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -143,7 +139,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
@@ -153,7 +149,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-LongRange</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -164,10 +160,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Gold</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -178,12 +173,11 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Gold]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Gold]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-	  
         <Prefab SubtypeId="(NPC-ACS) Capital Mining Ship - Raupe">
           <Position>
             <X>0.0</X>
@@ -191,7 +185,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -201,7 +195,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
@@ -211,7 +205,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-LongRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -221,7 +215,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
@@ -231,7 +225,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-LongRange</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -242,10 +236,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Silver</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -256,7 +249,7 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Silver]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Silver]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
@@ -268,7 +261,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Escort Corvette">
@@ -278,7 +271,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining-Sniper</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
@@ -288,7 +281,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -298,7 +291,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -308,7 +301,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
       </Prefabs>
 	</SpawnGroup>
@@ -319,10 +312,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Magnesium</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -333,12 +325,11 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Magnesium]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Magnesium]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
       <Prefabs>
-	  
         <Prefab SubtypeId="(NPC-ACS) Capital Mining Ship - Raupe">
           <Position>
             <X>0.0</X>
@@ -346,7 +337,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
@@ -356,7 +347,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -366,7 +357,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
@@ -376,7 +367,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-LongRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - AC">
@@ -386,7 +377,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-LongRange</Behaviour>
         </Prefab>
       </Prefabs>
     </SpawnGroup>
@@ -397,10 +388,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Cobalt</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -411,7 +401,7 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Cobalt]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Cobalt]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
@@ -423,7 +413,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -433,7 +423,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - O">
@@ -443,7 +433,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortCorvette-Mining-Brawler</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -453,7 +443,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -463,7 +453,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 	  </Prefabs>
     </SpawnGroup>
@@ -474,10 +464,9 @@
         <SubtypeId>(NPC-ACS) Raupe-Iron</SubtypeId>
       </Id>
       <Description>
-
         [Modular Encounters SpawnGroup]
 
-        [SpawnConditionsProfiles:(NPC-ACS)SpawnCondition-Space-MiningDivision-Raupe]
+        [SpawnConditionsProfiles:PVTACS-AD-SpawnCondition-Space-MiningDivision-Raupe]
 		
         [FactionOverride:ASSERT]
         [ReplenishSystems:false]
@@ -488,7 +477,7 @@
         [ManipulationProfiles:MES-Manipulation-ResearchPoints]
 		
         [ManipulationProfiles:(NPC-ACS)ManipSpaceCargoShipMedium]
-		[ManipulationProfiles:(NPC-ACS)SpawnManipulation-Space-MiningDivision-Raupe-Iron]
+		[ManipulationProfiles:PVTACS-AD-SpawnManipulation-Space-MiningDivision-Raupe-Iron]
       </Description>
       <IsPirate>true</IsPirate>
       <Frequency>1.0</Frequency>
@@ -500,7 +489,7 @@
             <Z>0.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>(NPC-ACS)-Behavior-MiningDivision-Raupe-ExtraDefenders</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-MiningDivision-Raupe</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -510,7 +499,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) 'Combat Croissant' Heavy Fighter - M">
@@ -520,7 +509,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ExtremeRange</Behaviour>
         </Prefab>
 		
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -530,7 +519,7 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
 
         <Prefab SubtypeId="(NPC-ACS) Ceres-Class Escort Fighter">
@@ -540,9 +529,8 @@
             <Z>150.0</Z>
           </Position>
           <Speed>12</Speed>
-          <Behaviour>PVTACS-Behavior-EscortCorvette-Mining</Behaviour>
+          <Behaviour>PVTACS-AD-Behavior-EscortFighter-ShortRange</Behaviour>
         </Prefab>
-		
       </Prefabs>
     </SpawnGroup>
 
